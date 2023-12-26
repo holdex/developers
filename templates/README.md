@@ -14,6 +14,12 @@ sequenceDiagram
     c->>h: apply(form.initial)
     h->>g: createIssue()
     g->>h: return `issueId`
-    h->>c: sendEmail(issueId)
-    Note over h,c: bcc: HR_DB to log activity<br/> email includes GitHub issue link
+    par
+    Note over c,db: bcc: HR_DB to log activity<br/> email includes GitHub issue link
+        h->>c: sendEmail(issueId)
+        and
+        h->>db: sendEmail(issueId)
+    end
+    c->>g: replyInGithub(issueId)
+    
 ```
