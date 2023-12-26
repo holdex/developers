@@ -1,11 +1,9 @@
 # Introduce Yourself
 
-Thank you for applying to join the Holdex developers community.  
-
-Please go to our GitHub and create an issue by introducing yourself:  
+Please introduce yourself by creating a GitHub issue in our repository:  
 https://github.com/holdex/developers/issues
 
-As soon as you create an issue we will get in contact with you to discuss potential collaboration.
+We will reply to that GitHub issue to discuss potential collaboration.
 
 We are looking forward to chatting with you! 
 
