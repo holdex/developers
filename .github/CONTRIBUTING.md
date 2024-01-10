@@ -59,7 +59,7 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 
 ##### Design PRs
 
-Initiate a Pull Request with a note in the DESIGN.md file detailing the design aspects being addressed. Design PRs use 'docs' as the keyword.
+Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. Design PRs use `docs(ui)` as the "type" and "scope" of its name. I.e.: `docs(ui): design table component`
 
 ```
 # Design Assets
