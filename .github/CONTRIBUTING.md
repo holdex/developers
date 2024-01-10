@@ -52,10 +52,10 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 > PRs that do not correspond to the following criteria are usually rejected.
 
 1. **Small size**. [Keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/) and completable within 3-4 hours. If the solution requires more time, then decompose is into smaller PRs.
-2. **Clear naming**. When creating PRs and commits follow [Conventional Commit](https://www.conventionalcommits.org) guidelines. Keep it [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles).
-3. **Stalled PR**. We usually reject and close PRs which do not have activity for the last 24 hours. Unless there is a clear comment in that PR explaining a reason why that PR is stalled.
-4. **Link PR to Issue**. When creating a PR, make sure to link it to the corresponding problem/issue. Follow the instructions [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
-5. **Report your time**. Make sure to report the time you spent on the PR.
+1. **Clear naming**. When creating PRs and commits follow [Conventional Commit](https://www.conventionalcommits.org) guidelines. Keep it [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles).
+1. **Stalled PR**. We usually reject and close PRs which do not have activity for the last 24 hours. Unless there is a clear comment in that PR explaining a reason why that PR is stalled.
+1. **Link PR to Issue**. When creating a PR, make sure to link it to the corresponding problem/issue. Follow the instructions [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+1. **Report your time**. Make sure to report the time you spent on the PR.
 
 ##### Design PRs
 
@@ -69,7 +69,7 @@ Initiate a PR with a note in the DESIGN.md file detailing the design aspects bei
 If there isn't an existing DESIGN.md file:
 
 1. Create a new file named DESIGN.md.
-2. Link it from README.md.
+1. Link it from README.md.
 
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%). 
