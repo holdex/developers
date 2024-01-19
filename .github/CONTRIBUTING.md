@@ -33,7 +33,7 @@ Once the goal is clear, you must identify what stops us from achieving it. Anyth
 Sometimes, a Goal already has a few identified problems, but it’s not always the case.
 
 > [!NOTE]
-> Once a Problems is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems.
+> Once a Problems is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and cristal clear. 
 
 ### Solution
 
