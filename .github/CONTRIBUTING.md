@@ -33,7 +33,7 @@ Once the goal is clear, you must identify what stops us from achieving it. Anyth
 Sometimes, a Goal already has a few identified problems, but it’s not always the case.
 
 > [!NOTE]
-> Once a Problems is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and cristal clear. 
+> Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear. 
 
 ### Solution
 
@@ -53,7 +53,7 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 
 ## Scoping
 When planning the scope of work, make sure you [keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/). You must be able to complete your PR within 3-4 hours.  
-If the solution requires more time, then decompose it into smaller independent PRs. In case your smaller PRs can't be used on production use feature flags.
+If the solution requires more time, then decompose it into smaller independent PRs. In case your smaller PRs can't be used on production, use feature flags.
 
 We usually reject and close PRs which do not have activity for the last 24 hours, unless there is a clear comment explaining the reason why that PR is stalled.
 
