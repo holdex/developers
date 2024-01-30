@@ -33,43 +33,56 @@ Once the goal is clear, you must identify what stops us from achieving it. Anyth
 Sometimes, a Goal already has a few identified problems, but it’s not always the case.
 
 > [!NOTE]
-> Once a Problems is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and cristal clear. 
+> Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear. 
 
 ### Solution
 
 The third pillar of successful contribution is the Solution.
 
-Different problems may require different set of skills.  
+Different problems may require different sets of skills.  
 Whether it’s code, design, or marketing material, we expect a lean and clean solution from the contributor.
 
 > [!NOTE]
-> Code and design solution is presented as [GitHub PR (Pull Request)](https://docs.github.com/en/pull-requests). All PRs, whether for source-code or design changes, must comply with our PR Requirements.
+> Code and design solution is presented as [GitHub PR (Pull Request)](https://docs.github.com/en/pull-requests). All PRs, whether for source code or design changes, must comply with our PR Requirements.
 > 
 
-#### PR Requirements
+# PR Requirements
 
 > [!WARNING]
 > PRs that do not correspond to the following criteria are usually rejected.
 
-1. **Small size**. [Keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/) and completable within 3-4 hours. If the solution requires more time, then decompose is into smaller PRs.
-1. **Clear naming**. When creating PRs and commits follow [Conventional Commit](https://www.conventionalcommits.org) guidelines. Keep it [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles).
-1. **Stalled PR**. We usually reject and close PRs which do not have activity for the last 24 hours. Unless there is a clear comment in that PR explaining a reason why that PR is stalled.
-1. **Link PR to Issue**. When creating a PR, make sure to link it to the corresponding problem/issue. Follow the instructions [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
-1. **Report your time**. Make sure to report the time you spent on the PR.
+## Scoping
+When planning the scope of work, make sure you [keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/). You must be able to complete your PR within 3-4 hours.  
+If the solution requires more time, then decompose it into smaller independent PRs. In case your smaller PRs can't be used on production, use feature flags.
 
-##### Design PRs
+We usually reject and close PRs which do not have activity for the last 24 hours, unless there is a clear comment explaining the reason why that PR is stalled.
 
-Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. Design PRs use `docs(ui)` as the "type" and "scope" of its name. I.e.: `docs(ui): design table component`
+## Drafting
+When start working on a Problem, you must open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) right away. Do not mark PR as "ready to review" unless you are confident it is ready.
+
+When creating a PR, you must [link it](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
+
+### Design PRs
+
+Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. 
+Design PRs use `docs(ui)` as the "type" and "scope" of its name. I.e.: `docs(ui): design table component`
 
 ```
 # Design Assets
-## [Name of Page](_link_to_figma_canvas)
+- [Name of Page](_link_to_figma_canvas)
 ```
 
 If there isn't an existing DESIGN.md file:
 
 1. Create a new file named DESIGN.md.
 1. Link it from README.md.
+
+## Naming
+When naming your PRs and commits follow [Conventional Commit](https://www.conventionalcommits.org) guidelines.  
+Keep it [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles).
+
+## Requesting Review
+Once your PR is ready, assign reviewers and mark it as "ready to review". But before that, make sure to report the time you have spent on the PR.
 
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%). 
