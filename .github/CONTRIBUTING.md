@@ -43,6 +43,10 @@ Different problems may require different sets of skills.
 Whether it’s code, design, or marketing material, we expect a lean and clean solution from the contributor.
 
 > [!NOTE]
+> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy
+>
+
+> [!NOTE]
 > Code and design solution is presented as [GitHub PR (Pull Request)](https://docs.github.com/en/pull-requests). All PRs, whether for source code or design changes, must comply with our PR Requirements.
 > 
 
