@@ -25,3 +25,6 @@ The trial period can take from 1 to 5 days, which can be extended if necessary. 
 
 ## Can I get a different task on trial?
 No. 
+
+## Do I get hired after the trial?
+After the trial, your results will undergo a collective verification and assessment from a board of responsible members. Since we will be in touch, we will communicate to you personally the results of the trial and the next steps awaiting. 
