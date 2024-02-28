@@ -1,29 +1,27 @@
 # Trial Period
 
-Thank you for your interest in a position at Holdex. 
+## How to begin?
+1. Align yourself with our [Engineering guidelines](./CONTRIBUTING.md). Not following them will result in your work being rejected.
+1. Pick a Problem you are confident you can solve.
+1. Let us know in the comments which problem you want to solve and agree on your solution and ETA with our engineers. 
 
-We are constantly looking for new talent to join our team and support our [portfolio companies](https://holdex.io/portfolio). 
+> [!TIP]
+> Repositories where you can find trial (Problems) tasks:
+> - **HTML/CSS and JavaScript:** https://github.com/holdex/holdex-venture-studio 
+> - **Python:** https://github.com/truflation/truflation
+> - **Full-stack web3:** [get in touch](https://discord.gg/cHxnURgGgk)
+> - **Solidity:** [get in touch](https://discord.gg/cHxnURgGgk)
+> - **Go:** [get in touch](https://discord.gg/cHxnURgGgk)
+> - **Design:** [get in touch](https://discord.gg/cHxnURgGgk)
+> - **DevOps:** [get in touch](https://discord.gg/cHxnURgGgk)
+>
+> Repositories listed above may not have any Problems free for claiming. This means you will have to report new Problems yourself. Use our [Engineering Guidelines](./CONTRIBUTING.md) to help you define your first Problem.
 
-As part of our hiring process, we give preference to candidates who have successfully completed Trial while following our [Contributing Guidelines](./CONTRIBUTING.md).
+## I don't have access to open a PR in the repository. What to do?
+Fork the repository and create a PR using a [Fork Strategy](https://gist.github.com/Chaser324/ce0505fbed06b947d962). 
 
-> [!IMPORTANT]
-> You must strictly follow the guidelines for your work to be accepted.
+## What is the trial duration?
+The trial period can take from 1 to 5 days, which can be extended if necessary. If the PR is kept stale for a long period without previous notice, it will be closed automatically.
 
-## Begin Trial
-
-To start your trial, follow these steps:
-1. Claim existing problems 
-1. Align yourself with our [contributing guidelines](./CONTRIBUTING.md)
-1. Select your skill set:
-   1. Designers: talk to us and we will provide you with access to our Figma
-   1. Developers: 
-      1. Python: https://github.com/truflation/truflation
-      1. Solidity: talk to us and we will provide you with access to the repository
-      1. HTML/CSS, JavaScript: https://github.com/holdex/holdex-venture-studio
-      1. NodeJs: https://github.com/holdex/holdex-venture-studio
-2. Fork repository and identify the problem to work on. Not all of these repositories will have problems listed. This means that you will need to create a GitHub issue (problem) yourself.
-3. Provide a solution by creating PR and requesting a review for merge.
-
-## Trial Completion
-Usually, the trial period takes about 7 days, which can be extended if the case requires. Problems that are not solved and kept stale for a long period of time are automatically canceled.
-To end the trial period, create a new GitHub issue in https://github.com/holdex/holdex-venture-studio repository with the following name: "`Your Name` Performance Review". Further, attach all the Problems you have solved during the trial period and the time it took you to solve them (in man hours). Finally, ping one of our core team members (Vadim, George, Mark) and we will take it from there. Looking forward!
+## Can I get a different task on trial?
+No. 
