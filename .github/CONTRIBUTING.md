@@ -69,11 +69,33 @@ When creating a PR, you must [link it](https://docs.github.com/en/issues/trackin
 ### Design PRs
 
 Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. 
-Design PRs use `docs(ui)` as the "type" and "scope" of its name. I.e.: `docs(ui): design table component`
+Design PRs use `docs(ui)` as the "type" and "scope" of its name. i.e.: `docs(ui): design table component`
+
+Structure the design file with the following markup
 
 ```
-# Design Assets
-- [Name of Page](_link_to_figma_canvas)
+## Feature
+- [/page](https://figma.com/your-design-file-url)
+  - ./page/{params} 
+    - (group)
+      - [[state]](https://figma.com/your-design-file-url)
+```
+#### Key:
+- **`/...`** - Represents a page.
+- **`{...}`** - Represents a dynamic parameter within a URL.
+- **`(...)`** - Used for grouping related features or components.
+- **`[...]`** - Indicates a specific state of the page or component, such as a popup or modal state.
+
+- Indentation in the list represents the tree structure or hierarchy, showing how components or features are nested or related.
+
+Example:
+```
+## Credit Vaults
+- [/lending](https://figma.com/your-design-file-url)
+  - ./vaults/{poolAddr} 
+    - (Auction)
+      - [[Withdraw Popup]](https://figma.com/your-design-file-url)
+      - [[Bid Popup]](https://figma.com/your-design-file-url)
 ```
 
 If there isn't an existing DESIGN.md file:
