@@ -43,12 +43,7 @@ Different problems may require different sets of skills.
 Whether it’s code, design, or marketing material, we expect a lean and clean solution from the contributor.
 
 > [!NOTE]
-> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy
->
-
-> [!NOTE]
 > Code and design solution is presented as [GitHub PR (Pull Request)](https://docs.github.com/en/pull-requests). All PRs, whether for source code or design changes, must comply with our PR Requirements.
-> 
 
 # PR Requirements
 
@@ -56,6 +51,10 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 > PRs that do not correspond to the following criteria are usually rejected.
 
 ## Scoping
+
+> [!NOTE]
+> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
+
 When planning the scope of work, make sure you [keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/). You must be able to complete your PR within 3-4 hours.  
 If the solution requires more time, then decompose it into smaller independent PRs. In case your smaller PRs can't be used on production, use feature flags.
 
