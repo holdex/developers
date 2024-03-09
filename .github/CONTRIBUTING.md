@@ -8,7 +8,7 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community ap
 
 There are 3 core contribution pillars:
 1. **Goal** – a business aim
-1. **Problem** – an issue that is on the way to help us achieve the goal
+1. **Problem** – an issue that is on our way to achieve the Goal
 1. **Solution** –  the actual deliverable which resolves the problem
 
 > [!NOTE]
