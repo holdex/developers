@@ -1,6 +1,7 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to our project! Accepted contributions will be reflected on [holdex.io](https://holdex.io) or other related websites and repositories. 
+Thank you for your interest in contributing to our project!  
+Accepted contributions will be reflected on [holdex.io](https://holdex.io) or other related websites and repositories. 
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
@@ -8,7 +9,7 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community ap
 
 There are 3 core contribution pillars:
 1. **Goal** – a business aim
-1. **Problem** – an issue that is on our way to achieve the Goal
+1. **Problem** – an issue that is on our way to achieving the Goal
 1. **Solution** –  the actual deliverable which resolves the problem
 
 > [!NOTE]
@@ -24,16 +25,18 @@ As soon as you get involved, you must understand the goal you are working on by
 It is crucial to understand the business context of the goal and how achieving the goal will impact the project.
 
 > [!NOTE]
-> A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`. Goals are created and managed by Partner level contributors.
+> A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`.  
+> Goals are created and managed by Partner level contributors.
 
 ### Problem
 
-Once the goal is clear, you must identify what stops us from achieving it. Anything that is stopping us - is a “Problem”. A typical question to ask is: "why this Goal is not achieved yet and what is the Problem?".
+Once the goal is clear, you must identify what stops you from achieving it. Anything that is stopping you - is a “Problem”. A typical question to ask is: "Why is this Goal not achieved and what is the Problem?".
 
 Sometimes, a Goal already has a few identified problems, but it’s not always the case.
 
 > [!NOTE]
-> Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`. We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear. 
+> Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`.  
+> We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear. 
 
 ### Solution
 
@@ -43,9 +46,10 @@ Different problems may require different sets of skills.
 Whether it’s code, design, or marketing material, we expect a lean and clean solution from the contributor.
 
 > [!NOTE]
-> Code and design solution is presented as [GitHub PR (Pull Request)](https://docs.github.com/en/pull-requests). All PRs, whether for source code or design changes, must comply with our PR Requirements.
+> Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
 
 # PR Requirements
+All PRs, whether for source code, design or copy changes, must comply with our PR Requirements.
 
 > [!WARNING]
 > PRs that do not correspond to the following criteria are usually rejected.
