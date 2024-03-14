@@ -1,21 +1,31 @@
 # Trial Period
+When hiring at Holdex, we look for specific qualities and skills in our candidates that can only be observed during the trial period. Skills such as the ability to figure things out on your own, judgemental skills, decision-making, and async collaboration are part of our internal culture and what we aim for.
 
-## How to begin?
-1. Align yourself with our [Engineering guidelines](./CONTRIBUTING.md). Not following them will result in your work being rejected.
-1. Pick a Problem you are confident you can solve.
-1. Let us know in the comments which problem you want to solve and agree on your solution and ETA with our engineers. 
+From top to bottom, our teams operate the following way: Lead engineers contribute to defining the Goals along with the Partners and Stakeholders. Once defined, everyone on the team looks for the best solutions to achieve those Goals. Individual engineers define the Problems (issues) themselves and propose the solutions as PRs. The main idea is to make the right contributions to achieve the Goals. All of which is happening async, without making blockers or individuals being spoon-fed with new assignments. This is what we are expecting from you during your trial period too.
+
+## How the Trial works
+Once onboarded in the repository, you won't receive a narrow Problem to resolve. Instead, you will be assigned to a Goal where you will join forces with our team members and be responsible for contributing to the Goal. We'll expect you to define a new Problem and resolve it, or pick from the ones reported by your peers. Our [Engineering Guidelines](./CONTRIBUTING.md) will help you navigate your trial and follow familiar to our team principles.
+
+## Get started
+1. Align yourself with our [Engineering Guidelines](./CONTRIBUTING.md). Not following them will result in your work being rejected.
+1. Open a private thread discussion in our [Discord](https://discord.gg/cHxnURgGgk) and ping there Mark (@MarkCurchin).
+1. Join one of the repositories presented below or request access on demand.
+1. Align with the Goal you will get assigned to.
+1. Create a Problem (issue) or assign yourself to an existing one.
+1. Describe shortly your solution and provide an ETA in the comment section.
+1. Communicate in your Discord private thread your intentions to resolve a problem and paste the GitHub link.
+1. Begin solving and follow our [Engineering Guidelines](./CONTRIBUTING.md).
+1. Once complete, request review according to our [Engineering Guidelines](./CONTRIBUTING.md) and ping Mark in your Discord private thread.
 
 > [!TIP]
-> Repositories where you can find trial (Problems) tasks:
+> Repositories where you can begin your trial:
 > - **HTML/CSS and JavaScript:** https://github.com/holdex/holdex-venture-studio 
 > - **Python:** https://github.com/truflation/truflation
-> - **Full-stack web3:** [get in touch](https://discord.gg/cHxnURgGgk)
-> - **Solidity:** [get in touch](https://discord.gg/cHxnURgGgk)
-> - **Go:** [get in touch](https://discord.gg/cHxnURgGgk)
-> - **Design:** [get in touch](https://discord.gg/cHxnURgGgk)
-> - **DevOps:** [get in touch](https://discord.gg/cHxnURgGgk)
->
-> Repositories listed above may not have any Problems free for claiming. This means you will have to report new Problems yourself. Use our [Engineering Guidelines](./CONTRIBUTING.md) to help you define your first Problem.
+> - **Full-stack web3:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
+> - **Solidity:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
+> - **Go:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
+> - **Design:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
+> - **DevOps:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
 
 ## I don't have access to open a PR in the repository. What to do?
 Fork the repository and create a PR using a [Fork Strategy](https://gist.github.com/Chaser324/ce0505fbed06b947d962). 
