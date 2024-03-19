@@ -8,7 +8,7 @@ Once onboarded in the repository, you won't receive a narrow Problem to resolve.
 
 ## Get started
 1. Align yourself with our [Engineering Guidelines](./CONTRIBUTING.md). Not following them will result in your work being rejected.
-1. Open a private thread discussion in our [Discord](https://discord.gg/cHxnURgGgk) and ping there Mark (@MarkCurchin).
+1. Open a [PRIVATE THREAD](https://github.com/holdex/developers/blob/docs-update-trial/.github/private-thread-instruction-min.png?raw=true) discussion in our [Discord](https://discord.gg/cHxnURgGgk) and ping there Mark (@MarkCurchin).
 1. Join one of the repositories presented below or request access on demand.
 1. Align with the Goal you will get assigned to.
 1. Create a Problem (issue) or assign yourself to an existing one.
