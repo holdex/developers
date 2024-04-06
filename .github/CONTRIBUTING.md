@@ -1,7 +1,7 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to our project!  
-Accepted contributions will be reflected on [holdex.io](https://holdex.io) or other related websites and repositories. 
+Thank you for your interest in contributing to our project!
+Accepted contributions will be reflected in our repositories and related websites. 
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
@@ -120,6 +120,3 @@ Once your PR is ready, assign reviewers and mark it as "ready to review". But be
 #### Code Quality and Reviews
 
 Aim for solutions that work correctly 99.9% of the time. Be independent and thorough in your QA - reviewers are not QA team members but are there for a final safety check. We expect contributors to deliver bug-free software, understanding that perfection is an ideal. Stand firm in your solutions and avoid unnecessary revisions based on subjective feedback.
-
-# Support 
-https://discord.gg/JswagFgdR9
