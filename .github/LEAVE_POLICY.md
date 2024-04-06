@@ -1,6 +1,6 @@
 # Anual Leave Policy
 
-Every Holdex team member benefits from our standard "paid time off" allowance:
+Every team member benefits from our standard "paid time off" allowance:
 |  | Leave Reason | Paid Time Off |
 |--|--|--|
 | 🎄 | Holidays	| 3 days	|
@@ -19,7 +19,7 @@ The policy terms are:
 Unused Personal days can be carried over into the following year.  
 However, we encourage you to get out of the office and refresh.
 
-### If I stop collaboration with Holdex, will I be compensated for unused days?  
+### If I stop collaboration with you, will I be compensated for unused days?  
 Yes. You will receive compensation for any unused Personal days.  
 Sick days and holidays will not be reimbursed.  
 _compensation = monthlyRate * (unusedPtoDays / totalPtoDays)_

@@ -32,14 +32,14 @@ Once onboarded in the repository, you won't receive a narrow Problem to resolve.
 > - **Design:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
 > - **DevOps:** [for access - get in touch](https://discord.gg/cHxnURgGgk)
 
-## I don't have access to open a PR in the repository. What to do?
+## I don't have access to open a PR in the repository. What do I do?
 Fork the repository and create a PR using a [Fork Strategy](https://gist.github.com/Chaser324/ce0505fbed06b947d962). 
 
 ## What is the trial duration?
 The trial period can take from 1 to 5 days, which can be extended if necessary. If the PR is kept stale for a long period without previous notice, it will be closed automatically.
 
 ## Can I get a different task on trial?
-No. 
+No.
 
 ## Do I get hired after the trial?
 After the trial, your results will undergo a collective verification and assessment from a board of responsible members. Since we will be in touch, we will communicate to you personally the results of the trial and the next steps awaiting. 

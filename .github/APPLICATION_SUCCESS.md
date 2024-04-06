@@ -3,12 +3,10 @@
 We have received your application and will begin reviewing it soon. 
 
 > [!NOTE] 
-> As much as we love to hire fast, we are taking our time to reply to each one of you and it's not always immediate. Thank you for understanding. 
-
+> As much as we love to be fast, we are taking our time to reply to each one of you and it's not always immediate. Thank you for understanding. 
 
 ## What's next for me?
-1. If you haven't already, join our [Discord Server](https://discord.gg/cHxnURgGgk)
-2. Begin your [Trial Period](https://github.com/holdex/developers/blob/main/.github/TRIAL.md)
+Begin your [Trial Period](./TRIAL.md)
 
 ## Frequent questions
 
@@ -24,12 +22,8 @@ Follow the steps outlined in our [short instruction](./TRIAL.md) and it will get
 ### Are we having an interview call?
 Personal time is more precious. Instead of spending 1 hour of collective time on a "whiteboard" interview, we allow you to focus on what really matters. We usually don't have calls until official onboarding where you get to meet the founders and other team members.
 
-### What benefits Holdex offers?
+### What benefits do you offer?
 1. **We are 100% remote**. Work from anywhere around the world async and ad-hoc. 
-1. **Salary in stablecoins**. As [early adopters](https://holdex.io/about), we are very supportive of blockchain payroll. It is negotiable though.
+1. **Salary in stablecoins**. As early adopters, we are very supportive of blockchain payroll. It is negotiable though.
 1. **[PTO](./LEAVE_POLICY.md) and Holidays leave**.
-1. Project rotation. Exchange experience by building alongside [industry leaders](https://holdex.io/portfolio).
-1. Career growth protocol. Grow skills and contributions to become a Leader or Partner and earn from deals brought in.
 
-### I don't have Discord. Why should I join Holdex there?
-Discord is where we communicate with all our team members. We'll reach out personally to you in Discord to keep track of your application progress. 
