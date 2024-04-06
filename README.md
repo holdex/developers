@@ -6,7 +6,7 @@ This is where your Holdex journey starts.
 
 Make sure to align yourself with:
 - [Contributing Guidelines](./.github/CONTRIBUTING.md)
-- [Sick Leave Policy](https://holdex.io/c/learn/leave)
+- [Sick Leave Policy](./.github/LEAVE_POLICY.md)
 
 ## For HR
 - message templates are located here: [/templates](./templates)
