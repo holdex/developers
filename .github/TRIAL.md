@@ -1,15 +1,20 @@
 # Trial Period
-When hiring at Holdex, we look for specific qualities and skills in our candidates that can only be observed during the trial period. Skills such as the ability to figure things out on your own, judgemental skills, decision-making, and async collaboration are part of our internal culture and what we aim for.
+When hiring, we look for specific qualities and skills in our candidates that can only be observed during the trial period. Skills such as the ability to figure things out on your own, judgemental skills, decision-making, and async collaboration are part of our internal culture and what we aim for.
 
-From top to bottom, our teams operate the following way: Lead engineers contribute to defining the Goals along with the Partners and Stakeholders. Once defined, everyone on the team looks for the best solutions to achieve those Goals. Individual engineers define the Problems (issues) themselves and propose the solutions as PRs. The main idea is to make the right contributions to achieve the Goals. All of which is happening async, without making blockers or individuals being spoon-fed with new assignments. This is what we are expecting from you during your trial period too.
+Across the whole engineering, our team operates the following way:  
+1. lead engineers contribute to defining business Goals along with the Partners and Stakeholders
+2. every engineer, who is assigned to the Goal, identifies the Problems stopping us from achieving the Goal
+3. every engineer assigns themself one Problem at a time and proposes a solution in the form of PR.
+
+The main idea is to make the right contributions to achieve the Goals. All this process happens async, without making blockers or individuals being spoon-fed with new assignments. This is what we are expecting from you during your trial period too. For more details please carefully read Developer Guidelines.
 
 ## How the Trial works
-Once onboarded in the repository, you won't receive a narrow Problem to resolve. Instead, you will be assigned to a Goal where you will join forces with our team members and be responsible for contributing to the Goal. We'll expect you to define a new Problem and resolve it, or pick from the ones reported by your peers. Our [Engineering Guidelines](./CONTRIBUTING.md) will help you navigate your trial and follow familiar to our team principles.
+Once onboarded in the repository, you won't receive a narrow Problem to resolve. Instead, you will be assigned to a Goal where you will join forces with our team members and be responsible for contributing to the Goal. We'll expect you to define a new Problem and resolve it, or pick from the ones reported by your peers. Our [Developer Guidelines](./CONTRIBUTING.md) will help you navigate your trial and follow our team's principles.
 
 ## Get started
-1. Align yourself with our [Engineering Guidelines](./CONTRIBUTING.md). Not following them will result in your work being rejected.
+1. Align yourself with our [Developer Guidelines](./CONTRIBUTING.md). Not following them will result in your contribution being rejected.
 1. Open a [PRIVATE THREAD](https://github.com/holdex/developers/blob/main/.github/private-thread-instruction-min.png) discussion in our [Discord](https://discord.gg/cHxnURgGgk) and ping there Mark (@MarkCurchin).
-1. Join one of the repositories presented below or request access on demand.
+1. Join one of the repositories presented below or request an access.
 1. Align with the Goal you will get assigned to.
 1. Create a Problem (issue) or assign yourself to an existing one.
 1. Describe shortly your solution and provide an ETA in the comment section.
