@@ -110,6 +110,19 @@ If there isn't an existing DESIGN.md file:
 When naming your PRs and commits follow [Conventional Commit](https://www.conventionalcommits.org) guidelines.  
 Keep it [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles).
 
+The names of the PRs should be always oriented towards end-user's actions. This is so because for most of the repositories release logs are generated and presented to non-technical people. 
+
+Good examples:
+ - feat(ui): play music
+ - fix: mute sound
+ - test: open door
+
+Bad examples:
+ - create a player
+ - add a file to mute sound
+ - modified door function
+
+
 ## Requesting Review
 Once your PR is ready, assign reviewers and mark it as "ready to review". But before that, make sure to report the time you have spent on the PR.
 
