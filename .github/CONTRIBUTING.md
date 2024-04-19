@@ -126,6 +126,15 @@ Thus, the names of the PRs must:
  - feat: modified door function
 ```
 
+## Commit Signature Verification
+
+For the security and integrity of our project, we require all contributors to sign their commits. While we recommend using SSH for its simplicity, you may also use GPG or other methods.
+
+For detailed instructions on how to sign your commits with SSH, GPG, or another method, and to understand why commit signing is crucial for our project's security, please refer to [GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+
+> [!NOTE]
+>We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification) for a straightforward setup and verification process. Ensure your Git version supports SSH signature verification (Git 2.34 or later).
+
 ## Requesting Review
 Once your PR is ready, assign reviewers and mark it as "ready to review". But before that, make sure to report the time you have spent on the PR.
 
