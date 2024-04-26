@@ -54,6 +54,15 @@ All PRs, whether for source code, design or copy changes, must comply with our P
 > [!WARNING]
 > PRs that do not correspond to the following criteria are usually rejected.
 
+## Commit Signature Verification
+
+For the security and integrity of our project, we require all contributors to sign their commits.  
+For detailed instructions on why and how to sign your commits refer to [GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+
+> [!Note]
+> We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Ensure your Git version supports SSH signature verification (Git 2.34 or later).
+
+
 ## Scoping
 
 > [!NOTE]
