@@ -78,6 +78,15 @@ When start working on a Problem, you must open a [draft PR](https://docs.github.
 
 When creating a PR, you must [link it](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
 
+When working on tasks or sub-tasks within our project management system, it's essential to maintain clear links between related issues. This helps everyone stay informed about the progress of related tasks and promotes transparency within our team.
+
+When creating sub-issues, please remember to reference the parent issue using the following convention:
+
+```
+sub of: <parent_issue>
+
+```
+
 ### Design PRs
 
 Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. 
