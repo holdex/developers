@@ -1,4 +1,4 @@
-# Application Submitted! 🙌
+# Application Submitted! 🙌 
 
 We have received your application and will begin reviewing it soon. 
 
