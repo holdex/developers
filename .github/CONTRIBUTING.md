@@ -30,13 +30,19 @@ It is crucial to understand the business context of the goal and how achieving t
 
 ### Problem
 
-Once the goal is clear, you must identify what stops you from achieving it. Anything that is stopping you - is a “Problem”. A typical question to ask is: "Why is this Goal not achieved and what is the Problem?".
+Once the Goal is clear, you must identify what stops you from achieving it. Anything that is stopping you - is a “Problem”. A typical question to ask is: "Why is this Goal not achieved and what is the Problem?".
 
-Sometimes, a Goal already has a few identified problems, but it’s not always the case.
+Sometimes, a Goal already has a few identified problems, but not always.
 
 > [!NOTE]
 > Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`.  
-> We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear. 
+> We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear.
+
+Make sure each Problem issue is interlinked with it's Goal issue:
+- add a Problem issue link into the Goal description
+- add a Goal issue link to the Problem description
+
+It's essential to maintain clear links between Goals and related Problem issues. This helps everyone stay informed and team members can easily track progress and understand the context.
 
 ### Solution
 
@@ -49,7 +55,7 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 > Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
 
 # PR Requirements
-All PRs, whether for source code, design or copy changes, must comply with our PR Requirements.
+All PRs, whether for source code, design, or copy changes, must comply with our PR Requirements.
 
 > [!WARNING]
 > PRs that do not correspond to the following criteria are usually rejected.
