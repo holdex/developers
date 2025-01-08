@@ -1,13 +1,13 @@
 # Contributing Guidelines
 
 Thank you for your interest in contributing to our project!
-Accepted contributions will be reflected in our repositories and related websites. 
+Your accepted contributions will be reflected in our repositories and related websites. 
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 ## Getting started
 
-There are 3 core contribution pillars:
+There are three core contribution pillars:
 1. **Goal** – a business aim
 1. **Problem** – an issue that is on our way to achieving the Goal
 1. **Solution** –  the actual deliverable which resolves the problem
@@ -17,12 +17,14 @@ There are 3 core contribution pillars:
 
 ### Goal
 
-As soon as you get involved, you must understand the goal you are working on by
+Understanding the Goal and its business context is crucial for successful contribution.
 
-1. investigating the conversations and related documents
-1. understanding how things are already moving towards achieving the goal 
+As soon as you get involved, you must:
+1. analyze specifications (the Specs), 
+1. assess progress and outstanding Problems and
+1. provide an estimated time of achieving (ETA) the Goal.
 
-It is crucial to understand the business context of the goal and how achieving the goal will impact the project.
+Each Goal description must include Specs (a Google Document with commenting permissions) and an ETA. 
 
 > [!NOTE]
 > A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`.  
@@ -86,10 +88,10 @@ When creating a PR, you must [link it](https://docs.github.com/en/issues/trackin
 
 ### Design PRs
 
-Initiate a PR with a note in the DESIGN.md file detailing the design aspects being addressed. 
+Initiate a PR with a note in the DESIGN.md file detailing the addressed design aspects. 
 Design PRs use `docs(ui)` as the "type" and "scope" of its name. i.e.: `docs(ui): design table component`
 
-Structure the design file with the following markup
+Structure the design file with the following markup:
 
 ```
 ## Feature
@@ -142,7 +144,7 @@ Thus, the names of the PRs must:
 ```
 
 ## Requesting Review
-Once your PR is ready, assign reviewers and mark it as "ready to review". But before that, make sure to report the time you have spent on the PR.
+Once your PR is ready, assign reviewers and mark it as "ready to review." But before that, report the time you have spent on it.
 
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%). 
