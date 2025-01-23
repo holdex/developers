@@ -1,5 +1,3 @@
-<!-- pr init -->
-
 # Contributing Guidelines
 
 Thank you for your interest in contributing to our project!
@@ -85,6 +83,19 @@ When planning the scope of work, make sure you [keep PRs small](https://artsy.gi
 If the solution requires more time, then decompose it into smaller independent PRs. In case your smaller PRs can't be used on production, use feature flags.
 
 We usually reject and close PRs which do not have activity for the last 24 hours, unless there is a clear comment explaining the reason why that PR is stalled.
+
+## CI Checks
+
+To maintain the quality and integrity of our project, all PRs must successfully pass the required Continuous Integration (CI) checks before being marked as "ready to review." PRs with failing CI checks will be rejected.
+
+The required checks are as follows:
+	
+	- The pr-time-tracker verifies that the time spent on the PR has been properly logged.
+	- The pr-time-tracker for bugs ensures that bug-related time tracking is correctly linked to the corresponding commit and bug author.
+	- The code-rabbit validates that the code meets quality standards and passes all automated checks.
+
+> [!NOTE]
+> Contributors need to resolve all CI issues before assigning reviewers or requesting a review. Any PR with unresolved CI checks should remain in "draft" status until all issues are fixed.
 
 ## Drafting
 
