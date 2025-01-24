@@ -1,16 +1,17 @@
 # Contributing Guidelines
 
 Thank you for your interest in contributing to our project!
-Your accepted contributions will be reflected in our repositories and related websites. 
+Your accepted contributions will be reflected in our repositories and related websites.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 ## Getting started
 
 There are three core contribution pillars:
+
 1. **Goal** – a business aim
 1. **Problem** – an issue that is on our way to achieving the Goal
-1. **Solution** –  the actual deliverable which resolves the problem
+1. **Solution** – the actual deliverable which resolves the problem
 
 > [!NOTE]
 > In this guide you will get an overview of the contribution workflow: from finding a Goal, identifying a Problem, and the process of delivering your solutions.
@@ -20,11 +21,12 @@ There are three core contribution pillars:
 Understanding the Goal and its business context is crucial for successful contribution.
 
 As soon as you get involved, you must:
-1. analyze specifications (the Specs), 
+
+1. analyze specifications (the Specs),
 1. assess progress and outstanding Problems and
 1. provide an estimated time of achieving (ETA) the Goal.
 
-Each Goal description must include Specs (a Google Document with commenting permissions) and an ETA. 
+Each Goal description must include Specs (a Google Document with commenting permissions) and an ETA.
 
 > [!NOTE]
 > A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`.  
@@ -41,6 +43,7 @@ Sometimes, a Goal already has a few identified problems, but not always.
 > We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear.
 
 Make sure each Problem issue is interlinked with it's Goal issue:
+
 - add a Problem issue link into the Goal description
 - add a Goal issue link to the Problem description
 
@@ -57,6 +60,7 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 > Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
 
 # PR Requirements
+
 All PRs, whether for source code, design, or copy changes, must comply with our PR Requirements.
 
 > [!WARNING]
@@ -70,7 +74,6 @@ For detailed instructions on why and how to sign your commits refer to [GitHub's
 > [!Note]
 > We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Ensure your Git version supports SSH signature verification (Git 2.34 or later).
 
-
 ## Scoping
 
 > [!NOTE]
@@ -81,14 +84,28 @@ If the solution requires more time, then decompose it into smaller independent P
 
 We usually reject and close PRs which do not have activity for the last 24 hours, unless there is a clear comment explaining the reason why that PR is stalled.
 
+## CI Checks
+
+To maintain the quality and integrity of our project, all PRs must successfully pass the required Continuous Integration (CI) checks before being marked as "ready to review." PRs with failing CI checks will be rejected.
+
+The required checks are as follows:
+	
+	- The pr-time-tracker verifies that the time spent on the PR has been properly logged.
+	- The pr-time-tracker for bugs ensures that bug-related time tracking is correctly linked to the corresponding commit and bug author.
+	- The code-rabbit validates that the code meets quality standards and passes all automated checks.
+
+> [!NOTE]
+> Contributors need to resolve all CI issues before assigning reviewers or requesting a review. Any PR with unresolved CI checks should remain in "draft" status until all issues are fixed.
+
 ## Drafting
+
 When start working on a Problem, you must open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) right away. Do not mark PR as "ready to review" unless you are confident it is ready.
 
 When creating a PR, you must [link it](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
 
 ### Design PRs
 
-Initiate a PR with a note in the DESIGN.md file detailing the addressed design aspects. 
+Initiate a PR with a note in the DESIGN.md file detailing the addressed design aspects.
 Design PRs use `docs(ui)` as the "type" and "scope" of its name. i.e.: `docs(ui): design table component`
 
 Structure the design file with the following markup:
@@ -96,11 +113,13 @@ Structure the design file with the following markup:
 ```
 ## Feature
 - [/page](https://figma.com/your-design-file-url)
-  - ./page/{params} 
+  - ./page/{params}
     - (group)
       - [[state]](https://figma.com/your-design-file-url)
 ```
+
 #### Key:
+
 - **`/...`** - Represents a page.
 - **`{...}`** - Represents a dynamic parameter within a URL.
 - **`(...)`** - Used for grouping related features or components.
@@ -109,10 +128,11 @@ Structure the design file with the following markup:
 - Indentation in the list represents the tree structure or hierarchy, showing how components or features are nested or related.
 
 Example:
+
 ```
 ## Credit Vaults
 - [/lending](https://figma.com/your-design-file-url)
-  - ./vaults/{poolAddr} 
+  - ./vaults/{poolAddr}
     - (Auction)
       - [[Withdraw Popup]](https://figma.com/your-design-file-url)
       - [[Bid Popup]](https://figma.com/your-design-file-url)
@@ -127,9 +147,10 @@ If there isn't an existing DESIGN.md file:
 
 We are using commits (PR names) to communicate the release log to all stakeholders, including non-technical ones.  
 Thus, the names of the PRs must:
+
 1. be oriented toward the end users
 1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
-2. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
+1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
 
 ```
 // Good examples:
@@ -144,11 +165,11 @@ Thus, the names of the PRs must:
 ```
 
 ## Requesting Review
+
 Once your PR is ready, assign reviewers and mark it as "ready to review." But before that, report the time you have spent on it.
 
 > [!NOTE]
-> When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%). 
-> 
+> When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%).
 
 #### Code Quality and Reviews
 
