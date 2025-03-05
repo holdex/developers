@@ -32,6 +32,22 @@ Each Goal description must include Specs (a Google Document with commenting perm
 > A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`.  
 > Goals are created and managed by Partner level contributors.
 
+#### Communication within Goal issues
+
+To maintain clarity and efficiency, discussions should be directed to the appropriate channels:
+
+- **Use the Spec document** for clarifications about the Goal, its scope, or business context.
+- **Use Problem issues** for tracking obstacles that prevent achieving the Goal.
+- **Goal issues should remain clean**, primarily linking Specs, tracking Problems, and monitoring progress.
+
+If you identify a potential new problem but are unsure whether it is planned:
+
+1. First, check if there is an existing Problem issue related to your concern.
+2. If there isn't, ask for clarification in the Spec document.
+3. If necessary, create a new Problem issue and discuss it there.
+
+Avoid extended discussions in Goal issues. Instead, move conversations to the relevant Spec document or Problem issue.
+
 ### Problem
 
 Once the Goal is clear, you must identify what stops you from achieving it. Anything that is stopping you - is a “Problem”. A typical question to ask is: "Why is this Goal not achieved and what is the Problem?".
@@ -89,10 +105,12 @@ We usually reject and close PRs which do not have activity for the last 24 hours
 To maintain the quality and integrity of our project, all PRs must successfully pass the required Continuous Integration (CI) checks before being marked as "ready to review." PRs with failing CI checks will be rejected.
 
 The required checks are as follows:
-	
-	- The pr-time-tracker verifies that the time spent on the PR has been properly logged.
-	- The pr-time-tracker for bugs ensures that bug-related time tracking is correctly linked to the corresponding commit and bug author.
-	- The code-rabbit validates that the code meets quality standards and passes all automated checks.
+
+```
+- The pr-time-tracker verifies that the time spent on the PR has been properly logged.
+- The pr-time-tracker for bugs ensures that bug-related time tracking is correctly linked to the corresponding commit and bug author.
+- The code-rabbit validates that the code meets quality standards and passes all automated checks.
+```
 
 > [!NOTE]
 > Contributors need to resolve all CI issues before assigning reviewers or requesting a review. Any PR with unresolved CI checks should remain in "draft" status until all issues are fixed.
