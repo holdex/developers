@@ -33,3 +33,27 @@ The policy terms are:
   <br>
   Formula: <i>compensation = monthlyRate * (unusedPtoDays / totalPtoDays)_</i>
 </details>
+
+<details>
+  <summary>
+    If I take unpaid leave within the first six months, will my wages be reduced?
+  </summary>
+  <br>
+  Yes, your wages will be reduced accordingly.
+</details>
+
+<details>
+  <summary>
+    How is the reduction calculated?
+  </summary>
+  <br>
+  The deduction is calculated with the following formula: <br>
+  <i>x = s/a * b</i> <br>
+  Where: <br>
+  <ul>
+    <li><b>s</b> = salary ($)</li>
+    <li><b>a</b> = all weekdays in the month</li>
+    <li><b>b</b> = requested weekdays off</li>
+    <li><b>x</b> = deduction from salary</li>
+  </ul>
+</details>
