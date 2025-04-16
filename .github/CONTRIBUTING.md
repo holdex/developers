@@ -3,7 +3,8 @@
 Thank you for your interest in contributing to our project!
 Your accepted contributions will be reflected in our repositories and related websites.
 
-Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectful.  
+Also, if you are a permanent contributor, read our [DOs and DON'Ts](.github/DONTS.md).
 
 ## Getting started
 
