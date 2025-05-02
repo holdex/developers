@@ -183,6 +183,31 @@ Thus, the names of the PRs must:
  - feat: modified door function
 ```
 
+## Referencing
+
+When referencing issues or pull requests in any GitHub discussion, use a list item format to enable automatic title rendering and improve readability. This ensures that GitHub automatically expands the reference to show the issue/PR title.
+
+### Correct Format
+Use a list item to reference issues or PRs:
+
+```md
+See these related items:
+- <issue_or_pr_url>
+- <another_issue_or_pr_url>
+```
+
+### Incorrect Formats
+Avoid simply pasting the URL inline.
+
+```md
+Check this out: <issue_or_pr_url>
+Related: <issue_or_pr_url>
+See <issue_or_pr_url> for details
+```
+
+[!TIP]
+The list format not only improves readability but also helps other contributors quickly understand the context by showing the referenced issue/PR titles automatically.
+
 ## Requesting Review
 
 Once your PR is ready, assign reviewers and mark it as "ready to review." But before that, report the time you have spent on it.
