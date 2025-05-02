@@ -205,8 +205,8 @@ Related: <issue_or_pr_url>
 See <issue_or_pr_url> for details
 ```
 
-[!TIP]
-The list format not only improves readability but also helps other contributors quickly understand the context by showing the referenced issue/PR titles automatically.
+> [!TIP]
+> The list format improves readability and helps contributors quickly understand the context by showing the referenced issue/PR titles automatically.
 
 ## Requesting Review
 
