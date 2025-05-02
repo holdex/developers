@@ -168,10 +168,10 @@ We are using commits (PR names) to communicate the release log to all stakeholde
 Thus, the names of the PRs must:
 
 1. be oriented toward the end users
-2. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
-3. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
-4. be written from a user's perspective (what the user gets)
-5. use present tense to describe the change
+1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
+1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
+1. be written from a user's perspective (what the user gets)
+1. use present tense to describe the change
 
 ```
 // Good examples:
