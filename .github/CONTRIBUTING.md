@@ -168,8 +168,10 @@ We are using commits (PR names) to communicate the release log to all stakeholde
 Thus, the names of the PRs must:
 
 1. be oriented toward the end users
-1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
-1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
+2. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
+3. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
+4. be written from a user's perspective (what the user gets)
+5. use present tense to describe the change
 
 ```
 // Good examples:
@@ -182,6 +184,35 @@ Thus, the names of the PRs must:
  - fix: add a file to mute sound
  - feat: modified door function
 ```
+
+> [!IMPORTANT]
+> When naming PRs, focus on describing the user capability (what they can do) rather than the technical implementation (how it's done):
+>
+> Compare these examples:
+> - ❌ "quick custom subscribe button" - describes an object
+> - ✅ "customize subscription preferences" - describes user capability
+>
+> Think of it this way:
+> - A button isn't a feature; what it enables users to do is the feature
+> - A toggle isn't a feature; the control it gives users is the feature
+> - A handler isn't a feature; the functionality it provides is the feature
+>
+> Always ask yourself: "What will users be able to do?" instead of "What am I building?"
+
+The key differences are:
+
+1. Good examples focus on user capabilities:
+   - "enable music playback control" instead of "add play button"
+   - "prevent sound during mute state" instead of "add mute toggle"
+   - Each name describes what users can accomplish
+
+2. Bad examples focus on technical implementation:
+   - "subscribe button" - just names a UI element
+   - "add mute toggle" - describes a component
+   - "modify door handler" - describes code changes
+   - None of these tell users what they can actually do
+
+This makes it immediately clear that PR names should describe features from the user's perspective rather than the technical components used to implement them.
 
 ## Requesting Review
 
