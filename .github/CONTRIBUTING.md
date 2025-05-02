@@ -170,7 +170,7 @@ Thus, the names of the PRs must:
 1. be oriented toward the end users
 1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
 1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
-1. be written from a user's perspective (what the user gets)
+1. be written from the user's perspective (what the user gets)
 1. use present tense to describe the change
 
 ```
@@ -212,7 +212,7 @@ The key differences are:
    - "modify door handler" - describes code changes
    - None of these tell users what they can actually do
 
-This makes it immediately clear that PR names should describe features from the user's perspective rather than the technical components used to implement them.
+This makes it immediately clear that PR names should describe features from the user's perspective, rather than the technical components used to implement them.
 
 ## Requesting Review
 
