@@ -76,6 +76,36 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 > [!NOTE]
 > Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
 
+### Referencing
+
+When referencing issues or pull requests in any GitHub discussion, use a list item format to enable automatic title rendering and improve readability. This ensures that GitHub automatically expands the reference to show the issue/PR title.
+
+#### Correct Format
+
+Use a list item to reference issues or PRs:
+
+```md
+See these related items:
+
+- <issue_or_pr_url>
+- <another_issue_or_pr_url>
+- #4
+- #12
+```
+
+#### Incorrect Formats
+
+Avoid simply pasting the URL inline.
+
+```md
+Check this out: <issue_or_pr_url>
+Related: <issue_or_pr_url>
+See <issue_or_pr_url> for details
+```
+
+> [!NOTE]
+> The list format improves readability and helps contributors quickly understand the context by showing the referenced issue/PR titles automatically.
+
 # PR Requirements
 
 All PRs, whether for source code, design, or copy changes, must comply with our PR Requirements.
@@ -182,31 +212,6 @@ Thus, the names of the PRs must:
  - fix: add a file to mute sound
  - feat: modified door function
 ```
-
-## Referencing
-
-When referencing issues or pull requests in any GitHub discussion, use a list item format to enable automatic title rendering and improve readability. This ensures that GitHub automatically expands the reference to show the issue/PR title.
-
-### Correct Format
-Use a list item to reference issues or PRs:
-
-```md
-See these related items:
-- <issue_or_pr_url>
-- <another_issue_or_pr_url>
-```
-
-### Incorrect Formats
-Avoid simply pasting the URL inline.
-
-```md
-Check this out: <issue_or_pr_url>
-Related: <issue_or_pr_url>
-See <issue_or_pr_url> for details
-```
-
-> [!TIP]
-> The list format improves readability and helps contributors quickly understand the context by showing the referenced issue/PR titles automatically.
 
 ## Requesting Review
 
