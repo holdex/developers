@@ -201,7 +201,7 @@ A feature isn’t a button, toggle, or handler—it’s **what the user gains fr
 3. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
 
 
-### Before Submitting, Ask:  
+### Before Submitting, Ask  
 1. Does it use `type(scope): action` format?  
 2. Could a non-technical user understand the benefit?  
 3. Is it in the present tense?  
