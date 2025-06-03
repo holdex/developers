@@ -164,55 +164,49 @@ If there isn't an existing DESIGN.md file:
 
 ## Naming
 
-We are using commits (PR names) to communicate the release log to all stakeholders, including non-technical ones.  
-Thus, the names of the PRs must:
+We use PR titles to communicate changes to all stakeholders, including non-technical users. Follow these rules:  
 
-1. be oriented toward the end users
-1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
-1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
-1. be written from the user's perspective (what the user gets)
-1. use present tense to describe the change
+1. **User-focused**: Describe what users gain, not technical implementation  
+2. **Follow [Conventional Commits](https://www.conventionalcommits.org)**  
+3. **Clear & simple** (present tense, action-oriented)  
 
-```
-// Good examples:
- - feat(ui): play music
- - fix(sdk): mute sound
- - test(api): open door
+### Example Comparison  
 
-// Bad examples:
- - create a player
- - fix: add a file to mute sound
- - feat: modified door function
-```
+| **Good Examples** ✅          | **Bad Examples** ❌               | **Why?** |  
+|-----------------------------|----------------------------------|---------|  
+| `feat(ui): play music`      | "Create player"                 | Missing scope/type |  
+| `fix(sdk): mute sound`      | "Fix: add file to mute sound"   | Technical details |  
+| `test(api): open door`      | "Feat: modified door function"  | Vague, past tense |  
 
-> [!IMPORTANT]
-> When naming PRs, focus on describing the user capability (what they can do) rather than the technical implementation (how it's done):
->
-> Compare these examples:
-> - ❌ "quick custom subscribe button" - describes an object
-> - ✅ "customize subscription preferences" - describes user capability
->
-> Think of it this way:
-> - A button isn't a feature; what it enables users to do is the feature
-> - A toggle isn't a feature; the control it gives users is the feature
-> - A handler isn't a feature; the functionality it provides is the feature
->
-> Always ask yourself: "What will users be able to do?" instead of "What am I building?"
+---
 
-The key differences are:
+### Key Principles  
 
-1. Good examples focus on user capabilities:
-   - "enable music playback control" instead of "add play button"
-   - "prevent sound during mute state" instead of "add mute toggle"
-   - Each name describes what users can accomplish
+#### **What to Focus On**  
+A feature isn’t a button, toggle, or handler—it’s **what the user gains from it**. Ask:  
+- ❌ *"What am I building?"* → Leads to technical labels.  
+- ✅ *"What will users be able to do?"* → Leads to clear value.  
 
-2. Bad examples focus on technical implementation:
-   - "subscribe button" - just names a UI element
-   - "add mute toggle" - describes a component
-   - "modify door handler" - describes code changes
-   - None of these tell users what they can actually do
+#### **Why It Matters**  
+- **Clarity**: Engineers, PMs, and stakeholders instantly understand the impact.  
+- **Consistency**: Aligns with product-facing language (release notes, docs).  
+- **User-Centricity**: Work is driven by user needs, not just code changes.  
 
-This makes it immediately clear that PR names should describe features from the user's perspective, rather than the technical components used to implement them.
+#### **How to Apply It**  
+1. **Replace UI labels with actions**:  
+   - 🚫 "Add dropdown for filters" → ✅ "Filter search results by category"  
+2. **Describe outcomes, not components**:  
+   - 🚫 "Fix API error handling" → ✅ "Gracefully recover from connection errors"  
+3. **Use user action verbs**:  
+   - *View, Play, Customize, Save*, etc.  
+
+
+### Before Submitting, Ask:  
+1. Does it use `type(scope): action` format?  
+2. Could a non-technical user understand the benefit?  
+3. Is it in the present tense?  
+4. Does it focus on user capability (not code)?  
+
 
 ## Requesting Review
 
