@@ -164,7 +164,10 @@ If there isn't an existing DESIGN.md file:
 
 ## Naming
 
-We use PR titles to communicate changes to all stakeholders, including non-technical users. Follow these rules:  
+> [!NOTE]
+> We use PR titles to communicate changes to all stakeholders, including non-technical users.
+
+PR names must be:
 
 1. **User-focused**: Describe what users gain, not technical implementation  
 2. **Follow [Conventional Commits](https://www.conventionalcommits.org)**  
@@ -174,9 +177,9 @@ We use PR titles to communicate changes to all stakeholders, including non-techn
 
 | **Good Examples** ✅          | **Bad Examples** ❌               | **Why?** |  
 |-----------------------------|----------------------------------|---------|  
-| `feat(ui): play music`      | "Create player"                 | Missing scope/type |  
-| `fix(sdk): mute sound`      | "Fix: add file to mute sound"   | Technical details |  
-| `test(api): open door`      | "Feat: modified door function"  | Vague, past tense |  
+| `feat(ui): play music`      | `Create player`                 | Missing scope/type |  
+| `fix(sdk): mute sound`      | `Fix: add file to mute sound`   | Technical details |  
+| `test(api): open door`      | `Feat: modified door function`  | Vague, past tense |  
 
 ---
 
@@ -193,12 +196,9 @@ A feature isn’t a button, toggle, or handler—it’s **what the user gains fr
 - **User-Centricity**: Work is driven by user needs, not just code changes.  
 
 #### **How to Apply It**  
-1. **Replace UI labels with actions**:  
-   - 🚫 "Add dropdown for filters" → ✅ "Filter search results by category"  
-2. **Describe outcomes, not components**:  
-   - 🚫 "Fix API error handling" → ✅ "Gracefully recover from connection errors"  
-3. **Use user action verbs**:  
-   - *View, Play, Customize, Save*, etc.  
+1. **Replace UI labels with actions**: 🚫 "Add dropdown for filters" → ✅ "Filter search results by category"  
+2. **Describe outcomes, not components**: 🚫 "Fix API error handling" → ✅ "Gracefully recover from connection errors"  
+3. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
 
 
 ### Before Submitting, Ask:  
