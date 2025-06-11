@@ -4,7 +4,10 @@ Thank you for your interest in contributing to our project!
 Your accepted contributions will be reflected in our repositories and related websites.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectful.  
-Also, if you are a permanent contributor, read our [DOs and DON'Ts](.github/DONTS.md).
+Also, if you are a permanent contributor, read our [DOs and DON'Ts](./DONTS.md).
+
+> [!TIP]
+> You can use [GitHub Wizard](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) Chrome extension to simplify some of the workflows described in these Guidelines.
 
 ## Getting started
 
