@@ -9,7 +9,6 @@ _Developers_ are everyone creating value—business developers, designers, engin
 Align with:
 - [Principles](./.github/PRINCIPLES.md)
 - [Contributing Guidelines](./.github/CONTRIBUTING.md)
-- [DOs & DON'T](.github/DONTS.md)
 - [Sick Leave Policy](./.github/LEAVE_POLICY.md)
 - [Compensation Guide](./.github/COMPENSATION.md)
 
