@@ -1,5 +1,5 @@
 # Developer Guidelines
-Welcome to the Developer Guidelines!
+Welcome to our Developer Guidelines!
 Your journey to shape the future starts here.
 
 ## For Developers
