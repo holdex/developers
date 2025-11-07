@@ -3,7 +3,11 @@
 Thank you for your interest in contributing to our project!
 Your accepted contributions will be reflected in our repositories and related websites.
 
-Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectful.  
+Also, if you are a permanent contributor, read our [DOs and DON'Ts](./DONTS.md).
+
+> [!TIP]
+> You can use [GitHub Wizard](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) Chrome extension to simplify some of the workflows described in these Guidelines.
 
 ## Getting started
 
@@ -74,6 +78,36 @@ Whether it’s code, design, or marketing material, we expect a lean and clean s
 
 > [!NOTE]
 > Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
+
+### Referencing
+
+When referencing issues or pull requests in any GitHub discussion, use a list item format to enable automatic title rendering and improve readability. This ensures that GitHub automatically expands the reference to show the issue/PR title.
+
+#### Correct Format
+
+Use a list item to reference issues or PRs:
+
+```md
+See these related items:
+
+- <issue_or_pr_url>
+- <another_issue_or_pr_url>
+- #4
+- #12
+```
+
+#### Incorrect Formats
+
+Avoid simply pasting the URL inline.
+
+```md
+Check this out: <issue_or_pr_url>
+Related: <issue_or_pr_url>
+See <issue_or_pr_url> for details
+```
+
+> [!NOTE]
+> The list format improves readability and helps contributors quickly understand the context by showing the referenced issue/PR titles automatically.
 
 # PR Requirements
 
@@ -163,24 +197,49 @@ If there isn't an existing DESIGN.md file:
 
 ## Naming
 
-We are using commits (PR names) to communicate the release log to all stakeholders, including non-technical ones.  
-Thus, the names of the PRs must:
+> [!NOTE]
+> We use PR titles to communicate changes to all stakeholders, including non-technical users.
 
-1. be oriented toward the end users
-1. follow [Conventional Commits Guidelines](https://www.conventionalcommits.org)
-1. be [clean and simple](https://pulsar.apache.org/contribute/develop-semantic-title/#how-to-write-good-pr-titles)
+PR names must be:
 
-```
-// Good examples:
- - feat(ui): play music
- - fix(sdk): mute sound
- - test(api): open door
+1. **User-focused**: Describe what users gain, not technical implementation  
+2. **Follow [Conventional Commits](https://www.conventionalcommits.org)**  
+3. **Clear & simple** (present tense, action-oriented)  
 
-// Bad examples:
- - create a player
- - fix: add a file to mute sound
- - feat: modified door function
-```
+### Example Comparison  
+
+| **Good Examples** ✅          | **Bad Examples** ❌               | **Why?** |  
+|-----------------------------|----------------------------------|---------|  
+| `feat(ui): play music`      | `Create player`                 | Missing scope/type |  
+| `fix(sdk): mute sound`      | `Fix: add file to mute sound`   | Technical details |  
+| `test(api): open door`      | `Feat: modified door function`  | Vague, past tense |  
+
+---
+
+### Key Principles  
+
+#### **What to Focus On**  
+A feature isn’t a button, toggle, or handler—it’s **what the user gains from it**. Ask:  
+- ❌ *"What am I building?"* → Leads to technical labels.  
+- ✅ *"What will users be able to do?"* → Leads to clear value.  
+
+#### **Why It Matters**  
+- **Clarity**: Engineers, PMs, and stakeholders instantly understand the impact.  
+- **Consistency**: Aligns with product-facing language (release notes, docs).  
+- **User-Centricity**: Work is driven by user needs, not just code changes.  
+
+#### **How to Apply It**  
+1. **Replace UI labels with actions**: 🚫 "Add dropdown for filters" → ✅ "Filter search results by category"  
+2. **Describe outcomes, not components**: 🚫 "Fix API error handling" → ✅ "Gracefully recover from connection errors"  
+3. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
+
+
+### Before Submitting, Ask  
+1. Does it use `type(scope): action` format?  
+2. Could a non-technical user understand the benefit?  
+3. Is it in the present tense?  
+4. Does it focus on user capability (not code)?  
+
 
 ## Requesting Review
 
