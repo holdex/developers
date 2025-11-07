@@ -77,7 +77,7 @@ Different problems may require different sets of skills.
 Whether it’s code, design, or marketing material, we expect a lean and clean solution from the contributor.
 
 > [!NOTE]
-> Solution is presented in GitHub as [Pull Requests (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
+> Solution is presented in GitHub as a [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
 
 ### Referencing
 
@@ -151,9 +151,10 @@ The required checks are as follows:
 
 ## Drafting
 
-When start working on a Problem, you must open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) right away. Do not mark PR as "ready to review" unless you are confident it is ready.
-
-When creating a PR, you must [link it](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
+When starting to work on a Problem, you must:
+1. Open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) right away. Do not mark PR as "ready to review" unless you are confident it is ready.
+2. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
+3. Before marking your PR as ready for review, assign **at least one reviewer** (team or individual). Do not merge without approved review.
 
 ### Design PRs
 
