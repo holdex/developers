@@ -10,5 +10,6 @@ Align with:
 - [Contributing Guidelines](./.github/CONTRIBUTING.md)
 - [DOs & DON'T](.github/DONTS.md)
 - [Sick Leave Policy](./.github/LEAVE_POLICY.md)
+- [Compensation Guide](./.github/COMPENSATION.md)
 
 Subscribe to repository notifications to stay updated with frequent fixes and improvements.
