@@ -1,4 +1,5 @@
 # Developer Guidelines
+
 Welcome to our Developer Guidelines!
 Your journey to shape the future starts here.
 
@@ -7,6 +8,7 @@ Your journey to shape the future starts here.
 _Developers_ are everyone creating value—business developers, designers, engineers, marketers, and beyond. We build businesses, products, partnerships, customer relationships, processes, and delivery methods, crafting the future we envision.
 
 Align with:
+
 - [Principles](./.github/PRINCIPLES.md)
 - [Contributing Guidelines](./.github/CONTRIBUTING.md)
 - [Advocacy Guidelines](./.github/ADVOCACY.md)
