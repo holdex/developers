@@ -45,4 +45,11 @@ You must exclusively promote Holdex during the period you being under Holdex con
 
 Must mention Holdex in the ‘Experiences’ tab & place it as the recent / current role.
 
+Mandatory `Experience` description:
+> Holdex is premier partner for institutions pioneering DeFi & RWAs. Hong Kong-based since 2016, we turn bold visions into secure, scalable blockchain solutions – driving adoption with unmatched expertise.
+
 ### X (Twitter) Profile
+
+- Must mention your role @HoldexIo within the profile description.
+- Link to Holdex website / portfolio.
+- Location: localhost
