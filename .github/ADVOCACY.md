@@ -21,6 +21,11 @@ Twitter) profiles to reflect Holdex.
 
 ### Profile Checklist
 
+### GitHub Bio
+
+You must exclusively promote Holdex during the period you being under Holdex contract, you should not include any mentions of other brands or any links other than Holdex-related links.
+
+
 | Github Profile Attributes | Acceptance Criteria                                                                                                                                                                                                                                   |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name                      | Only state your First Name                                                                                                                                                                                                                            |
@@ -35,9 +40,6 @@ Twitter) profiles to reflect Holdex.
 | Pinned Repositories       | Trial                                                                                                                                                                                                                                                 |
 | Overview (not urgent)     | Guidelines<br>Create a ‘README.md’ file in public self-repo that states:<ul><li>Role at Holdex</li><li>What you do & what you love about Holdex</li><li>Link to Holdex website</li></ul>                                                                       |
 
-### GitHub Bio
-
-You must exclusively promote Holdex during the period you being under Holdex contract, you should not include any mentions of other brands or any links other than Holdex-related links.
 
 ### LinkedIn Profile
 
