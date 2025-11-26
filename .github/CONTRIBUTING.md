@@ -249,10 +249,10 @@ Once your PR is ready, assign reviewers and mark it as "ready to review." But be
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%).
 
-#### Scout approach
+### Scout approach
 
 If you ever have free time, be proactive and apply the scout approach: own the job, look for PRs that still need reviewers, and offer timely feedback so work keeps moving.
 
-#### Code Quality and Reviews
+### Code Quality and Reviews
 
 Aim for solutions that work correctly 99.9% of the time. Be independent and thorough in your QA - reviewers are not QA team members but are there for a final safety check. We expect contributors to deliver bug-free software, understanding that perfection is an ideal. Stand firm in your solutions and avoid unnecessary revisions based on subjective feedback.
