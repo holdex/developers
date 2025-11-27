@@ -236,7 +236,7 @@ A feature isn’t a button, toggle, or handler—it’s **what the user gains fr
 
 
 ### Before Submitting, Ask  
-1. Does it use `type(scope): action` format?  
+1. Does it use `type(scope [Optional]): action` format?
 2. Could a non-technical user understand the benefit?  
 3. Is it in the present tense?  
 4. Does it focus on user capability (not code)?  
