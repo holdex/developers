@@ -13,6 +13,10 @@ agreement terms prevail.
 
 The Year of Service starts from the date of signing the agreement.
 
+## Minimum Service Period
+
+The Minimum Service Perios is 9 months since the date of signing the agreement.
+
 ## Leave Request
 
 ### Submit Request
@@ -28,14 +32,16 @@ sick leave).
 
 #### Paid Leave
 
-Member is granted 14 days paid time off allowance (including holidays, sick
-leave, personal leave) if member has been with the company for at least 9
-months.
+Members with the [Minimum Service Period](#minimum-service-period) are granted
+14 days paid time off allowance (including holidays, sick leave, personal
+leave).
+
+#### Reimbursable Leave
+
+In case of the agreement termination after 9 up to 5 unused Paid Leave days can be compensated
 
 Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
-
-In case of the agreement termination up to 5 unused Paid Leave days can be compensated
 
 ### Approve or Reject Request
 
@@ -47,8 +53,8 @@ planned" option.
 ## FAQ
 
 <summary> Will I be compensated for unused days if I stop collaborating with
-you?
- Will I be compensated for unused days if I stop collaborating with you? </summary>
+you? Will I be compensated for unused days if I stop collaborating with you?
+ Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you? </summary>
 
 Yes. You will receive compensation for any unused Personal days.  
 Sick days and holidays will not be reimbursed.  
