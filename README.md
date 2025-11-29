@@ -12,12 +12,12 @@ envision.
 
 Align with:
 
-- [Principles](./.github/PRINCIPLES.md)
-- [Contributing Guidelines](./.github/CONTRIBUTING.md)
-- [Advocacy Guidelines](./.github/ADVOCACY.md)
-- [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
-- [Sick Leave Policy](./.github/LEAVE_POLICY.md)
-- [Compensation Guide](./.github/COMPENSATION.md)
+- [Principles](./docs/PRINCIPLES)
+- [Contributing Guidelines](./docs/CONTRIBUTING)
+- [Advocacy Guidelines](./docs/ADVOCACY.md)
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
+- [Sick Leave Policy](./docs/LEAVE_POLICY.md)
+- [Compensation Guide](./docs/COMPENSATION.md)
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
