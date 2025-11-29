@@ -11,7 +11,8 @@ agreement terms prevail.
 
 ## Year of Service
 
-The Year of Service is 365 calendar days starting from the date of signing the agreement.
+The Year of Service is 365 calendar days starting from the date of
+signing the agreement.
 
 ## Minimum Service Period
 
@@ -38,7 +39,8 @@ leave).
 
 #### Reimbursable Leave
 
-In case of the agreement termination after 9 up to 5 unused Paid Leave days can be compensated
+In case of the agreement termination after 9 up to 5 unused Paid Leave days 
+can be compensated
 
 Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
