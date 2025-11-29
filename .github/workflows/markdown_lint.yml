@@ -1,0 +1,28 @@
+name: Markdown Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    # Also trigger on ready_for_review to run when a PR changes from draft to ready
+    types: [opened, reopened, synchronize, ready_for_review]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'pull_request' || !github.event.pull_request.draft }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install rumdl pre-compiled binary
+        run: |
+          # Define the URL for the latest Linux binary
+          DOWNLOAD_URL="https://github.com/rvben/rumdl/releases/download/v0.0.185/rumdl-v0.0.185-x86_64-unknown-linux-gnu.tar.gz"
+
+          # Use curl to download the archive and tar to extract it
+          curl -sL $DOWNLOAD_URL | tar -xz -C /usr/local/bin/
+
+          # Ensure the binary is executable and in the PATH
+          chmod +x /usr/local/bin/rumdl
+      - name: Lint Markdown
+        run: rumdl check --output-format github .
