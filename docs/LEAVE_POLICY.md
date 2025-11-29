@@ -28,24 +28,6 @@ Request by creating a new GitHub issue in HR repository and providing:
 - start and end dates, and
 - leave reason.
 
-#### Paid Leave
-
-Members with the [Minimum Service Period](#minimum-service-period) are granted
-14 days paid time off allowance (including holidays, sick leave, personal
-leave).
-
-#### Reimbursable Leave
-
-In case of the agreement termination after 9 up to 5 unused Paid Leave days can
-be compensated based on the following formula:
-
-```text
-compensation = monthlyRate / 30 * reimbersableDays
-```
-
-Member can carry over 3 unused Paid Leave days into the following
-[Year of Service](#year-of-service).
-
 ### Approve or Reject Request
 
 HR Manager must consult with relevant Partner and approve leave request by
@@ -53,26 +35,31 @@ merging a pull request (PR) in PR Tracker repository or reject the Leave Request
 by providing a detailed explanation and closing the issue with "Close as not
 planned" option.
 
-</details>
+## Leave Allowance
 
-<details>
-<summary>
-If I take unpaid leave within the first six months, will my wages be reduced?
-</summary>
-Yes, your wages will be reduced accordingly.
-</details>
+### Paid Leave
 
-<details>
-<summary>
-    How is the reduction calculated?
-</summary>
+Members with the [Minimum Service Period](#minimum-service-period) are granted
+14 days paid time off allowance (including holidays, sick leave, personal
+leave).
 
-The deduction is calculated with the following formula: `x = s/a * b` .  
-Where:  
+### Reimbursable Leave
 
-- **s** = salary ($)
-- **a** = all weekdays in the month
-- **b** = requested weekdays off
-- **x** = deduction from salary
+1. In case of the agreement termination after 9 up to 5 unused Paid Leave days
+   can be compensated based on the following formula:
 
-</details>
+  ```text
+  compensation = monthlyRate / 30 * reimbersableDays
+  ```
+
+1. Member can carry over 3 unused Paid Leave days into the following
+   [Year of Service](#year-of-service).
+
+#### Unpaid Leave
+
+The Unpaid Leave is deducted from the monthly payout. The deduction is
+calculated with the following formula:
+
+```text
+deduction = monthlyRate / 30 * requestedDaysOff
+```
