@@ -5,7 +5,7 @@
 Every team member benefits from our "paid time off" allowance described below or
 directly in the terms of your signed agreement.
 
-> [!important] Title
+> [!IMPORTANT] Title
 > Description] In case of conflict, the signed
 agreement terms prevail.
 
