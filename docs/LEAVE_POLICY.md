@@ -2,8 +2,8 @@
 
 ## Introduction
 
-Every team member benefits from our "paid time off" allowance described below or
-directly in the terms of your signed agreement.
+Every team member (the Member) benefits from our "paid time off" allowance
+described below or directly in the signed agreement.
 
 > [!IMPORTANT]
 > In case of conflict between the signed agreement and scheduler, the signed
@@ -33,12 +33,12 @@ Paid Leave is granted if:
 - member has been with the company for at least 6 months, and
 - requested more than 2 weeks in advance (except for sick leave).
 
-Member can carry over 3 unused Paide Leave days into the following
+Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
 
 #### Unpaid Leave
 
-1. Member can request additional to Paid Leave unpaid time off.
+The Member can request unpaid time off.
 
 ### Approve or Reject Request
 
