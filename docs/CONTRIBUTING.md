@@ -5,8 +5,7 @@ contributions will be reflected in our repositories and related websites.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.  
-Also, if you are a permanent contributor, read our [Principles](./PRINCIPLES.md)
-.
+Also, if you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
 
 > [!TIP]
 > You can use [GitHub Wizard](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) Chrome extension to simplify some of the workflows described in these Guidelines.
@@ -48,7 +47,7 @@ appropriate channels:
 - **Use the Spec document** for clarifications about the Goal, its scope, or
   business context.
 - **Use Problem issues** for tracking obstacles that prevent achieving the Goal.
-- **Goal issues should remain clean** , primarily linking Specs, tracking
+- **Goal issues should remain clean**, primarily linking Specs, tracking
   Problems, and monitoring progress.
 
 If you identify a potential new problem but are unsure whether it is planned:
@@ -138,8 +137,7 @@ PR Requirements.
 For the security and integrity of our project, we require all contributors to
 sign their commits.  
 For detailed instructions on why and how to sign your commits refer to
-[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
-.
+[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 > [!Note]
 > We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Ensure your Git version supports SSH signature verification (Git 2.34 or later).
@@ -150,8 +148,8 @@ For detailed instructions on why and how to sign your commits refer to
 > Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
 
 When planning the scope of work, make sure you
-[keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/)
-. You must be able to complete your PR within 3-4 hours.  
+[keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
+You must be able to complete your PR within 3-4 hours.  
 If the solution requires more time, then decompose it into smaller independent
 PRs. In case your smaller PRs can't be used on production, use feature flags.
 
@@ -257,7 +255,7 @@ PR names must be:
 #### What to Focus On
 
 A feature isn’t a button, toggle, or handler—it’s
-**what the user gains from it** . Ask:  
+**what the user gains from it**. Ask:  
 
 - ❌ *"What am I building?"* → Leads to technical labels.  
 - ✅ *"What will users be able to do?"* → Leads to clear value.  
@@ -270,9 +268,9 @@ A feature isn’t a button, toggle, or handler—it’s
 
 #### How to Apply It
 
-1. **Replace UI labels with actions** : 🚫 "Add dropdown for filters" → ✅ "Filter
+1. **Replace UI labels with actions**: 🚫 "Add dropdown for filters" → ✅ "Filter
    search results by category"  
-1. **Describe outcomes, not components** : 🚫 "Fix API error handling" → ✅
+1. **Describe outcomes, not components**: 🚫 "Fix API error handling" → ✅
    "Gracefully recover from connection errors"  
 1. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
 

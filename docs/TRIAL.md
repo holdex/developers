@@ -30,7 +30,7 @@ trial and follow our team's principles.
 
 ## Get started
 
-1. Align yourself with our [Developer Guidelines](./CONTRIBUTING.md) . Not
+1. Align yourself with our [Developer Guidelines](./CONTRIBUTING.md). Not
    following them will result in your contribution being rejected.
 1. Open a
    [PRIVATE THREAD](https://github.com/holdex/developers/blob/main/.github/private-thread-instruction-min.png)

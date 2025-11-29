@@ -47,6 +47,6 @@ founders and other team members.
 ### What benefits do you offer?
 
 1. **We are 100% remote**. Work from anywhere around the world async and ad-hoc.
-1. **Salary in stablecoins** . As early adopters, we are very supportive of
+1. **Salary in stablecoins**. As early adopters, we are very supportive of
    blockchain payroll. It is negotiable though.
 1. **[PTO](./LEAVE_POLICY.md) and Holidays leave**.
