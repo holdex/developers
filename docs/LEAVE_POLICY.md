@@ -11,11 +11,11 @@ agreement terms prevail.
 
 ## Year of Service
 
-The Year of Service starts from the date of signing the agreement.
+The Year of Service is 365 calendar days starting from the date of signing the agreement.
 
 ## Minimum Service Period
 
-The Minimum Service Perios is 9 months since the date of signing the agreement.
+The Minimum Service Period is 6 months since the date of signing the agreement.
 
 ## Leave Request
 
@@ -54,7 +54,9 @@ planned" option.
 
 <summary> Will I be compensated for unused days if I stop collaborating with
 you? Will I be compensated for unused days if I stop collaborating with you?
- Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you? </summary>
+Will I be compensated for unused days if I stop collaborating with you? Will I
+be compensated for unused days if I stop collaborating with you?
+ Will I be compensated for unused days if I stop collaborating with you? Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you? </summary>
 
 Yes. You will receive compensation for any unused Personal days.  
 Sick days and holidays will not be reimbursed.  
