@@ -1,4 +1,4 @@
-# Anual Leave Policy
+# Leave Policy
 
 ## Introduction
 
@@ -6,46 +6,46 @@ Every team member benefits from our "paid time off" allowance described below or
 directly in the terms of your signed agreement.
 
 > [!IMPORTANT]
-> In case of conflict between the signed agreement and this policy, the signed
+> In case of conflict between the signed agreement and scheduler, the signed
 agreement terms prevail.
 
-## Terms
+## Year of Service
 
-### Leave Request
+The Year of Service starts from the date of signing the agreement.
 
-The Leave Request is represented by a GitHub issue in the HR repository and must
-include:
+## Leave Request
 
-1. start and end dates, and
-1. the reason for the leave.
+### Submit Request
 
-1. **Submit Request:** the Member can submit the Leave Request by creating a new
-   GitHub issue in HR repository and providing a detailed description of your
-   leave request, including the start and end dates, and the reason for your
-   leave.
-1. **Reject Request:** HR Manager can reject leave request by providing a
-   detailed explanation and closing the issue with "Close as not planned"
-   option.
-1. **Approve Request:** HR Manager must consult with project Partner and approve
-   leave request by merging a pull request (PR) in PR Tracker repository or
-   reject leave request by providing a detailed explanation and closing the
-   issue with "Close as not planned" option.
+The Member can submit the Leave Request by creating a new GitHub issue in HR
+repository and providing:
 
-### Paid Leave
+- start and end dates, and
+- leave reason.
 
-1. Member has the following paid time off allowance:
-   - 🎄 Holidays: 3 days;
-   - 🤒 Being sick: 7 days;
-   - 🏖️ Personal: 4 days.
-1. Member can request paid time off only after serving at least 6 months.
+#### Paid Leave
 
-### Unpaid Leave
+Member has the 14 days paid time off allowance (including holidays, sick leave,
+personal leave).
 
-1. Member can request unpaid time off any time.
-1. The holidays are Christmas Day, New Year's Day, and Easter Day. If these
+Paid Leave is granted if:
 
-Holidays are not part of your culture, let us know. We can make an exception for
-you.
+- member has been with the company for at least 6 months, and
+- requested more than 2 weeks in advance (except for sick leave).
+
+Member can carry over 3 unused Paide Leave days into the following
+[Year of Service](#year-of-service).
+
+#### Unpaid Leave
+
+1. Member can request additional to Paid Leave unpaid time off.
+
+### Approve or Reject Request
+
+HR Manager must consult with relevant Partner and approve leave request by
+merging a pull request (PR) in PR Tracker repository or reject leave request by
+providing a detailed explanation and closing the issue with "Close as not
+planned" option.
 
 ## FAQ
 
@@ -53,9 +53,6 @@ you.
     <summary>
         Will my unused Personal days carry over to the following year?
     </summary>
-
-Unused personal days can be carried over into the following year. However, we
-encourage you to get out of the office and refresh.
 
 </details>
 

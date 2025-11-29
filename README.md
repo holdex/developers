@@ -16,7 +16,7 @@ Align with:
 - [Contributing Guidelines](./docs/CONTRIBUTING)
 - [Advocacy Guidelines](./docs/ADVOCACY.md)
 - [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
-- [Sick Leave Policy](./docs/LEAVE_POLICY.md)
+- [Leave Policy](./docs/LEAVE_POLICY.md)
 - [Compensation Guide](./docs/COMPENSATION.md)
 
 Subscribe to repository notifications to stay updated with frequent fixes and
