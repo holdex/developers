@@ -17,7 +17,7 @@ jobs:
       - name: Install rumdl pre-compiled binary
         run: |
           # Define the URL for the latest Linux binary
-          DOWNLOAD_URL="https://github.com/rvben/rumdl/releases/download/v0.0.181/rumdl-v0.0.181-x86_64-unknown-linux-gnu.tar.gz"
+          DOWNLOAD_URL="https://github.com/rvben/rumdl/releases/download/v0.0.185/rumdl-v0.0.185-x86_64-unknown-linux-gnu.tar.gz"
 
           # Use curl to download the archive and tar to extract it
           curl -sL $DOWNLOAD_URL | tar -xz -C /usr/local/bin/
