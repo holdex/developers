@@ -23,15 +23,16 @@ repository and providing:
 - start and end dates, and
 - leave reason.
 
+The Leave Request must be submitted more than 2 weeks in advance (except for sick leave).
+
 #### Paid Leave
 
-Member has the 14 days paid time off allowance (including holidays, sick leave,
-personal leave).
+Member is granted 14 days paid time off allowance (including holidays, sick
+leave, personal leave).
 
 Paid Leave is granted if:
 
 - member has been with the company for at least 6 months, and
-- requested more than 2 weeks in advance (except for sick leave).
 
 Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
