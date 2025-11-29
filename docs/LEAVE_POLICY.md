@@ -31,21 +31,22 @@ encourage you to get out of the office and refresh.
 
 <details>
   <summary>
-    Will I be compensated for unused days if I stop collaborating with you?
+
+Will I be compensated for unused days if I stop collaborating with you?
+
   </summary>
-  <br>
-  Yes. You will receive compensation for any unused Personal days. <br>
-  Sick days and holidays will not be reimbursed.  <br>
-  <br>
-  Formula: <i>compensation = monthlyRate * (unusedPtoDays / totalPtoDays)_</i>
+
+Yes. You will receive compensation for any unused Personal days.  
+Sick days and holidays will not be reimbursed.  
+Formula: `compensation = monthlyRate * (unusedPtoDays / totalPtoDays)`
+
 </details>
 
 <details>
   <summary>
-    If I take unpaid leave within the first six months, will my wages be reduced?
+If I take unpaid leave within the first six months, will my wages be reduced?
   </summary>
-  <br>
-  Yes, your wages will be reduced accordingly.
+Yes, your wages will be reduced accordingly.
 </details>
 
 <details>
