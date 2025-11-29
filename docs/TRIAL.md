@@ -11,7 +11,7 @@ Across the whole engineering, our team operates the following way:
    and Stakeholders
 1. every engineer, who is assigned to the Goal, identifies the Problems stopping
    us from achieving the Goal
-1. every engineer assigns themself one Problem at a time and proposes a solution
+1. every engineer assigns themselves one Problem at a time and proposes a solution
    in the form of PR.
 
 The main idea is to make the right contributions to achieve the Goals. All this

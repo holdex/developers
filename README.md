@@ -12,8 +12,8 @@ envision.
 
 Align with:
 
-- [Principles](./docs/PRINCIPLES)
-- [Contributing Guidelines](./docs/CONTRIBUTING)
+- [Principles](./docs/PRINCIPLES.md)
+- [Contributing Guidelines](./docs/CONTRIBUTING.md)
 - [Advocacy Guidelines](./docs/ADVOCACY.md)
 - [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
 - [Leave Policy](./docs/LEAVE_POLICY.md)
