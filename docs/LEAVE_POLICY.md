@@ -22,14 +22,11 @@ The Minimum Service Period is 6 months since the date of signing the agreement.
 
 ### Submit Request
 
-The Member can submit the Leave Request by creating a new GitHub issue in HR
-repository and providing:
+2 weeks in advance (except for sick leave) the Member can submit the Leave
+Request by creating a new GitHub issue in HR repository and providing:
 
 - start and end dates, and
 - leave reason.
-
-The Leave Request must be submitted more than 2 weeks in advance (except for
-sick leave).
 
 #### Paid Leave
 
