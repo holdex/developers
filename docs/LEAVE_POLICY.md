@@ -53,8 +53,7 @@ encourage you to get out of the office and refresh.
     How is the reduction calculated?
   </summary>
   <br>
-  The deduction is calculated with the following formula:  
-  _x = s/a * b_
+  The deduction is calculated with the following formula: `_x = s/a * b`.
   Where:  
 
    - **s** = salary ($)
