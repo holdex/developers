@@ -5,7 +5,7 @@ contributions will be reflected in our repositories and related websites.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.  
-Also, if you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
+If you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
 
 > [!TIP]
 > You can use [GitHub Wizard](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) Chrome extension to simplify some of the workflows described in these Guidelines.
@@ -268,10 +268,11 @@ A feature isn’t a button, toggle, or handler—it’s
 
 #### How to Apply It
 
-1. **Replace UI labels with actions**: 🚫 "Add dropdown for filters" → ✅ "Filter
-   search results by category"  
-1. **Describe outcomes, not components**: 🚫 "Fix API error handling" → ✅
-   "Gracefully recover from connection errors"  
+1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
+   Correct:"Filter search results by category"  
+1. **Describe outcomes, not components**: Wrong: "Fix API error handling" →
+   Correct:"Gracefully recover from connection errors"  
+
 1. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
 
 ### Before Submitting, Ask
@@ -289,10 +290,11 @@ before that, report the time you have spent on it.
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%).
 
-
 ### Scout approach
 
-If you ever have free time, be proactive and apply the scout approach: own the job, look for PRs that still need reviewers, and offer timely feedback so work keeps moving.
+If you ever have free time, be proactive and apply the scout approach: own the
+job, look for PRs that still need reviewers, and offer timely feedback so work
+keeps moving.
 
 ### Code Quality and Reviews
 
