@@ -48,10 +48,9 @@ leave).
 1. In case of the agreement termination after 9 up to 5 unused Paid Leave days
    can be compensated based on the following formula:
 
-  ```text
-  compensation = monthlyRate / 30 * reimbersableDays
-  ```
-
+   ```text
+    compensation = monthlyRate / 30 * reimbersableDays
+    ```
 1. Member can carry over 3 unused Paid Leave days into the following
    [Year of Service](#year-of-service).
 
