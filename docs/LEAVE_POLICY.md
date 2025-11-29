@@ -40,7 +40,11 @@ leave).
 #### Reimbursable Leave
 
 In case of the agreement termination after 9 up to 5 unused Paid Leave days can
-be compensated
+be compensated based on the following formula:
+
+```text
+compensation = monthlyRate / 30 * reimbersableDays
+```
 
 Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
@@ -51,22 +55,6 @@ HR Manager must consult with relevant Partner and approve leave request by
 merging a pull request (PR) in PR Tracker repository or reject the Leave Request
 by providing a detailed explanation and closing the issue with "Close as not
 planned" option.
-
-## FAQ
-
-<summary> Will I be compensated for unused days if I stop collaborating with
-you? Will I be compensated for unused days if I stop collaborating with you?
-Will I be compensated for unused days if I stop collaborating with you? Will I
-be compensated for unused days if I stop collaborating with you? Will I be
-compensated for unused days if I stop collaborating with you? Will I be
-compensated for unused days if I stop collaborating with you? Will I be
-compensated for unused days if I stop collaborating with you? Will I be
-compensated for unused days if I stop collaborating with you?
- Will I be compensated for unused days if I stop collaborating with you? Will I be compensated for unused days if I stop collaborating with you? Will I be compensated for unused days if I stop collaborating with you? Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you? Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you?  Will I be compensated for unused days if I stop collaborating with you? </summary>
-
-Yes. You will receive compensation for any unused Personal days.  
-Sick days and holidays will not be reimbursed.  
-Formula: `compensation = monthlyRate * (unusedPtoDays / totalPtoDays)`
 
 </details>
 
