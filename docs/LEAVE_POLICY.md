@@ -13,6 +13,10 @@ agreement terms prevail.
 
 ### Leave Request
 
+You can submit a leave request by:
+1. Creating a new issue in your HR repository.
+2. Providing a detailed description of your leave request, including the start and end dates, and the reason for your leave.
+
 1. You must submit requests through GitHub issues in your HR repository 2 weeks
    before taking time off.
 1. Manager can reject request based on the overall team's needs.
