@@ -31,9 +31,7 @@ encourage you to get out of the office and refresh.
 
 <details>
   <summary>
-
 Will I be compensated for unused days if I stop collaborating with you?
-
   </summary>
 
 Yes. You will receive compensation for any unused Personal days.  
