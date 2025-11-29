@@ -1,38 +1,56 @@
 # Anual Leave Policy
 
-Every team member benefits from our standard "paid time off" allowance:
+## Introduction
 
-|  | Leave Reason | Paid Time Off |
-|--|--|--|
-| 🎄 | Holidays    | 3 days    |
-| 🤒 | Being sick | 7 days |
-| 🏖️ | Personal | 4 days |
+Every team member benefits from our "paid time off" allowance described below or
+directly in the terms of your signed agreement.
 
-The policy terms are:
+> [!important] Title
+> Description] In case of conflict, the signed
+agreement terms prevail.
 
-1. paid time off can be requested only after 6 months of collaboration;
-1. all requests should be submitted through GitHub issues 2 weeks before taking
-   time off; otherwise, your request might be rejected;
-1. any leaves outside of the PTO are unpaid;
+## Terms
+
+### Leave Request
+
+1. You must submit requests through GitHub issues in your HR repository 2 weeks
+   before taking time off.
+1. Manager can reject request based on the overall team's needs.
+
+#### Unpaid Leave
+
+You can request unpaid time off any time.
+
+1. You can request paid time off after 6 months of service;
+   1.
+
+1.
+
+| Leave Reason | Paid Time Off | |--|--| | 🎄 Holidays | 3 days | | 🤒 Being sick
+| 7 days | | 🏖️ Personal | 4 days |
+
 1. The holidays are Christmas Day, New Year's Day, and Easter Day. If these
-   Holidays are not part of your culture, let us know. We can make an exception
-   for you.
+
+Holidays are not part of your culture, let us know. We can make an exception for
+you.
 
 ## FAQ
 
 <details>
-  <summary>
+<summary>
     Will my unused Personal days carry over to the following year?
-  </summary>
+</summary>
 
 Unused personal days can be carried over into the following year. However, we
-encourage you to get out of the office and refresh.
-</details>
+encourage you to get out of the office and refresh. Unused personal days can be
+carried over into the following year. However, we encourage you to get out of
+the office and refresh.
+Unused personal days can be carried over into the following year. However, we encourage you to get out of the office and refresh. Unused personal days can be carried over into the following year. However, we encourage you to get out of the office and refresh. </details>
 
 <details>
-  <summary>
+<summary>
 Will I be compensated for unused days if I stop collaborating with you?
-  </summary>
+</summary>
 
 Yes. You will receive compensation for any unused Personal days.  
 Sick days and holidays will not be reimbursed.  
@@ -41,16 +59,16 @@ Formula: `compensation = monthlyRate * (unusedPtoDays / totalPtoDays)`
 </details>
 
 <details>
-  <summary>
+<summary>
 If I take unpaid leave within the first six months, will my wages be reduced?
-  </summary>
+</summary>
 Yes, your wages will be reduced accordingly.
 </details>
 
 <details>
-  <summary>
+<summary>
     How is the reduction calculated?
-  </summary>
+</summary>
 
 The deduction is calculated with the following formula: `x = s/a * b` .  
 Where:  
@@ -59,4 +77,5 @@ Where:
 - **a** = all weekdays in the month
 - **b** = requested weekdays off
 - **x** = deduction from salary
+
 </details>
