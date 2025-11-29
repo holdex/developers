@@ -53,14 +53,10 @@ encourage you to get out of the office and refresh.
     How is the reduction calculated?
   </summary>
 
-  The deduction is calculated with the 
-  following formula: `x = s/a * b`.
-  Where:  
+The deduction is calculated with the following formula: `x = s/a * b` . Where:  
 
-   - **s** = salary ($)
-   - **a** = all weekdays in the month
-   - **b** = requested weekdays off
-   - **x** = deduction from salary
+- **s** = salary ($)
+- **a** = all weekdays in the month
+- **b** = requested weekdays off
+- **x** = deduction from salary
 </details>
-
-`x = s/a * b`.
