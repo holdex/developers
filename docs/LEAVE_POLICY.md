@@ -59,6 +59,6 @@ leave).
 The Unpaid Leave is deducted from the monthly payout. The deduction is
 calculated with the following formula:
 
-```text
+```js
 deduction = monthlyRate / 30 * requestedDaysOff
 ```
