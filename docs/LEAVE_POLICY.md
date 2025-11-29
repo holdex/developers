@@ -43,8 +43,8 @@ The Member can request unpaid time off.
 ### Approve or Reject Request
 
 HR Manager must consult with relevant Partner and approve leave request by
-merging a pull request (PR) in PR Tracker repository or reject leave request by
-providing a detailed explanation and closing the issue with "Close as not
+merging a pull request (PR) in PR Tracker repository or reject the Leave Request
+by providing a detailed explanation and closing the issue with "Close as not
 planned" option.
 
 ## FAQ
