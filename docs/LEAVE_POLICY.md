@@ -23,23 +23,19 @@ repository and providing:
 - start and end dates, and
 - leave reason.
 
-The Leave Request must be submitted more than 2 weeks in advance (except for sick leave).
+The Leave Request must be submitted more than 2 weeks in advance (except for
+sick leave).
 
 #### Paid Leave
 
 Member is granted 14 days paid time off allowance (including holidays, sick
-leave, personal leave).
-
-Paid Leave is granted if:
-
-- member has been with the company for at least 6 months, and
+leave, personal leave) if member has been with the company for at least 9
+months.
 
 Member can carry over 3 unused Paid Leave days into the following
 [Year of Service](#year-of-service).
 
-#### Unpaid Leave
-
-The Member can request unpaid time off.
+In case of the agreement termination up to 5 unused Paid Leave days can be compensated
 
 ### Approve or Reject Request
 
@@ -50,17 +46,9 @@ planned" option.
 
 ## FAQ
 
-<details>
-    <summary>
-        Will my unused Personal days carry over to the following year?
-    </summary>
-
-</details>
-
-<details>
-<summary>
-Will I be compensated for unused days if I stop collaborating with you?
-</summary>
+<summary> Will I be compensated for unused days if I stop collaborating with
+you?
+ Will I be compensated for unused days if I stop collaborating with you? </summary>
 
 Yes. You will receive compensation for any unused Personal days.  
 Sick days and holidays will not be reimbursed.  
