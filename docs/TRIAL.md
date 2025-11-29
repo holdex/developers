@@ -32,10 +32,9 @@ trial and follow our team's principles.
 
 1. Align yourself with our [Developer Guidelines](./CONTRIBUTING.md). Not
    following them will result in your contribution being rejected.
-1. Open a
-   [PRIVATE THREAD](./private-thread-instruction-min.png)
-   discussion in our [Discord](https://discord.gg/cHxnURgGgk) and ping there
-   Mark (@MarkCurchin).
+1. Open a [PRIVATE THREAD](./private-thread-instruction-min.png) discussion in
+   our [Discord](https://discord.gg/cHxnURgGgk) and ping there Mark
+   (@MarkCurchin).
 1. Join one of the repositories presented below or request an access.
 1. Align with the Goal you will get assigned to.
 1. Create a Problem (issue) or assign yourself to an existing one.

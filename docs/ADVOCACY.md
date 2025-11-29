@@ -27,9 +27,8 @@ Twitter) profiles to reflect Holdex.
 
 ### GitHub Bio
 
-You must exclusively promote Holdex during the period you being under Holdex
-contract, you should not include any mentions of other brands or any links other
-than Holdex-related links.
+While employed by Holdex, exclusively promote Holdex in your bio. Do not include
+other brands or non-Holdex links..
 
 | Github Profile Attributes | Acceptance Criteria                                                                                                                                                                                                                                   |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
