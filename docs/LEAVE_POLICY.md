@@ -24,8 +24,9 @@ The policy terms are:
   <summary>
     Will my unused Personal days carry over to the following year?
   </summary>
-  <br>
-  Unused personal days can be carried over into the following year. However, we encourage you to get out of the office and refresh.
+
+Unused personal days can be carried over into the following year. However, we
+encourage you to get out of the office and refresh.
 </details>
 
 <details>
@@ -54,11 +55,10 @@ The policy terms are:
   <br>
   The deduction is calculated with the following formula: <br>
   <i>x = s/a * b</i> <br>
-  Where: <br>
-  <ul>
-    <li><b>s</b> = salary ($)</li>
-    <li><b>a</b> = all weekdays in the month</li>
-    <li><b>b</b> = requested weekdays off</li>
-    <li><b>x</b> = deduction from salary</li>
-  </ul>
+  Where:  
+
+   - **s** = salary ($)
+   - **a** = all weekdays in the month
+   - **b** = requested weekdays off
+   - **x** = deduction from salary
 </details>

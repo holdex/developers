@@ -70,3 +70,6 @@ reflow-mode = "normalize"  # Reflow mode: "default", "normalize", or "sentence-p
 # - "one-or-ordered": Auto-detect per list (either all-ones OR sequential)
 # - "consistent": Document-wide consistency - uses most common style across all lists
 style = "one"  # Default - matches markdownlint behavior
+
+[MD033]
+allowed-elements = ["details", "summary"] # List of allowed HTML tags (default: none)
