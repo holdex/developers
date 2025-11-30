@@ -277,8 +277,6 @@ A feature isn’t a button, toggle, or handler—it’s
 
 ### Before Submitting, Ask
 
-### Before Submitting, Ask
-
 1. Does it use `type(scope [Optional]): action` format?
 2. Could a non-technical user understand the benefit?
 3. Is it in the present tense?
