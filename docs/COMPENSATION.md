@@ -1,12 +1,15 @@
 # Compensation Guide
 
-**Goal:** Reward impact, not titles or location. Pay based on merit—what you deliver independently.
+**Goal:** Reward impact, not titles or location. Pay based on merit—what you
+deliver independently.
 
 > Open roles: [holdex.io/c/jobs](https://holdex.io/c/jobs) | Mission: [holdex.io/about](https://holdex.io/about)
 
 ## Core Rules
-1. **Clear incentives** — Same job, same level = same pay. More results = more rewards.
-2. **Simple framework** — Consistent rules for growth.
+
+1. **Clear incentives** — Same job, same level = same pay. More results = more
+   rewards.
+1. **Simple framework** — Consistent rules for growth.
 
 ## Levels & Core Skills
 

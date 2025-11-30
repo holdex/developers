@@ -7,19 +7,19 @@
 1. **Start with the Goal**  
    Keep the big picture. Break it into clear problems. Solve one at a time.
 
-2. **Own It Like a Founder**  
+1. **Own It Like a Founder**  
    No one assigns tasks. You spot problems, claim them, and deliver results.
 
-3. **Ship Daily, Small & Often**  
+1. **Ship Daily, Small & Often**  
    No task >4 hours. Finish, push, move on. Momentum beats perfection.
 
-4. **Respect Time—Yours & Others**  
+1. **Respect Time—Yours & Others**  
    One team sync/week. Work async. No meetings unless needed.
 
-5. **Wear Many Hats**  
+1. **Wear Many Hats**  
    Code, design, test, write, explore. We grow by doing.
 
-6. **Figure It Out**  
+1. **Figure It Out**  
    Research. Read. Ask. Learn fast. No waiting for instructions.
 
 ---
@@ -36,6 +36,7 @@
 ---
 
 ## ⏰ Core Hours  
+
 **2–6 PM HKT** — Be online. Rest is flexible.
 
 ---
