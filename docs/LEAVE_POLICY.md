@@ -9,6 +9,16 @@ described below or directly in the signed agreement.
 > In case of conflict between the signed agreement and scheduler, the signed
 agreement terms prevail.
 
+## Summary of Leave Entitlements
+
+| Eligibility                  | Paid Leave per Year of Service | Can Carry Over | Can Be Paid Out on Termination | Unpaid Leave Allowed? |
+|------------------------------|--------------------------------|----------------|--------------------------------|-----------------------|
+| < 6 months service           | 0 days                         | No             | No                             | Yes (deducted)        |
+| ≥ 6 months service           | 14 days (includes public holidays, sick, personal) | Max 3 days | Max 5 unused days              | Yes (deducted)        |
+
+> [!NOTE]
+> 1 Year of Service = 365 calendar days from your agreement start date.
+
 ## Year of Service
 
 The Year of Service is 365 calendar days starting from the date of signing the
@@ -22,11 +32,17 @@ The Minimum Service Period is 6 months since the date of signing the agreement.
 
 ### Submit Request
 
-2 weeks in advance (except for sick leave) the Member can submit the Leave
-Request by creating a new GitHub issue in HR repository and providing:
+**Submit your request at least 14 days in advance** (except for genuine sick
+leave or emergencies). Create a **new GitHub issue** in the **HR repository**
+using this exact title format:  
+   `Leave Request: FirstName LastName – YYYY-MM-DD to YYYY-MM-DD`
 
-- start and end dates, and
-- leave reason.
+- Start date: YYYY-MM-DD
+- End date: YYYY-MM-DD (inclusive)
+- Total working days requested: X
+- Type: Paid / Sick / Unpaid
+- Reason (short): e.g., Vacation in Italy / Family event / Medical appointment
+- Backup person (who covers your duties): @github-username
 
 ### Approve or Reject Request
 
