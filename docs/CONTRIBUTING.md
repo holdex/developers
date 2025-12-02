@@ -236,17 +236,17 @@ If there isn't an existing DESIGN.md file:
 
 PR names must be:
 
-1. **User-focused**: Describe what users gain, not technical implementation  
-1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**  
-1. **Clear & simple** (present tense, action-oriented)  
+1. **User-focused**: Describe what users gain, not technical implementation
+1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**
+1. **Clear & simple** (present tense, action-oriented)
 
 ### Example Comparison
 
-| **Good Examples** ✅          | **Bad Examples** ❌               | **Why?** |  
-|-----------------------------|----------------------------------|---------|  
-| `feat(ui): play music`      | `Create player`                 | Missing scope/type |  
-| `fix(sdk): mute sound`      | `Fix: add file to mute sound`   | Technical details |  
-| `test(api): open door`      | `Feat: modified door function`  | Vague, past tense |  
+| **Good Examples** ✅   | **Bad Examples** ❌            | **Why?**           |
+| ---------------------- | ------------------------------ | ------------------ |
+| `feat(ui): play music` | `Create player`                | Missing scope/type |
+| `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
+| `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
 ---
 
@@ -255,32 +255,32 @@ PR names must be:
 #### What to Focus On
 
 A feature isn’t a button, toggle, or handler—it’s
-**what the user gains from it**. Ask:  
+**what the user gains from it**. Ask:
 
-- ❌ *"What am I building?"* → Leads to technical labels.  
-- ✅ *"What will users be able to do?"* → Leads to clear value.  
+- ❌ _"What am I building?"_ → Leads to technical labels.
+- ✅ _"What will users be able to do?"_ → Leads to clear value.
 
 #### Why It Matters
 
 - **Clarity**: Engineers, PMs, and stakeholders instantly understand the impact.
-- **Consistency**: Aligns with product-facing language (release notes, docs).  
-- **User-Centricity**: Work is driven by user needs, not just code changes.  
+- **Consistency**: Aligns with product-facing language (release notes, docs).
+- **User-Centricity**: Work is driven by user needs, not just code changes.
 
 #### How to Apply It
 
 1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
-   Correct:"Filter search results by category"  
+   Correct:"Filter search results by category"
 1. **Describe outcomes, not components**: Wrong: "Fix API error handling" →
-   Correct:"Gracefully recover from connection errors"  
+   Correct:"Gracefully recover from connection errors"
 
-1. **Use user action verbs**: *View, Play, Customize, Save*, etc.  
+1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
 
 ### Before Submitting, Ask
 
-1. Does it use `type(scope): action` format?  
-1. Could a non-technical user understand the benefit?  
-1. Is it in the present tense?  
-1. Does it focus on user capability (not code)?  
+1. Does it use `type(scope [Optional]): action` format?
+1. Could a non-technical user understand the benefit?
+1. Is it in the present tense?
+1. Does it focus on user capability (not code)?
 
 ## Requesting Review
 
