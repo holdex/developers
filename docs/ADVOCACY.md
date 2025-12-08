@@ -25,9 +25,9 @@ Exclusively promote Holdex in your bio while employed—no other brands or links
 | Location | localhost |
 | Time | Uncheck; hide current time. |
 | Email | Empty. |
-| Social Link 1 (X) | <https://x.com/holdex.io> |
-| Social Link 2 (Website) | <https://holdex.io/c/jobs> |
-| Social Link 3 (LinkedIn) | <https://linkedin.com/company/holdex> |
+| Social Link: X | <https://x.com/holdex.io> |
+| Social Link: website | <https://holdex.io/c/jobs> |
+| Social Link: LinkedIn | <https://linkedin.com/company/holdex> |
 | Pinned Repositories | Holdex-related only. |
 | Overview | In a public self-repo, create README.md stating your role, contributions, enthusiasm for Holdex, and links to Holdex website and GitHub org. |
 
