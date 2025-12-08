@@ -4,9 +4,9 @@ As a Holdex team member, you must actively advocate for Holdex, its mission, and
 its values. This requires:
 
 - Participating in aligned community events and activities.
-- Sharing Holdex content on LinkedIn and X (formerly Twitter).
-- Representing Holdex professionally, ethically, and in line with our code of
-  conduct.
+- Sharing and engaging with Holdex content on LinkedIn and X (formerly Twitter).
+- Representing Holdex professionally, ethically, and in line with our
+  [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Social Media Presence
 
@@ -44,5 +44,6 @@ mandatory description:
 - Link: To Holdex website/portfolio.
 - Location: localhost.
 
-Engage actively: Share Holdex news/updates, interact with our community, respond 
-to comments/questions, and tag [@holdexio](https://x.com/holdex.io) and [@zolotokrylin](https://x.com/zolotokrylin)
+Engage actively: Share Holdex news/updates, interact with our community, respond
+to comments/questions, and tag [@holdexio](https://x.com/holdex.io) and
+[@zolotokrylin](https://x.com/zolotokrylin)
