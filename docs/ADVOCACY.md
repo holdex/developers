@@ -1,59 +1,50 @@
-# Advocacy Guidelines
+# Holdex Advocacy Guidelines
 
-If you are a Holdex team member, we expect you to advocate for Holdex, its
-mission, and its values. This includes:
+As a Holdex team member, you must actively advocate for Holdex, its mission, and
+its values. This requires:
 
-- Participate in community events and activities that align with Holdex's
-  mission and values.
-- Share Holdex-related content on social media platforms, including LinkedIn and
-  Twitter.
-- Represent Holdex professionally and ethically, and to uphold the company's
-  code of conduct at all times.
+- Participating in aligned community events and activities.
+- Sharing and engaging with Holdex content on LinkedIn and X (formerly Twitter).
+- Representing Holdex professionally, ethically, and in line with our
+  [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Social Media Presence
 
-Your Personal Social Media Presence:
+Maintain a professional online presence that promotes Holdex. Upon joining,
+immediately update your GitHub, LinkedIn, and X profiles to reflect your role.
 
-- Create and maintain a professional LinkedIn profile that showcases your work
-  at Holdex.
-- Use Twitter to share Holdex-related news, updates, and insights.
-- Engage with Holdex's community on social media platforms, responding to
-comments and questions.
+### GitHub Profile
 
-When you join Holdex you must update your GitHub, LinkedIn and X (formally
-Twitter) profiles to reflect Holdex.
+Exclusively promote Holdex in your bio while employed—no other brands or links.
+Checklist:
 
-### Profile Checklist
-
-### GitHub Bio
-
-While employed by Holdex, exclusively promote Holdex in your bio. Do not include
-other brands or non-Holdex links..
-
-| Github Profile Attributes | Acceptance Criteria                                                                                                                                                                                                                                   |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                      | Only state your First Name                                                                                                                                                                                                                            |
-| Bio                       | Describe your Role at Holdex. I.e.: “Full-stack Engineer at @holdex”>                                                               |
-| Company                   | @holdex                                                                                                                                                                                                                                               |
-| Location                  | localhost                                                                                                                                                                                                                                             |
-| Time                      | Uncheck; don’t display current time                                                                                                                                                                                                                   |
-| Email                     | Must be empty                                                                                                                                                                                                                                         |
-| Social link 1 – X         | Must be: “<https://x.com/holdex.io”>                                                                                                                                                                                                                    |
-| Social link 2 – Website   | <https://holdex.io/c/jobs>                                                                                                                                                                                                                              |
-| Social link 3 – LinkedIn  | <https://linkedin.com/company/holdex>                                                                                                                                                                                                            |
-| Pinned Repositories       | Trial                                                                                                                                                                                                                                                 |
-| Overview     | Create a ‘README.md’ file in public self-repo that states: role at Holdex, what you do & what you love about Holdex, link to Holdex website and GitHub organization profile.                                                                                      |
+| Attribute | Requirement |
+|-----------|-------------|
+| Name | First name only. |
+| Bio | Role at Holdex (e.g., "Full-stack Engineer at @holdex"). |
+| Company | @holdex |
+| Location | localhost |
+| Time | Uncheck; hide current time. |
+| Email | Empty. |
+| Social Link: X | <https://x.com/holdex.io> |
+| Social Link: website | <https://holdex.io/c/jobs> |
+| Social Link: LinkedIn | <https://linkedin.com/company/holdex> |
+| Pinned Repositories | Holdex-related only. |
+| Overview | In a public self-repo, create README.md stating your role, contributions, enthusiasm for Holdex, and links to Holdex website and GitHub org. |
 
 ### LinkedIn Profile
 
-Must mention Holdex in the ‘Experiences’ tab & place it as the recent / current
-role.
+Add Holdex as your current experience in the "Experience" section. Use this
+mandatory description:
 
-Mandatory `Experience` description:
-> Holdex is premier partner for institutions pioneering DeFi & RWAs. Hong Kong-based since 2016, we turn bold visions into secure, scalable blockchain solutions – driving adoption with unmatched expertise.
+> Holdex is the premier partner for institutions pioneering DeFi & RWAs. Hong Kong-based since 2016, we turn bold visions into secure, scalable blockchain solutions—driving adoption with unmatched expertise.
 
 ### X (Twitter) Profile
 
-- Must mention your role @HoldexIo within the profile description.
-- Link to Holdex website / portfolio.
-- Location: localhost
+- Description: State your role at @HoldexIo.
+- Link: To Holdex website/portfolio.
+- Location: localhost.
+
+Engage actively: Share Holdex news/updates, interact with our community, respond
+to comments/questions, and tag [@holdexio](https://x.com/holdex.io) and
+[@zolotokrylin](https://x.com/zolotokrylin)

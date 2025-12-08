@@ -45,9 +45,8 @@ leave).
 
 ### Reimbursable Leave
 
-1. In case of the agreement termination after the Minimum Service Period,
-   up to 5 unused Paid Leave days can be compensated
-   based on the following formula:
+1. In case of the agreement termination after the Minimum Service Period, up to
+   5 unused Paid Leave days can be compensated based on the following formula:
 
    ```js
     compensation = monthlyRate / 30 * reimbersableDays
