@@ -13,9 +13,10 @@ its values. This requires:
 Maintain a professional online presence that promotes Holdex. Upon joining,
 immediately update your GitHub, LinkedIn, and X profiles to reflect your role.
 
-### GitHub Profile Checklist
+### GitHub Profile
 
 Exclusively promote Holdex in your bio while employed—no other brands or links.
+Checklist:
 
 | Attribute | Requirement |
 |-----------|-------------|
