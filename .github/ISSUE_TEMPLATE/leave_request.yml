@@ -42,7 +42,7 @@ body:
     attributes:
       label: Total Working Days Requested
       description: Count only Mon–Fri
-      placeholder: 7
+      placeholder: "7"
     validations:
       required: true
 
