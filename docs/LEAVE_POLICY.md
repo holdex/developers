@@ -22,8 +22,8 @@ The Minimum Service Period is 6 months since the date of signing the agreement.
 
 ### Submit Request
 
-2 weeks in advance (except for sick leave) the Member can submit a request 
-by [creating a new Leave Request]().
+2 weeks in advance (except for sick leave) the Member can submit a request by
+[creating a new Leave Request](https://github.com/holdex/developers/issues/new?template=leave_request.yml).
 
 ### Approve or Reject Request
 
