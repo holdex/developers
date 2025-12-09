@@ -1,7 +1,5 @@
 # Leave Policy
 
-## Introduction
-
 Every team member (the Member) benefits from our "paid time off" allowance
 described below or directly in the signed agreement.
 
@@ -9,56 +7,35 @@ described below or directly in the signed agreement.
 > In case of conflict between the signed agreement and scheduler, the signed
 agreement terms prevail.
 
-## Year of Service
+## How Many Days Do You Get?
 
-The Year of Service is 365 calendar days starting from the date of signing the
-agreement.
+| Your Service Time       | Paid Days per Year | Can Carry Over | Can Get Paid When Leaving |
+|-------------------------|--------------------|----------------|---------------------------|
+| 0 – 6 months            | 0 days             | –              | –                         |
+| 6 months and more       | 14 days            | Max 3 days     | Max 5 days                |
 
-## Minimum Service Period
+These 14 days cover **everything**: vacation, personal days, sick days, and
+public holidays.
 
-The Minimum Service Period is 6 months since the date of signing the agreement.
+## When Does Your Year Start?
 
-## Leave Request
+Your personal leave year = **365 days from the date you signed your agreement**.
 
-### Submit Request
+## How to Ask for Leave?
 
-2 weeks in advance (except for sick leave) the Member can submit the Leave
-Request by creating a new GitHub issue in HR repository and providing:
+[Create Leave Request (GitHub form)](https://github.com/holdex/developers/issues/new?template=leave_request.yml).
 
-- start and end dates, and
-- leave reason.
+## What Happens After You Submit?
 
-### Approve or Reject Request
+| Result     | What HR does                                     |
+|------------|---------------------------------------------------|
+| Approved   | HR merges a PR and writes “Approved” in your request |
+| Rejected   | HR closes the request and explains why            |
 
-HR Manager must consult with relevant Partner and approve leave request by
-merging a pull request (PR) in PR Tracker repository or reject the Leave Request
-by providing a detailed explanation and closing the issue with "Close as not
-planned" option.
+## Money Rules – Super Simple
 
-## Leave Allowance
-
-### Paid Leave
-
-Members with the [Minimum Service Period](#minimum-service-period) are granted
-14 days paid time off allowance (including holidays, sick leave, personal
-leave).
-
-### Reimbursable Leave
-
-1. In case of the agreement termination after the Minimum Service Period, up to
-   5 unused Paid Leave days can be compensated based on the following formula:
-
-   ```js
-    compensation = monthlyRate / 30 * reimbersableDays
-    ```
-1. Member can carry over 3 unused Paid Leave days into the following
-   [Year of Service](#year-of-service).
-
-#### Unpaid Leave
-
-The Unpaid Leave is deducted from the monthly payout. The deduction is
-calculated with the following formula:
-
-```js
-deduction = monthlyRate / 30 * requestedDaysOff
-```
+| Situation                         | What You Get / Lose                                                                 |
+|-----------------------------------|--------------------------------------------------------------------------------------|
+| You leave the company             | Up to 5 unused paid days are paid out → `monthly rate ÷ 30 × days`                  |
+| You have leftover days at year end| Max 3 paid days move to next year. The rest disappear.                              |
+| You take unpaid leave             | Money is deducted → `monthly rate ÷ 30 × unpaid days`                               |
