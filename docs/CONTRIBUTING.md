@@ -290,6 +290,17 @@ before that, report the time you have spent on it.
 > [!NOTE]
 > When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%).
 
+### Reviewing PRs
+
+Use **Request Changes** (reject) only for objective problems:
+
+- PR doesn't solve the stated problem.
+- A bug is introduced.
+- Code style is inconsistent.
+- Required guidelines are violated.
+
+Use **Comment** for optional improvements or suggestions.
+
 ### Scout approach
 
 If you ever have free time, be proactive and apply the scout approach: own the
