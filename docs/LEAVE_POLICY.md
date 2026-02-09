@@ -21,16 +21,53 @@ public holidays.
 
 Your personal leave year = **365 days from the date you signed your agreement**.
 
-## How to Ask for Leave?
+## How to Request Leave?
 
-[Create Leave Request (GitHub form)](https://github.com/holdex/developers/issues/new?template=leave_request.yml).
+1. **Go to your HR repository** (e.g., `holdex/hr-member-yourname`)
+2. **Create a new branch** for your leave request
+3. **Edit the `leave.yaml` file** and add your leave dates:
+   - For future leave: add under `daysOff.scheduled`
+   - For past days: add under `daysOff.taken`
 
-## What Happens After You Submit?
+   Example:
+   ```yaml
+   daysOff:
+     taken:
+       - date: 2025-12-25
+         type: holiday
+     scheduled:
+       - date: 2026-01-15
+         type: vacation
+         notes: Family trip
+   ```
 
-| Result     | What HR does                                     |
-|------------|---------------------------------------------------|
-| Approved   | HR merges a PR and writes “Approved” in your request |
-| Rejected   | HR closes the request and explains why            |
+4. **Create a Pull Request** with your changes
+5. **Wait for approval** - HR will review and merge your PR if approved
+6. **After merge** - your leave is recorded and will appear in the automated summary
+
+### Valid Leave Types
+
+- `vacation` - Planned time off
+- `sick` - Sick leave
+- `personal` - Personal days
+- `holiday` - Public/company holidays
+- `unpaid` - Unpaid leave (deducted from salary)
+
+### Date Ranges
+
+You can use ranges for multi-day leave:
+```yaml
+- date: 2026-02-10 to 2026-02-15
+  type: vacation
+```
+
+## Automated Leave Summary
+
+Every day at midnight UTC, the system automatically:
+- Calculates your leave balance (days remaining/committed)
+- Shows carry-over from previous year (max 3 days)
+- Updates your HR issue with a detailed leave summary
+- Calculates unpaid leave deductions per month
 
 ## Money Rules – Super Simple
 
