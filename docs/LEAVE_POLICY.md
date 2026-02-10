@@ -24,8 +24,7 @@ Your personal leave year = **365 days from the date you signed your agreement**.
 ## How to Request Leave?
 
 1. **Go to your HR repository** (e.g., `holdex/hr-member-yourname`)
-1. **Create a new issue and branch** for your leave request
-
+1. **Create a new issue and branch**
    - Issue Title Example: `Leave Request: William Rusdyputra - Holiday`
    - Branch example: `leave/william-rusdyputra`
    - You can specify the days you’re requesting in the issue description,
