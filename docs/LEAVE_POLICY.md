@@ -28,7 +28,9 @@ Your personal leave year = **365 days from the date you signed your agreement**.
 
    - Issue Title Example: `Leave Request: William Rusdyputra - Holiday`
    - Branch example: `leave/william-rusdyputra`
-   - You can define which days you are requesting on the issue description, even if the days are separated like 12th, 14th, etc.
+   - You can specify the days you’re requesting in the issue description,
+
+     even if they’re non-consecutive (e.g., the 12th and 14th).
 
 1. **Edit the `leave.yaml` file** and add your leave dates:
    - For future leave: add under `daysOff.scheduled`
