@@ -24,8 +24,8 @@ Your personal leave year = **365 days from the date you signed your agreement**.
 ## How to Request Leave?
 
 1. **Go to your HR repository** (e.g., `holdex/hr-member-yourname`)
-1. **Create a new branch** for your leave request
-1. **Edit the `leave.yaml` file** and add your leave dates:
+2. **Create a new branch** for your leave request
+3. **Edit the `leave.yaml` file** and add your leave dates:
    - For future leave: add under `daysOff.scheduled`
    - For past days: add under `daysOff.taken`
 
@@ -42,9 +42,9 @@ Your personal leave year = **365 days from the date you signed your agreement**.
          notes: Family trip
    ```
 
-1. **Create a Pull Request** with your changes
-1. **Wait for approval** - HR will review and merge your PR if approved
-1. **After merge** - your leave is recorded and will appear in the automated
+4. **Create a Pull Request** with your changes
+5. **Wait for approval** - HR will review and merge your PR if approved
+6. **After merge** - your leave is recorded and will appear in the automated
    summary
 
 ### Valid Leave Types
@@ -62,6 +62,16 @@ You can use ranges for multi-day leave:
 ```yaml
 - date: 2026-02-10 to 2026-02-15
   type: vacation
+```
+
+or for multi-day but separated, you can simply add more items on 1 PR:
+```yaml
+- date: 2026-02-10
+  type: vacation
+- date: 2026-02-12
+  type: personal
+- date: 2026-02-15 to 2026-02-17
+  type: personal
 ```
 
 ## Automated Leave Summary
