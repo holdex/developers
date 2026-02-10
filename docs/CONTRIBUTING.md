@@ -116,9 +116,8 @@ See these related items:
 Avoid simply pasting the URL inline.
 
 ```md
-Check this out: <issue_or_pr_url>
-Related: <issue_or_pr_url>
-See <issue_or_pr_url> for details
+Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
+<issue_or_pr_url> for details
 ```
 
 > [!NOTE]
@@ -137,7 +136,8 @@ PR Requirements.
 For the security and integrity of our project, we require all contributors to
 sign their commits.  
 For detailed instructions on why and how to sign your commits refer to
-[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+[GitHub's documentation on commit signature
+verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 > [!Note]
 > We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Ensure your Git version supports SSH signature verification (Git 2.34 or later).
@@ -148,7 +148,8 @@ For detailed instructions on why and how to sign your commits refer to
 > Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
 
 When planning the scope of work, make sure you
-[keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
+[keep PRs
+small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
 You must be able to complete your PR within 3-4 hours.  
 If the solution requires more time, then decompose it into smaller independent
 PRs. In case your smaller PRs can't be used on production, use feature flags.
@@ -182,7 +183,8 @@ When starting to work on a Problem, you must:
    [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
    right away. Do not mark PR as "ready to review" unless you are confident it
    is ready.
-1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
+1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
+   to the corresponding Problem (issue).
 1. Before marking your PR as ready for review, assign **at least one reviewer**
    (team or individual). Do not merge without approved review.
 
