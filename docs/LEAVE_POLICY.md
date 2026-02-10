@@ -24,7 +24,12 @@ Your personal leave year = **365 days from the date you signed your agreement**.
 ## How to Request Leave?
 
 1. **Go to your HR repository** (e.g., `holdex/hr-member-yourname`)
-1. **Create a new branch** for your leave request
+1. **Create a new issue and branch** for your leave request
+
+   - Issue Title Example: `Leave Request: William Rusdyputra - Holiday `
+   - Branch example: `leave/william-rusdyputra`
+   - You can define which days you are requesting on the issue description, even if the days are separated like 12th, 14th, etc.
+
 1. **Edit the `leave.yaml` file** and add your leave dates:
    - For future leave: add under `daysOff.scheduled`
    - For past days: add under `daysOff.taken`
@@ -43,7 +48,7 @@ Your personal leave year = **365 days from the date you signed your agreement**.
    ```
 
 1. **Create a Pull Request** with your changes
-1. **Wait for approval** - HR will review and merge your PR if approved
+1. **Wait for approval** - HR will review it by D-1 at the latest and merge your PR if it’s approved
 1. **After merge** - your leave is recorded and will appear in the automated
    summary
 
