@@ -23,69 +23,7 @@ Your personal leave year = **365 days from the date you signed your agreement**.
 
 ## How to Request Leave?
 
-1. **Go to your HR repository** (e.g., `holdex/hr-member-yourname`)
-1. **Create Leave Request** on this
-   [Form](https://github.com/holdex/developers/issues/new?template=leave_request.yml).
-
-1. **Create a Pull Request** by editing the `leave.yaml` file and add your leave
-   dates:
-   - For future leave: add under `daysOff.scheduled`
-   - For past days: add under `daysOff.taken`
-
-   Example:
-
-   ```yaml
-   daysOff:
-     taken:
-       - date: 2025-12-25
-         type: holiday
-     scheduled:
-       - date: 2026-01-15
-         type: vacation
-         notes: Family trip
-   ```
-
-1. **Wait for approval** - HR will review it by D-1 at the latest and merge your
-   PR if it’s approved
-1. **After merge** - your leave is recorded and will appear in the automated
-   summary
-
-### Valid Leave Types
-
-- `vacation` - Planned time off
-- `sick` - Sick leave
-- `personal` - Personal days
-- `holiday` - Public/company holidays
-- `unpaid` - Unpaid leave (deducted from salary)
-
-### Date Ranges
-
-You can use ranges for multi-day leave:
-
-```yaml
-- date: 2026-02-10 to 2026-02-15
-  type: vacation
-```
-
-or for multi-day but separated, you can simply add more items on 1 PR:
-
-```yaml
-- date: 2026-02-10
-  type: vacation
-- date: 2026-02-12
-  type: personal
-- date: 2026-02-15 to 2026-02-17
-  type: personal
-```
-
-## Automated Leave Summary
-
-Every day at midnight UTC, the system automatically:
-
-- Calculates your leave balance (days remaining/committed)
-- Shows carry-over from previous year (max 3 days)
-- Updates your HR issue with a detailed leave summary
-- Calculates unpaid leave deductions per month
+See the [Leave Request guide](https://wizard.holdex.io/docs/leave-request).
 
 ## Money Rules – Super Simple
 
