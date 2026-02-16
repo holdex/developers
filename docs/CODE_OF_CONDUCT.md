@@ -27,7 +27,7 @@
 - **“Own it with Passion”** — we believe in taking ownership and responsibility
   for our work. We encourage a mindset of accelerated learning as you “figure it
   out yourself” and the drive to go beyond expectations. We are passionate about
-  what we do and understand that the success of our business is dependent on us.
+  what we do and understand that our team success is dependent on us.
 - **“Be Open”** — expand your horizons by challenging your beliefs and embracing
   new knowledge, ideas, and opportunities. See things from the perspective of
   others, and you may uncover potential missteps and grow in your understanding.
