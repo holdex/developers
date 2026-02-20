@@ -8,7 +8,7 @@ approachable and respectful.
 If you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
 
 > [!TIP]
-> You can use [GitHub Wizard](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) Chrome extension to simplify some of the workflows described in these Guidelines.
+> You can use [Wizard Browser Extension](https://chromewebstore.google.com/detail/github-wizard/gibcadmedmabfnfbolimcndljcopbhep?) to simplify some of the workflows described in these Guidelines.
 
 ## Getting started
 
