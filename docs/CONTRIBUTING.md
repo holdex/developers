@@ -7,7 +7,7 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.
 
 > [!TIP]
-> You can use [Wizard Github App][2] and [Wizard Browser Extension][1] to
+> You can use [Wizard GitHub App][2] and [Wizard Browser Extension][1] to
 > simplify some of the workflows described in these Guidelines.
 
 ## Table of Contents
