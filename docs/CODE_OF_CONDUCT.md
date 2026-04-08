@@ -34,14 +34,13 @@ Make sure you are aligned with our Core Values and follow the rules below.
 
 1. Ensure the quality of your work. It is a sign of poor ownership and lack of
    confidence when you expect someone to deal with your incomplete work.
-1. Assign yourself to the Goal or Problem you are working on so others are
-   aware of it.
+1. Assign yourself to the Goal or Problem you are working on so others are aware
+   of it.
 
 ### Communication
 
-1. Use `@mention` only when the person truly needs to be notified or take
-   action — otherwise, use reactions (likes, thumbs up, etc.) for
-   acknowledgment.
+1. Use `@mention` only when the person truly needs to be notified or take action
+   — otherwise, use reactions (likes, thumbs up, etc.) for acknowledgment.
 1. Leave daily updates on relevant tasks/problems to maintain visibility and
    simplicity for the team.
 1. Keep all communication task-focused: work topics, deliverables, questions,
