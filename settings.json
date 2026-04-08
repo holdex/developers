@@ -1,0 +1,20 @@
+{
+  "lsp": {
+    "rumdl": {
+      "binary": {
+        "path": "rumdl",
+        "arguments": ["server"]
+      }
+    }
+  },
+  "languages": {
+    "Markdown": {
+      "language_servers": ["rumdl", "!markdown-language-server"],
+      "format_on_save": {
+        "language_server": {
+          "name": "rumdl"
+        }
+      }
+    }
+  }
+}
