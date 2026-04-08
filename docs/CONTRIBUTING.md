@@ -7,8 +7,8 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.
 
 > [!TIP]
-> You can use [Wizard Github App][2] and [Wizard Browser Extension][1] to simplify some of the workflows
-> described in these Guidelines.
+> You can use [Wizard Github App][2] and [Wizard Browser Extension][1] to
+> simplify some of the workflows described in these Guidelines.
 
 ## Table of Contents
 
@@ -73,8 +73,8 @@ Sometimes, a Goal already has a few identified problems, but not always.
 > clear.
 >
 > The statement must read as a **job story**: describe what the specific user
-> **can't do** or what is broken for them. Ask: _"What can [user] not do
-> because of this problem?"_
+> **can't do** or what is broken for them. Ask:
+> _"What can [user] not do because of this problem?"_
 
 | **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
@@ -108,7 +108,8 @@ Direct discussions to the appropriate channel at all times:
 
 - **Spec document** — clarifications about Goal scope or business context
 - **Problem issues** — tracking obstacles that prevent achieving the Goal
-- **Goal issues** — linking Specs, tracking Problems, and monitoring progress only
+- **Goal issues** — linking Specs, tracking Problems, and monitoring progress
+  only
 
 > [!IMPORTANT]
 > Do not post Problem status updates, PR notifications, or progress updates in
@@ -126,10 +127,9 @@ issue so the dependency is visible.
 
 ### Referencing issues and PRs
 
-When referencing issues or pull requests, use a list
-item format to enable automatic title rendering and improve readability. This
-ensures that GitHub automatically expands the reference to show the issue/PR
-title.
+When referencing issues or pull requests, use a list item format to enable
+automatic title rendering and improve readability. This ensures that GitHub
+automatically expands the reference to show the issue/PR title.
 
 **Correct** — use a list item:
 
@@ -212,8 +212,9 @@ PR names must be:
 | `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
 | `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
-A feature isn't a button, toggle, or handler — it's **what the user gains from
-it**. Ask _"What will users be able to do?"_ not _"What am I building?"_
+A feature isn't a button, toggle, or handler — it's
+**what the user gains from it**. Ask _"What will users be able to do?"_ not
+_"What am I building?"_
 
 1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
    Correct: "Filter search results by category"
@@ -268,9 +269,11 @@ If there isn't an existing DESIGN.md file, create one and link it from README.md
 
 Follow these steps in order from start to submission:
 
-1. **Open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)**
+1. **Open a [draft
+   PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)**
    right away when you start working on a Problem.
-1. **[Link the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
+1. **[Link the
+   PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
    to the corresponding Problem issue using a closing keyword.
 1. **Assign yourself** so it is clear who is working on it.
 1. **Resolve all CI checks** — PRs with failing checks will be rejected.
