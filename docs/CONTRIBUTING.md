@@ -10,6 +10,22 @@ approachable and respectful.
 > You can use [Wizard Browser Extension][1] to simplify some of the workflows
 > described in these Guidelines.
 
+## Table of Contents
+
+- [Getting started](#getting-started)
+  - [Goal](#goal)
+  - [Problem](#problem)
+  - [Solution](#solution)
+- [Communication Guidelines](#communication-guidelines)
+- [PR Requirements](#pr-requirements)
+  - [Commit Signature Verification](#commit-signature-verification)
+  - [Scoping](#scoping)
+  - [CI Checks](#ci-checks)
+  - [Drafting](#drafting)
+  - [Naming](#naming)
+  - [Requesting Review](#requesting-review)
+  - [Review Process](#review-process)
+
 ## Getting started
 
 There are three core contribution pillars:
@@ -69,7 +85,7 @@ issue so the dependency is visible.
 ### Problem
 
 Once the Goal is clear, you must identify what stops you from achieving it.
-Anything that is stopping you - is a “Problem”. A typical question to ask is:
+Anything that is stopping you - is a "Problem". A typical question to ask is:
 "Why is this Goal not achieved and what is the Problem?".
 
 Sometimes, a Goal already has a few identified problems, but not always.
@@ -77,9 +93,19 @@ Sometimes, a Goal already has a few identified problems, but not always.
 > [!NOTE]
 > Once a Problem is identified, we report it as a
 > [GitHub Issue](https://docs.github.com/en/issues) with the following naming
-> pattern: `Problem: [statement]`. We’re counting on our contributors to
+> pattern: `Problem: [statement]`. We're counting on our contributors to
 > identify problems. Keep a Problem name short (under 65 chars) and crystal
 > clear.
+>
+> The statement must read as a **job story**: describe what the specific user
+> **can't do** or what is broken for them. Ask: _"What can [user] not do
+> because of this problem?"_
+
+| **Good** ✅                                      | **Bad** ❌                                     | **Why?**                       |
+| ------------------------------------------------ | ---------------------------------------------- | ------------------------------ |
+| `operators can't view their account balance`     | `operators don't have their account balance`   | Describes inability, not state |
+| `users can't submit a form without refreshing`   | `form submission issue`                        | Vague, no actor or action      |
+| `admins can't export reports as CSV`             | `CSV export missing`                           | No subject, not a job story    |
 
 Make sure each Problem issue is interlinked with it's Goal issue:
 
@@ -100,7 +126,7 @@ understand the context.
 The third pillar of successful contribution is the Solution.
 
 Different problems may require different sets of skills.  
-Whether it’s code, design, or marketing material, we expect a lean and clean
+Whether it's code, design, or marketing material, we expect a lean and clean
 solution from the contributor.
 
 > [!NOTE]
@@ -113,14 +139,14 @@ solution from the contributor.
 > is linked to the Problem, which is linked to the Goal — that chain is
 > sufficient. Duplicate comments add noise.
 
-### Referencing
+## Communication Guidelines
 
 When referencing issues or pull requests in any GitHub discussion, use a list
 item format to enable automatic title rendering and improve readability. This
 ensures that GitHub automatically expands the reference to show the issue/PR
 title.
 
-#### Correct Format
+### Correct Format
 
 Use a list item to reference issues or PRs:
 
@@ -133,7 +159,7 @@ See these related items:
 - #12
 ```
 
-#### Incorrect Formats
+### Incorrect Formats
 
 Avoid simply pasting the URL inline.
 
@@ -148,13 +174,23 @@ Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
 
 ## PR Requirements
 
-All PRs, whether for source code, design, or copy changes, must comply with our
-PR Requirements.
+All PRs, whether for source code, design, or copy changes, must comply with the
+following requirements.
 
 > [!WARNING]
 > PRs that do not correspond to the following criteria are usually rejected.
 
-## Commit Signature Verification
+Before marking your PR as ready for review, confirm:
+
+- [ ] Commits are signed
+- [ ] PR scope fits within 3–4 hours of work
+- [ ] All CI checks pass
+- [ ] PR is linked to a Problem issue
+- [ ] At least one reviewer is assigned
+- [ ] Time is reported
+- [ ] PR title follows `type(scope): action` naming convention
+
+### Commit Signature Verification
 
 For the security and integrity of our project, we require all contributors to
 sign their commits.  
@@ -166,7 +202,7 @@ For detailed instructions on why and how to sign your commits refer to
 > Ensure your Git version supports SSH signature verification (Git 2.34 or
 > later).
 
-## Scoping
+### Scoping
 
 > [!NOTE]
 > Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
@@ -181,7 +217,7 @@ We usually reject and close PRs which do not have activity for the last 24
 hours, unless there is a clear comment explaining the reason why that PR is
 stalled.
 
-## CI Checks
+### CI Checks
 
 To maintain the quality and integrity of our project, all PRs must successfully
 pass the required Continuous Integration (CI) checks before being marked as
@@ -200,7 +236,7 @@ The required checks are as follows:
 > requesting a review. Any PR with unresolved CI checks should remain in "draft"
 > status until all issues are fixed.
 
-## Drafting
+### Drafting
 
 When starting to work on a Problem, you must:
 
@@ -214,7 +250,7 @@ When starting to work on a Problem, you must:
 1. Before marking your PR as ready for review, assign **at least one reviewer**
    (team or individual). Do not merge without approved review.
 
-### Design PRs
+#### Design PRs
 
 Initiate a PR with a note in the DESIGN.md file detailing the addressed design
 aspects. Design PRs use `docs(ui)` as the "type" and "scope" of its name. i.e.:
@@ -230,7 +266,7 @@ Structure the design file with the following markup:
       - [[state]](https://figma.com/your-design-file-url)
 ```
 
-#### Key
+##### Key
 
 - **`/...`** - Represents a page.
 - **`{...}`** - Represents a dynamic parameter within a URL.
@@ -256,7 +292,7 @@ If there isn't an existing DESIGN.md file:
 1. Create a new file named DESIGN.md.
 1. Link it from README.md.
 
-## Naming
+### Naming
 
 > [!NOTE]
 > We use PR titles to communicate changes to all stakeholders, including
@@ -268,7 +304,7 @@ PR names must be:
 1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**
 1. **Clear & simple** (present tense, action-oriented)
 
-### Example Comparison
+#### Example Comparison
 
 | **Good Examples** ✅   | **Bad Examples** ❌            | **Why?**           |
 | ---------------------- | ------------------------------ | ------------------ |
@@ -276,25 +312,23 @@ PR names must be:
 | `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
 | `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
----
+#### Key Principles
 
-### Key Principles
+##### What to Focus On
 
-#### What to Focus On
-
-A feature isn’t a button, toggle, or handler—it’s
+A feature isn't a button, toggle, or handler—it's
 **what the user gains from it**. Ask:
 
 - ❌ _"What am I building?"_ → Leads to technical labels.
 - ✅ _"What will users be able to do?"_ → Leads to clear value.
 
-#### Why It Matters
+##### Why It Matters
 
 - **Clarity**: Engineers, PMs, and stakeholders instantly understand the impact.
 - **Consistency**: Aligns with product-facing language (release notes, docs).
 - **User-Centricity**: Work is driven by user needs, not just code changes.
 
-#### How to Apply It
+##### How to Apply It
 
 1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
    Correct:"Filter search results by category"
@@ -302,14 +336,14 @@ A feature isn’t a button, toggle, or handler—it’s
    Correct:"Gracefully recover from connection errors"
 1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
 
-### Before Submitting, Ask
+#### Before Submitting, Ask
 
 1. Does it use `type(scope [Optional]): action` format?
 1. Could a non-technical user understand the benefit?
 1. Is it in the present tense?
 1. Does it focus on user capability (not code)?
 
-## Requesting Review
+### Requesting Review
 
 Once your PR is ready, assign reviewers and mark it as "ready to review." But
 before that, report the time you have spent on it.
@@ -321,7 +355,9 @@ before that, report the time you have spent on it.
 > Programming and designing isn't just about writing code or creating designs;
 > it also involves planning (40%) and QA (20-30%).
 
-### Reviewing PRs
+### Review Process
+
+#### Giving a Review
 
 Use **Request Changes** (reject) only for objective problems:
 
@@ -332,13 +368,13 @@ Use **Request Changes** (reject) only for objective problems:
 
 Use **Comment** for optional improvements or suggestions.
 
-### Scout approach
+#### Scout Approach
 
 If you ever have free time, be proactive and apply the scout approach: own the
 job, look for PRs that still need reviewers, and offer timely feedback so work
 keeps moving.
 
-### Code Quality and Reviews
+#### Code Quality
 
 Aim for solutions that work correctly 99.9% of the time. Be independent and
 thorough in your QA - reviewers are not QA team members but are there for a
