@@ -4,8 +4,7 @@ Thank you for your interest in contributing to our project! Your accepted
 contributions will be reflected in our repositories and related websites.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
-approachable and respectful.  
-If you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
+approachable and respectful.
 
 > [!TIP]
 > You can use [Wizard Browser Extension][1] to simplify some of the workflows
@@ -31,6 +30,7 @@ contribution.
 
 As soon as you get involved, you must:
 
+1. assign yourself to the Goal issue.
 1. analyze specifications (the Specs),
 1. assess progress and outstanding Problems and
 1. provide an estimated time of achieving (ETA) the Goal.
@@ -62,6 +62,9 @@ If you identify a potential new problem but are unsure whether it is planned:
 
 Avoid extended discussions in Goal issues. Instead, move conversations to the
 relevant Spec document or Problem issue.
+
+If someone's action is required to unblock progress, assign them to the Goal
+issue so the dependency is visible.
 
 ### Problem
 
@@ -207,6 +210,7 @@ When starting to work on a Problem, you must:
    is ready.
 1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
    to the corresponding Problem (issue).
+1. Assign yourself to the PR so it is clear who is working on it.
 1. Before marking your PR as ready for review, assign **at least one reviewer**
    (team or individual). Do not merge without approved review.
 
