@@ -5,7 +5,7 @@ can only be observed during the trial period. Skills such as the ability to
 figure things out on your own, judgemental skills, decision-making, and async
 collaboration are part of our internal culture and what we aim for.
 
-Across the whole engineering, our team operates the following way:  
+Across the whole engineering, our team operates the following way:
 
 1. lead engineers contribute to defining business Goals along with the Partners
    and Stakeholders

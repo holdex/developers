@@ -26,16 +26,16 @@
 
 ## Do This | Not That
 
-| ✅ **Do** | ❌ **Don’t** |
-|----------|-------------|
+| ✅ **Do**                 | ❌ **Don’t**            |
+| ------------------------- | ----------------------- |
 | Solve what moves the goal | Work on low-value tasks |
-| Own it end-to-end | Pass the buck |
-| Test your work | Expect others to QA |
-| Leave clear updates | Vanish without trace |
+| Own it end-to-end         | Pass the buck           |
+| Test your work            | Expect others to QA     |
+| Leave clear updates       | Vanish without trace    |
 
 ---
 
-## ⏰ Core Hours  
+## ⏰ Core Hours
 
 **2–6 PM HKT** — Be online. Rest is flexible.
 

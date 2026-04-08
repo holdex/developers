@@ -1,28 +1,35 @@
-name: Markdown Lint
+name: Validate Markdown and PR naming
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-  pull_request:
-    # Also trigger on ready_for_review to run when a PR changes from draft to ready
-    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - "**.md"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
 
 jobs:
-  lint:
+  checks:
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'pull_request' || !github.event.pull_request.draft }}
     steps:
       - uses: actions/checkout@v4
-      - name: Install rumdl pre-compiled binary
-        run: |
-          # Define the URL for the latest Linux binary
-          DOWNLOAD_URL="https://github.com/rvben/rumdl/releases/download/v0.0.185/rumdl-v0.0.185-x86_64-unknown-linux-gnu.tar.gz"
 
-          # Use curl to download the archive and tar to extract it
-          curl -sL $DOWNLOAD_URL | tar -xz -C /usr/local/bin/
+      - uses: holdex/github-actions/.github/actions/base/checkout@main
+        with:
+          ref: 05eefbf2dfd772dbb2c12b9985d21ac24c5da0e5
 
-          # Ensure the binary is executable and in the PATH
-          chmod +x /usr/local/bin/rumdl
-      - name: Lint Markdown
-        run: rumdl check --output-format github .
+      - uses: ./.holdex-actions/.github/actions/base/setup-runtime
+        with:
+          package-manager: bun
+
+      - uses: ./.holdex-actions/.github/actions/composed/pr-checks
+        with:
+          run-prettier: false
+          run-markdown: true
+          run-commits: true
+          package-manager: bun

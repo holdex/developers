@@ -3,7 +3,8 @@
 We have received your application and will begin reviewing it soon.
 
 > [!NOTE]
-> As much as we love to be fast, we are taking our time to reply to each one of you and it's not always immediate. Thank you for understanding.
+> As much as we love to be fast, we are taking our time to reply to each one of
+> you and it's not always immediate. Thank you for understanding.
 
 ## What's next for me?
 
