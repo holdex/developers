@@ -20,10 +20,8 @@ approachable and respectful.
 - [PR Requirements](#pr-requirements)
   - [Commit Signature Verification](#commit-signature-verification)
   - [Scoping](#scoping)
-  - [CI Checks](#ci-checks)
-  - [Drafting](#drafting)
   - [Naming](#naming)
-  - [Requesting Review](#requesting-review)
+  - [PR Lifecycle](#pr-lifecycle)
   - [Review Process](#review-process)
 
 ## Getting started
@@ -59,29 +57,6 @@ permissions) and an ETA.
 > following naming pattern: `Goal: [statement]`.  
 > Goals are created and managed by Partner level contributors.
 
-#### Communication within Goal issues
-
-To maintain clarity and efficiency, discussions should be directed to the
-appropriate channels:
-
-- **Use the Spec document** for clarifications about the Goal, its scope, or
-  business context.
-- **Use Problem issues** for tracking obstacles that prevent achieving the Goal.
-- **Goal issues should remain clean**, primarily linking Specs, tracking
-  Problems, and monitoring progress.
-
-If you identify a potential new problem but are unsure whether it is planned:
-
-1. First, check if there is an existing Problem issue related to your concern.
-1. If there isn't, ask for clarification in the Spec document.
-1. If necessary, create a new Problem issue and discuss it there.
-
-Avoid extended discussions in Goal issues. Instead, move conversations to the
-relevant Spec document or Problem issue.
-
-If someone's action is required to unblock progress, assign them to the Goal
-issue so the dependency is visible.
-
 ### Problem
 
 Once the Goal is clear, you must identify what stops you from achieving it.
@@ -101,25 +76,16 @@ Sometimes, a Goal already has a few identified problems, but not always.
 > **can't do** or what is broken for them. Ask: _"What can [user] not do
 > because of this problem?"_
 
-| **Good** ✅                                      | **Bad** ❌                                     | **Why?**                       |
-| ------------------------------------------------ | ---------------------------------------------- | ------------------------------ |
-| `operators can't view their account balance`     | `operators don't have their account balance`   | Describes inability, not state |
-| `users can't submit a form without refreshing`   | `form submission issue`                        | Vague, no actor or action      |
-| `admins can't export reports as CSV`             | `CSV export missing`                           | No subject, not a job story    |
+| **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
+| ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
+| `operators can't view their account balance`   | `operators don't have their account balance` | Describes inability, not state |
+| `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
+| `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
 
-Make sure each Problem issue is interlinked with it's Goal issue:
+Make sure each Problem issue is interlinked with its Goal issue:
 
 - add a Problem issue link into the Goal description
 - add a Goal issue link to the Problem description
-
-It's essential to maintain clear links between Goals and related Problem issues.
-This helps everyone stay informed and team members can easily track progress and
-understand the context.
-
-> [!IMPORTANT]
-> Do not post Problem status updates or notifications back into the Goal issue.
-> The link between them is sufficient — keep all updates within the Problem
-> issue itself.
 
 ### Solution
 
@@ -134,21 +100,38 @@ solution from the contributor.
 > [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance
 > with [PR Requirements](#pr-requirements).
 
-> [!IMPORTANT]
-> Do not repost PR notifications or progress updates in the Goal issue. The PR
-> is linked to the Problem, which is linked to the Goal — that chain is
-> sufficient. Duplicate comments add noise.
-
 ## Communication Guidelines
 
-When referencing issues or pull requests in any GitHub discussion, use a list
+### Discussion channels
+
+Direct discussions to the appropriate channel at all times:
+
+- **Spec document** — clarifications about Goal scope or business context
+- **Problem issues** — tracking obstacles that prevent achieving the Goal
+- **Goal issues** — linking Specs, tracking Problems, and monitoring progress only
+
+> [!IMPORTANT]
+> Do not post Problem status updates, PR notifications, or progress updates in
+> Goal issues. The Goal → Problem → PR chain makes these redundant and adds
+> noise.
+
+If you identify a potential new problem but are unsure whether it is planned:
+
+1. Check if there is an existing Problem issue related to your concern.
+1. If not, ask for clarification in the Spec document.
+1. If necessary, create a new Problem issue and discuss it there.
+
+If someone's action is required to unblock progress, assign them to the Goal
+issue so the dependency is visible.
+
+### Referencing issues and PRs
+
+When referencing issues or pull requests, use a list
 item format to enable automatic title rendering and improve readability. This
 ensures that GitHub automatically expands the reference to show the issue/PR
 title.
 
-### Correct Format
-
-Use a list item to reference issues or PRs:
+**Correct** — use a list item:
 
 ```md
 See these related items:
@@ -159,18 +142,12 @@ See these related items:
 - #12
 ```
 
-### Incorrect Formats
-
-Avoid simply pasting the URL inline.
+**Incorrect** — avoid inline pasting:
 
 ```md
 Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
 <issue_or_pr_url> for details
 ```
-
-> [!NOTE]
-> The list format improves readability and helps contributors quickly understand
-> the context by showing the referenced issue/PR titles automatically.
 
 ## PR Requirements
 
@@ -217,81 +194,6 @@ We usually reject and close PRs which do not have activity for the last 24
 hours, unless there is a clear comment explaining the reason why that PR is
 stalled.
 
-### CI Checks
-
-To maintain the quality and integrity of our project, all PRs must successfully
-pass the required Continuous Integration (CI) checks before being marked as
-"ready to review." PRs with failing CI checks will be rejected.
-
-The required checks are as follows:
-
-```text
-- The pr-time-tracker verifies that the time spent on the PR has been properly logged.
-- The pr-time-tracker for bugs ensures that bug-related time tracking is correctly linked to the corresponding commit and bug author.
-- The code-rabbit validates that the code meets quality standards and passes all automated checks.
-```
-
-> [!NOTE]
-> Contributors need to resolve all CI issues before assigning reviewers or
-> requesting a review. Any PR with unresolved CI checks should remain in "draft"
-> status until all issues are fixed.
-
-### Drafting
-
-When starting to work on a Problem, you must:
-
-1. Open a
-   [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
-   right away. Do not mark PR as "ready to review" unless you are confident it
-   is ready.
-1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
-   to the corresponding Problem (issue).
-1. Assign yourself to the PR so it is clear who is working on it.
-1. Before marking your PR as ready for review, assign **at least one reviewer**
-   (team or individual). Do not merge without approved review.
-
-#### Design PRs
-
-Initiate a PR with a note in the DESIGN.md file detailing the addressed design
-aspects. Design PRs use `docs(ui)` as the "type" and "scope" of its name. i.e.:
-`docs(ui): design table component`
-
-Structure the design file with the following markup:
-
-```text
-## Feature
-- [/page](https://figma.com/your-design-file-url)
-  - ./page/{params}
-    - (group)
-      - [[state]](https://figma.com/your-design-file-url)
-```
-
-##### Key
-
-- **`/...`** - Represents a page.
-- **`{...}`** - Represents a dynamic parameter within a URL.
-- **`(...)`** - Used for grouping related features or components.
-- **`[...]`** - Indicates a specific state of the page or component, such as a
-  popup or modal state.
-- Indentation in the list represents the tree structure or hierarchy, showing
-  how components or features are nested or related.
-
-Example:
-
-```text
-## Credit Vaults
-- [/lending](https://figma.com/your-design-file-url)
-  - ./vaults/{poolAddr}
-    - (Auction)
-      - [[Withdraw Popup]](https://figma.com/your-design-file-url)
-      - [[Bid Popup]](https://figma.com/your-design-file-url)
-```
-
-If there isn't an existing DESIGN.md file:
-
-1. Create a new file named DESIGN.md.
-1. Link it from README.md.
-
 ### Naming
 
 > [!NOTE]
@@ -304,36 +206,19 @@ PR names must be:
 1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**
 1. **Clear & simple** (present tense, action-oriented)
 
-#### Example Comparison
-
 | **Good Examples** ✅   | **Bad Examples** ❌            | **Why?**           |
 | ---------------------- | ------------------------------ | ------------------ |
 | `feat(ui): play music` | `Create player`                | Missing scope/type |
 | `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
 | `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
-#### Key Principles
-
-##### What to Focus On
-
-A feature isn't a button, toggle, or handler—it's
-**what the user gains from it**. Ask:
-
-- ❌ _"What am I building?"_ → Leads to technical labels.
-- ✅ _"What will users be able to do?"_ → Leads to clear value.
-
-##### Why It Matters
-
-- **Clarity**: Engineers, PMs, and stakeholders instantly understand the impact.
-- **Consistency**: Aligns with product-facing language (release notes, docs).
-- **User-Centricity**: Work is driven by user needs, not just code changes.
-
-##### How to Apply It
+A feature isn't a button, toggle, or handler — it's **what the user gains from
+it**. Ask _"What will users be able to do?"_ not _"What am I building?"_
 
 1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
-   Correct:"Filter search results by category"
+   Correct: "Filter search results by category"
 1. **Describe outcomes, not components**: Wrong: "Fix API error handling" →
-   Correct:"Gracefully recover from connection errors"
+   Correct: "Gracefully recover from connection errors"
 1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
 
 #### Before Submitting, Ask
@@ -343,17 +228,60 @@ A feature isn't a button, toggle, or handler—it's
 1. Is it in the present tense?
 1. Does it focus on user capability (not code)?
 
-### Requesting Review
+#### Design PRs
 
-Once your PR is ready, assign reviewers and mark it as "ready to review." But
-before that, report the time you have spent on it.
+Design PRs use `docs(ui)` as the type and scope. e.g.: `docs(ui): design table component`
+
+Initiate a PR with a note in the DESIGN.md file detailing the addressed design
+aspects. Structure the design file with the following markup:
+
+```text
+## Feature
+- [/page](https://figma.com/your-design-file-url)
+  - ./page/{params}
+    - (group)
+      - [[state]](https://figma.com/your-design-file-url)
+```
+
+**Key:**
+
+- **`/...`** — a page
+- **`{...}`** — a dynamic URL parameter
+- **`(...)`** — a grouping of related features or components
+- **`[...]`** — a specific state (e.g. popup or modal)
+- Indentation represents nesting hierarchy
+
+Example:
+
+```text
+## Credit Vaults
+- [/lending](https://figma.com/your-design-file-url)
+  - ./vaults/{poolAddr}
+    - (Auction)
+      - [[Withdraw Popup]](https://figma.com/your-design-file-url)
+      - [[Bid Popup]](https://figma.com/your-design-file-url)
+```
+
+If there isn't an existing DESIGN.md file, create one and link it from README.md.
+
+### PR Lifecycle
+
+Follow these steps in order from start to submission:
+
+1. **Open a [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)**
+   right away when you start working on a Problem.
+1. **[Link the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
+   to the corresponding Problem issue using a closing keyword.
+1. **Assign yourself** so it is clear who is working on it.
+1. **Resolve all CI checks** — PRs with failing checks will be rejected.
+1. **Report your time** spent across all stages: planning (40%), implementation,
+   and QA (20–30%). Open the PR early so time tracking starts from the
+   beginning, including investigation.
+1. **Assign at least one reviewer** (team or individual).
+1. **Mark as ready for review** only once all steps above are complete.
 
 > [!NOTE]
-> When contributing, it's essential to report time accurately, including all
-> stages of development (planning, implementation, QA). We encourage opening a
-> PR at the start of your work, even during the planning or investigation phase.
-> Programming and designing isn't just about writing code or creating designs;
-> it also involves planning (40%) and QA (20-30%).
+> Do not merge without an approved review.
 
 ### Review Process
 
@@ -377,7 +305,7 @@ keeps moving.
 #### Code Quality
 
 Aim for solutions that work correctly 99.9% of the time. Be independent and
-thorough in your QA - reviewers are not QA team members but are there for a
+thorough in your QA — reviewers are not QA team members but are there for a
 final safety check. We expect contributors to deliver bug-free software,
 understanding that perfection is an ideal. Stand firm in your solutions and
 avoid unnecessary revisions based on subjective feedback.
