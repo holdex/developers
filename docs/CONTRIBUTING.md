@@ -7,7 +7,7 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.
 
 > [!TIP]
-> You can use [Wizard Browser Extension][1] to simplify some of the workflows
+> You can use [Wizard Github App][2] and [Wizard Browser Extension][1] to simplify some of the workflows
 > described in these Guidelines.
 
 ## Table of Contents
@@ -313,3 +313,4 @@ avoid unnecessary revisions based on subjective feedback.
 ---
 
 [1]: https://chromewebstore.google.com/detail/wizard-browser-extension/gibcadmedmabfnfbolimcndljcopbhep
+[2]: https://github.com/apps/holdex
