@@ -23,6 +23,7 @@ approachable and respectful.
   - [Naming](#naming)
   - [PR Lifecycle](#pr-lifecycle)
   - [Review Process](#review-process)
+- [Referral Program](#referral-program)
 
 ## Getting started
 
@@ -41,6 +42,11 @@ There are three core contribution pillars:
 
 Understanding the Goal and its business context is crucial for successful
 contribution.
+
+To find a Goal to work on, browse GitHub Issues in the relevant repository and
+filter for issues with the `Goal:` prefix. Prioritize issues based on their
+impact and urgency. If you are unsure which Goal to choose, please consult
+your lead. Pick one that matches your skills, then proceed with the steps below.
 
 As soon as you get involved, you must:
 
@@ -166,6 +172,8 @@ Before marking your PR as ready for review, confirm:
 - [ ] At least one reviewer is assigned
 - [ ] Time is reported
 - [ ] PR title follows `type(scope): action` naming convention
+- [ ] Preview link is included (if applicable)
+- [ ] README is updated to reflect any functional changes
 
 ### Commit Signature Verification
 
@@ -193,6 +201,10 @@ PRs. In case your smaller PRs can't be used on production, use feature flags.
 We usually reject and close PRs which do not have activity for the last 24
 hours, unless there is a clear comment explaining the reason why that PR is
 stalled.
+
+When introducing functional changes, cross-check the README and update it in
+the same PR. If your change affects anything documented there — setup steps,
+environment requirements, file references — the README must stay in sync.
 
 ### Naming
 
@@ -281,6 +293,9 @@ Follow these steps in order from start to submission:
    and QA (20–30%). Open the PR early so time tracking starts from the
    beginning, including investigation.
 1. **Assign at least one reviewer** (team or individual).
+1. **Include a preview link** — if your changes are visually verifiable (UI,
+   design, or any deployable artifact), add a link to the deployed preview or
+   prototype in the PR description.
 1. **Mark as ready for review** only once all steps above are complete.
 
 > [!NOTE]
@@ -290,14 +305,20 @@ Follow these steps in order from start to submission:
 
 #### Giving a Review
 
-Use **Request Changes** (reject) only for objective problems:
+If a PR is not ready to merge, you **must** use **Request Changes** (reject).
+Do not leave a plain comment when rejection is warranted — comments do not
+block merging, are not recorded as rejections, and prevent the author from
+re-requesting a review.
+
+Use **Request Changes** (reject) for objective problems:
 
 - PR doesn't solve the stated problem.
 - A bug is introduced.
 - Code style is inconsistent.
 - Required guidelines are violated.
 
-Use **Comment** for optional improvements or suggestions.
+Use **Comment** for optional improvements or suggestions that should not block
+the PR.
 
 #### Scout Approach
 
@@ -312,6 +333,26 @@ thorough in your QA — reviewers are not QA team members but are there for a
 final safety check. We expect contributors to deliver bug-free software,
 understanding that perfection is an ideal. Stand firm in your solutions and
 avoid unnecessary revisions based on subjective feedback.
+
+## Referral Program
+
+Referrals are accepted for two types:
+
+- **Contributors** — someone you refer who joins and stays active for more than
+  3 months.
+- **Business** — a client or partner you refer who engages with us.
+
+In both cases, for a referral to be registered, the applicant or prospect must
+name you as the referral at the time of their application or first contact.
+Referrals claimed after the fact will not be counted.
+
+Once the eligibility conditions are met, reach out to your lead to claim the
+reward.
+
+> [!NOTE]
+> This referral program applies unless there is a separate commercial
+> engagement between Holdex and the contributor, in which case referral terms
+> are governed by that agreement instead.
 
 ---
 
