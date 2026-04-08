@@ -12,12 +12,12 @@ envision.
 
 Align with:
 
-- [Principles](./docs/PRINCIPLES.md)
 - [Contributing Guidelines](./docs/CONTRIBUTING.md)
 - [Advocacy Guidelines](./docs/ADVOCACY.md)
 - [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
 - [Leave Policy](./docs/LEAVE_POLICY.md)
 - [Compensation Guide](./docs/COMPENSATION.md)
+- [Referral Program](./docs/REFERRAL.md)
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
