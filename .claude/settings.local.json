@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-server-github__issue_read",
+      "Bash(gh issue:*)",
+      "Bash(gh pr:*)"
+    ]
+  }
+}

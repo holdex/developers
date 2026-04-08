@@ -80,6 +80,9 @@ It's essential to maintain clear links between Goals and related Problem issues.
 This helps everyone stay informed and team members can easily track progress and
 understand the context.
 
+> [!IMPORTANT]
+> Do not post Problem status updates or notifications back into the Goal issue. The link between them is sufficient — keep all updates within the Problem issue itself.
+
 ### Solution
 
 The third pillar of successful contribution is the Solution.
@@ -90,6 +93,9 @@ solution from the contributor.
 
 > [!NOTE]
 > Solution is presented in GitHub as a [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
+
+> [!IMPORTANT]
+> Do not repost PR notifications or progress updates in the Goal issue. The PR is linked to the Problem, which is linked to the Goal — that chain is sufficient. Duplicate comments add noise.
 
 ### Referencing
 
@@ -139,8 +145,10 @@ sign their commits.
 For detailed instructions on why and how to sign your commits refer to
 [GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
-> [!Note]
-> We recommend signing commits using an [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Ensure your Git version supports SSH signature verification (Git 2.34 or later).
+> [!Note] We recommend signing commits using an
+> [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification).
+> Ensure your Git version supports SSH signature verification (Git 2.34 or
+> later).
 
 ## Scoping
 
@@ -182,7 +190,8 @@ When starting to work on a Problem, you must:
    [draft PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
    right away. Do not mark PR as "ready to review" unless you are confident it
    is ready.
-1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the corresponding Problem (issue).
+1. [Link opened PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
+   to the corresponding Problem (issue).
 1. Before marking your PR as ready for review, assign **at least one reviewer**
    (team or individual). Do not merge without approved review.
 
