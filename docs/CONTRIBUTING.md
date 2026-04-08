@@ -157,7 +157,7 @@ All PRs, whether for source code, design, or copy changes, must comply with the
 following requirements.
 
 > [!WARNING]
-> PRs that do not correspond to the following criteria are usually rejected.
+> PRs that do not correspond to the following criteria will be rejected.
 
 Before marking your PR as ready for review, confirm:
 
@@ -295,7 +295,7 @@ Follow these steps in order from start to submission:
    prototype in the PR description.
 1. **Mark as ready for review** only once all steps above are complete.
 
-> [!NOTE]
+> [!WARNING]
 > Do not merge without an approved review.
 
 ### Review Process
