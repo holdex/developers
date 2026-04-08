@@ -8,7 +8,8 @@ approachable and respectful.
 If you are a permanent contributor, read our [Principles](./PRINCIPLES.md).
 
 > [!TIP]
-> You can use [Wizard Browser Extension](https://chromewebstore.google.com/detail/wizard-browser-extension/gibcadmedmabfnfbolimcndljcopbhep) to simplify some of the workflows described in these Guidelines.
+> You can use [Wizard Browser Extension][1] to simplify some of the workflows
+> described in these Guidelines.
 
 ## Getting started
 
@@ -19,7 +20,9 @@ There are three core contribution pillars:
 1. **Solution** – the actual deliverable which resolves the problem
 
 > [!NOTE]
-> In this guide you will get an overview of the contribution workflow: from finding a Goal, identifying a Problem, and the process of delivering your solutions.
+> In this guide you will get an overview of the contribution workflow: from
+> finding a Goal, identifying a Problem, and the process of delivering your
+> solutions.
 
 ### Goal
 
@@ -36,7 +39,8 @@ Each Goal description must include Specs (a Google Document with commenting
 permissions) and an ETA.
 
 > [!NOTE]
-> A Goal is represented as a GitHub issue in the relevant repository and has the following naming pattern: `Goal: [statement]`.  
+> A Goal is represented as a GitHub issue in the relevant repository and has the
+> following naming pattern: `Goal: [statement]`.  
 > Goals are created and managed by Partner level contributors.
 
 #### Communication within Goal issues
@@ -68,8 +72,11 @@ Anything that is stopping you - is a “Problem”. A typical question to ask is
 Sometimes, a Goal already has a few identified problems, but not always.
 
 > [!NOTE]
-> Once a Problem is identified, we report it as a [GitHub Issue](https://docs.github.com/en/issues) with the following naming pattern: `Problem: [statement]`.  
-> We’re counting on our contributors to identify problems. Keep a Problem name short (under 65 chars) and crystal clear.
+> Once a Problem is identified, we report it as a
+> [GitHub Issue](https://docs.github.com/en/issues) with the following naming
+> pattern: `Problem: [statement]`. We’re counting on our contributors to
+> identify problems. Keep a Problem name short (under 65 chars) and crystal
+> clear.
 
 Make sure each Problem issue is interlinked with it's Goal issue:
 
@@ -81,7 +88,9 @@ This helps everyone stay informed and team members can easily track progress and
 understand the context.
 
 > [!IMPORTANT]
-> Do not post Problem status updates or notifications back into the Goal issue. The link between them is sufficient — keep all updates within the Problem issue itself.
+> Do not post Problem status updates or notifications back into the Goal issue.
+> The link between them is sufficient — keep all updates within the Problem
+> issue itself.
 
 ### Solution
 
@@ -92,10 +101,14 @@ Whether it’s code, design, or marketing material, we expect a lean and clean
 solution from the contributor.
 
 > [!NOTE]
-> Solution is presented in GitHub as a [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance with [PR Requirements](#pr-requirements).
+> Solution is presented in GitHub as a
+> [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance
+> with [PR Requirements](#pr-requirements).
 
 > [!IMPORTANT]
-> Do not repost PR notifications or progress updates in the Goal issue. The PR is linked to the Problem, which is linked to the Goal — that chain is sufficient. Duplicate comments add noise.
+> Do not repost PR notifications or progress updates in the Goal issue. The PR
+> is linked to the Problem, which is linked to the Goal — that chain is
+> sufficient. Duplicate comments add noise.
 
 ### Referencing
 
@@ -122,13 +135,13 @@ See these related items:
 Avoid simply pasting the URL inline.
 
 ```md
-Check this out: <issue_or_pr_url>
-Related: <issue_or_pr_url>
-See <issue_or_pr_url> for details
+Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
+<issue_or_pr_url> for details
 ```
 
 > [!NOTE]
-> The list format improves readability and helps contributors quickly understand the context by showing the referenced issue/PR titles automatically.
+> The list format improves readability and helps contributors quickly understand
+> the context by showing the referenced issue/PR titles automatically.
 
 ## PR Requirements
 
@@ -180,7 +193,9 @@ The required checks are as follows:
 ```
 
 > [!NOTE]
-> Contributors need to resolve all CI issues before assigning reviewers or requesting a review. Any PR with unresolved CI checks should remain in "draft" status until all issues are fixed.
+> Contributors need to resolve all CI issues before assigning reviewers or
+> requesting a review. Any PR with unresolved CI checks should remain in "draft"
+> status until all issues are fixed.
 
 ## Drafting
 
@@ -218,7 +233,6 @@ Structure the design file with the following markup:
 - **`(...)`** - Used for grouping related features or components.
 - **`[...]`** - Indicates a specific state of the page or component, such as a
   popup or modal state.
-
 - Indentation in the list represents the tree structure or hierarchy, showing
   how components or features are nested or related.
 
@@ -241,7 +255,8 @@ If there isn't an existing DESIGN.md file:
 ## Naming
 
 > [!NOTE]
-> We use PR titles to communicate changes to all stakeholders, including non-technical users.
+> We use PR titles to communicate changes to all stakeholders, including
+> non-technical users.
 
 PR names must be:
 
@@ -281,7 +296,6 @@ A feature isn’t a button, toggle, or handler—it’s
    Correct:"Filter search results by category"
 1. **Describe outcomes, not components**: Wrong: "Fix API error handling" →
    Correct:"Gracefully recover from connection errors"
-
 1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
 
 ### Before Submitting, Ask
@@ -297,7 +311,11 @@ Once your PR is ready, assign reviewers and mark it as "ready to review." But
 before that, report the time you have spent on it.
 
 > [!NOTE]
-> When contributing, it's essential to report time accurately, including all stages of development (planning, implementation, QA). We encourage opening a PR at the start of your work, even during the planning or investigation phase. Programming and designing isn't just about writing code or creating designs; it also involves planning (40%) and QA (20-30%).
+> When contributing, it's essential to report time accurately, including all
+> stages of development (planning, implementation, QA). We encourage opening a
+> PR at the start of your work, even during the planning or investigation phase.
+> Programming and designing isn't just about writing code or creating designs;
+> it also involves planning (40%) and QA (20-30%).
 
 ### Reviewing PRs
 
@@ -323,3 +341,7 @@ thorough in your QA - reviewers are not QA team members but are there for a
 final safety check. We expect contributors to deliver bug-free software,
 understanding that perfection is an ideal. Stand firm in your solutions and
 avoid unnecessary revisions based on subjective feedback.
+
+---
+
+[1]: https://chromewebstore.google.com/detail/wizard-browser-extension/gibcadmedmabfnfbolimcndljcopbhep

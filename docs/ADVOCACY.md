@@ -18,26 +18,28 @@ immediately update your GitHub, LinkedIn, and X profiles to reflect your role.
 Exclusively promote Holdex in your bio while employed—no other brands or links.
 Checklist:
 
-| Attribute | Requirement |
-|-----------|-------------|
-| Name | First name only. |
-| Bio | Role at Holdex (e.g., "Full-stack Engineer at @holdex"). |
-| Company | @holdex |
-| Location | localhost |
-| Time | Uncheck; hide current time. |
-| Email | Empty. |
-| Social Link: X | <https://x.com/holdex.io> |
-| Social Link: website | <https://holdex.io/c/jobs> |
-| Social Link: LinkedIn | <https://linkedin.com/company/holdex> |
-| Pinned Repositories | Holdex-related only. |
-| Overview | In a public self-repo, create README.md stating your role, contributions, enthusiasm for Holdex, and links to Holdex website and GitHub org. |
+| Attribute             | Requirement                                                                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                  | First name only.                                                                                                                             |
+| Bio                   | Role at Holdex (e.g., "Full-stack Engineer at @holdex").                                                                                     |
+| Company               | @holdex                                                                                                                                      |
+| Location              | localhost                                                                                                                                    |
+| Time                  | Uncheck; hide current time.                                                                                                                  |
+| Email                 | Empty.                                                                                                                                       |
+| Social Link: X        | <https://x.com/holdex.io>                                                                                                                    |
+| Social Link: website  | <https://holdex.io/c/jobs>                                                                                                                   |
+| Social Link: LinkedIn | <https://linkedin.com/company/holdex>                                                                                                        |
+| Pinned Repositories   | Holdex-related only.                                                                                                                         |
+| Overview              | In a public self-repo, create README.md stating your role, contributions, enthusiasm for Holdex, and links to Holdex website and GitHub org. |
 
 ### LinkedIn Profile
 
 Add Holdex as your current experience in the "Experience" section. Use this
 mandatory description:
 
-> Holdex is the premier partner for institutions pioneering DeFi & RWAs. Hong Kong-based since 2016, we turn bold visions into secure, scalable blockchain solutions—driving adoption with unmatched expertise.
+> Holdex is the premier partner for institutions pioneering DeFi & RWAs. Hong
+> Kong-based since 2016, we turn bold visions into secure, scalable blockchain
+> solutions—driving adoption with unmatched expertise.
 
 ### X (Twitter) Profile
 
