@@ -65,22 +65,18 @@ permissions) and an ETA.
 
 ### Problem
 
-Once the Goal is clear, you must identify what stops you from achieving it.
-Anything that is stopping you - is a "Problem". A typical question to ask is:
-"Why is this Goal not achieved and what is the Problem?".
-
-Sometimes, a Goal already has a few identified problems, but not always.
+Once a Goal is clear, you must identify what prevents its achievement.
+Anything that acts as a barrier is considered a "Problem." Ask yourself:
+"Why is this Goal not achieved, and what specifically is the problem?"
 
 > [!NOTE]
-> Once a Problem is identified, we report it as a
-> [GitHub Issue](https://docs.github.com/en/issues) with the following naming
-> pattern: `Problem: [statement]`. We're counting on our contributors to
-> identify problems. Keep a Problem name short (under 65 chars) and crystal
-> clear.
->
-> The statement must read as a **job story**: describe what the specific user
-> **can't do** or what is broken for them. Ask:
-> _"What can [user] not do because of this problem?"_
+> Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
+> using the naming pattern: `Problem: [statement]`. Keep the name short
+> (under 65 characters) and crystal clear.
+
+The statement must be a **job story** — describe what a specific user **cannot
+do** or what is broken for them. Ask: _"What can [user] not do because of this
+problem?"_
 
 | **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
@@ -88,10 +84,10 @@ Sometimes, a Goal already has a few identified problems, but not always.
 | `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
 | `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
 
-Make sure each Problem issue is interlinked with its Goal issue:
+Ensure each Problem issue is properly interlinked with its parent Goal issue:
 
-- add a Problem issue link into the Goal description
-- add a Goal issue link to the Problem description
+- Add the Problem issue link to the Goal description.
+- Add the Goal issue link to the Problem description.
 
 ### Solution
 
@@ -182,19 +178,20 @@ sign their commits.
 For detailed instructions on why and how to sign your commits refer to
 [GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
-> [!Note] We recommend signing commits using an
+> [!NOTE]
+> We recommend signing commits using an
 > [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification).
 > Ensure your Git version supports SSH signature verification (Git 2.34 or
 > later).
 
 ### Scoping
 
-> [!NOTE]
+> [!TIP]
 > Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
 
 When planning the scope of work, make sure you
 [keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
-You must be able to complete your PR within 3-4 hours.  
+You must be able to complete your PR within 3–4 hours.  
 If the solution requires more time, then decompose it into smaller independent
 PRs. In case your smaller PRs can't be used on production, use feature flags.
 
@@ -349,7 +346,7 @@ Referrals claimed after the fact will not be counted.
 Once the eligibility conditions are met, reach out to your lead to claim the
 reward.
 
-> [!NOTE]
+> [!IMPORTANT]
 > This referral program applies unless there is a separate commercial
 > engagement between Holdex and the contributor, in which case referral terms
 > are governed by that agreement instead.
