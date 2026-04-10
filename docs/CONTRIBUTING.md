@@ -85,7 +85,7 @@ problem?"_
 
 Ensure each Problem issue is properly interlinked with its parent Goal issue:
 
-- Add the Problem issue link to the Goal description.
+- Add the Problem as a **sub-issue** of the Goal using GitHub's sub-issue feature.
 - Add the Goal issue link to the Problem description.
 
 ### Solution
