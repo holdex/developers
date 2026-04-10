@@ -44,8 +44,8 @@ contribution.
 
 To find a Goal to work on, browse GitHub Issues in the relevant repository and
 filter for issues with the `Goal:` prefix. Prioritize issues based on their
-impact and urgency. If you are unsure which Goal to choose, please consult
-your lead. Pick one that matches your skills, then proceed with the steps below.
+impact and urgency. If you are unsure which Goal to choose, please consult your
+lead. Pick one that matches your skills, then proceed with the steps below.
 
 As soon as you get involved, you must:
 
@@ -64,18 +64,18 @@ permissions) and an ETA.
 
 ### Problem
 
-Once a Goal is clear, you must identify what prevents its achievement.
-Anything that acts as a barrier is considered a "Problem." Ask yourself:
-"Why is this Goal not achieved, and what specifically is the problem?"
+Once a Goal is clear, you must identify what prevents its achievement. Anything
+that acts as a barrier is considered a "Problem." Ask yourself: "Why is this
+Goal not achieved, and what specifically is the problem?"
 
 > [!NOTE]
 > Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
-> using the naming pattern: `Problem: [statement]`. Keep the name short
-> (under 65 characters) and crystal clear.
+> using the naming pattern: `Problem: [statement]`. Keep the name short (under
+> 65 characters) and crystal clear.
 
-The statement must be a **job story** — describe what a specific user **cannot
-do** or what is broken for them. Ask: _"What can [user] not do because of this
-problem?"_
+The statement must be a **job story** — describe what a specific user
+**cannot do** or what is broken for them. Ask:
+_"What can [user] not do because of this problem?"_
 
 | **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
@@ -85,7 +85,8 @@ problem?"_
 
 Ensure each Problem issue is properly interlinked with its parent Goal issue:
 
-- Add the Problem as a **sub-issue** of the Goal using GitHub's sub-issue feature.
+- Add the Problem as a **sub-issue** of the Goal using GitHub's sub-issue
+  feature.
 - Add the Goal issue link to the Problem description.
 
 ### Solution
@@ -198,8 +199,8 @@ We usually reject and close PRs which do not have activity for the last 24
 hours, unless there is a clear comment explaining the reason why that PR is
 stalled.
 
-When introducing functional changes, cross-check the README and update it in
-the same PR. If your change affects anything documented there — setup steps,
+When introducing functional changes, cross-check the README and update it in the
+same PR. If your change affects anything documented there — setup steps,
 environment requirements, file references — the README must stay in sync.
 
 ### Naming
@@ -301,9 +302,9 @@ Follow these steps in order from start to submission:
 
 #### Giving a Review
 
-If a PR is not ready to merge, you **must** use **Request Changes** (reject).
-Do not leave a plain comment when rejection is warranted — comments do not
-block merging, are not recorded as rejections, and prevent the author from
+If a PR is not ready to merge, you **must** use **Request Changes** (reject). Do
+not leave a plain comment when rejection is warranted — comments do not block
+merging, are not recorded as rejections, and prevent the author from
 re-requesting a review.
 
 Use **Request Changes** (reject) for objective problems:
