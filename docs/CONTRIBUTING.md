@@ -231,6 +231,16 @@ _"What am I building?"_
    Correct: "Gracefully recover from connection errors"
 1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
 
+> [!WARNING]
+> This rule applies to **all PR types**, including `docs`. Do not use verbs that
+> describe what you did ("document", "update", "add") — use verbs that describe
+> what users can now do.
+>
+> | **Good** ✅                                        | **Bad** ❌                                          |
+> | -------------------------------------------------- | --------------------------------------------------- |
+> | `docs(typefully): log in with shared account`      | `docs(typefully): document shared account`          |
+> | `docs(api): authenticate with OAuth`               | `docs(api): add OAuth section to README`            |
+
 #### Before Submitting, Ask
 
 1. Does it use `type(scope [Optional]): action` format?
