@@ -21,3 +21,12 @@ Align with:
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
+
+## Claude Code Skills
+
+Clone this repository locally to get access to shared Claude Code slash
+commands. Available skills:
+
+| Command | When to use |
+| --- | --- |
+| `/holdex-contributing` | Before creating or updating a GitHub issue or PR in any Holdex repository |
