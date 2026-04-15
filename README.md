@@ -24,8 +24,14 @@ improvements.
 
 ## Claude Code Skills
 
-Clone this repository locally to get access to shared Claude Code slash
-commands. Available skills:
+Clone this repository locally and symlink the commands directory to make all
+skills available globally across every repo you work in:
+
+```bash
+ln -s /path/to/holdex/developers/.claude/commands ~/.claude/commands
+```
+
+Skills stay up to date automatically as you pull the repo. Available skills:
 
 | Command | When to use |
 | --- | --- |
