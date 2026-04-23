@@ -203,6 +203,10 @@ When introducing functional changes, cross-check the README and update it in the
 same PR. If your change affects anything documented there — setup steps,
 environment requirements, file references — the README must stay in sync.
 
+When adding new documentation files, ensure they are reachable via interlinking from the root entry point. Do not create orphaned files.
+
+Do not duplicate content across files. Each piece of information — procedures, templates, configuration steps — must live in exactly one place. Reference it from other docs rather than copying it.
+
 ### Naming
 
 > [!NOTE]
