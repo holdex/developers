@@ -187,7 +187,8 @@ For detailed instructions on why and how to sign your commits refer to
 ### Scoping
 
 > [!TIP]
-> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on software design philosophy.
+> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on
+> software design philosophy.
 
 When planning the scope of work, make sure you
 [keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
@@ -203,9 +204,12 @@ When introducing functional changes, cross-check the README and update it in the
 same PR. If your change affects anything documented there — setup steps,
 environment requirements, file references — the README must stay in sync.
 
-When adding new documentation files, ensure they are reachable via interlinking from the root entry point. Do not create orphaned files.
+When adding new documentation files, ensure they are reachable via interlinking
+from the root entry point. Do not create orphaned files.
 
-Do not duplicate content across files. Each piece of information — procedures, templates, configuration steps — must live in exactly one place. Reference it from other docs rather than copying it.
+Do not duplicate content across files. Each piece of information — procedures,
+templates, configuration steps — must live in exactly one place. Reference it
+from other docs rather than copying it.
 
 ### Naming
 
@@ -254,7 +258,8 @@ _"What am I building?"_
 
 #### Design PRs
 
-Design PRs use `docs(ui)` as the type and scope. e.g.: `docs(ui): design table component`
+Design PRs use `docs(ui)` as the type and scope. e.g.:
+`docs(ui): design table component`
 
 Initiate a PR with a note in the DESIGN.md file detailing the addressed design
 aspects. Structure the design file with the following markup:
@@ -286,7 +291,8 @@ Example:
       - [[Bid Popup]](https://figma.com/your-design-file-url)
 ```
 
-If there isn't an existing DESIGN.md file, create one and link it from README.md.
+If there isn't an existing DESIGN.md file, create one and link it from
+README.md.
 
 ### PR Lifecycle
 
