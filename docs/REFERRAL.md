@@ -14,6 +14,6 @@ Once the eligibility conditions are met, reach out to your lead to claim the
 reward.
 
 > [!IMPORTANT]
-> This referral program applies unless there is a separate commercial
-> engagement between Holdex and the contributor, in which case referral terms
-> are governed by that agreement instead.
+> This referral program applies unless there is a separate commercial engagement
+> between Holdex and the contributor, in which case referral terms are governed
+> by that agreement instead.
