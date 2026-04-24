@@ -224,6 +224,7 @@ PR names must be:
 1. **User-focused**: Describe what users gain, not technical implementation
 1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**
 1. **Clear & simple** (present tense, action-oriented)
+1. **Under 65 characters**
 
 | **Good Examples** ✅   | **Bad Examples** ❌            | **Why?**           |
 | ---------------------- | ------------------------------ | ------------------ |
@@ -257,6 +258,7 @@ _"What am I building?"_
 1. Could a non-technical user understand the benefit?
 1. Is it in the present tense?
 1. Does it focus on user capability (not code)?
+1. Is it under 65 characters?
 
 #### Design PRs
 
