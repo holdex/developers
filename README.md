@@ -21,3 +21,18 @@ Align with:
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
+
+## Claude Code Skills
+
+Clone this repository locally and symlink the commands directory to make all
+skills available globally across every repo you work in:
+
+```bash
+ln -s /path/to/holdex/developers/.claude/commands ~/.claude/commands
+```
+
+Skills stay up to date automatically as you pull the repo. Available skills:
+
+| Command | When to use |
+| --- | --- |
+| `/holdex-contributing` | Before creating or updating a GitHub issue or PR in any Holdex repository |
