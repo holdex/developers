@@ -258,7 +258,7 @@ _"What am I building?"_
 1. Could a non-technical user understand the benefit?
 1. Is it in the present tense?
 1. Does it focus on user capability (not code)?
-1. Is it under 65 characters?
+1. Is it up to 65 characters?
 
 #### Design PRs
 
