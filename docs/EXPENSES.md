@@ -11,6 +11,7 @@ reimbursed. Approval must be obtained **before** incurring the expense.
    - What the expense is and why it is needed
    - Estimated amount (USD)
    - Link to the service or product
+1. Add it as a sub-issue of your dedicated payout issue.
 1. Assign your manager to the issue.
 1. Wait for written approval in the issue thread before proceeding.
 
