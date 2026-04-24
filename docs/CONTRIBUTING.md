@@ -102,8 +102,6 @@ solution from the contributor.
 > [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance
 > with [PR Requirements](#pr-requirements).
 
-For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
-
 ## Communication Guidelines
 
 ### Discussion channels
