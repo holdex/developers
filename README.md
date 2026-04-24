@@ -18,6 +18,7 @@ Align with:
 - [Leave Policy](./docs/LEAVE_POLICY.md)
 - [Compensation Guide](./docs/COMPENSATION.md)
 - [Referral Program](./docs/REFERRAL.md)
+- [Expenses](./docs/EXPENSES.md)
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
