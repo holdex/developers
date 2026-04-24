@@ -57,6 +57,19 @@ As soon as you get involved, you must:
 Each Goal description must include Specs (a Google Document with commenting
 permissions) and an ETA.
 
+Comments on a Goal issue are only appropriate for:
+
+- **ETA update** — when the delivery date changes
+- **Priority change** — when the Goal is deprioritised or elevated relative
+  to other Goals (e.g. "pausing this Goal, focusing on X instead")
+- **Spec review request** — asking someone to review the Spec document or
+  address comments left in it
+
+Everything else — questions, blockers, progress updates, PR links — does not
+belong in the Goal issue. Blockers go as `Problem:` sub-issues. Questions go
+in the Spec document. Progress is implied by the absence of open Problems and
+a valid ETA.
+
 > [!NOTE]
 > A Goal is represented as a GitHub issue in the relevant repository and has the
 > following naming pattern: `Goal: [statement]`.  
