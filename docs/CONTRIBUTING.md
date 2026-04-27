@@ -89,6 +89,19 @@ Ensure each Problem issue is properly interlinked with its parent Goal issue:
   feature.
 - Add the Goal issue link to the Problem description.
 
+Every Problem issue body must include both a `# Problem` and a `# Solution`
+section, describing the recommended approach or workaround before work begins.
+
+```md
+# Problem
+
+Describe what the user cannot do and why it matters.
+
+# Solution
+
+Describe the recommended approach or workaround.
+```
+
 ### Solution
 
 The third pillar of successful contribution is the Solution.
