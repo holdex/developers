@@ -77,11 +77,15 @@ The statement must be a **job story** — describe what a specific user
 **cannot do** or what is broken for them. Ask:
 _"What can [user] not do because of this problem?"_
 
+If your title contains words like "automate", "build system", or "create process", it is describing a solution, not a problem. Replace it with the user inability that makes that solution necessary.
+
 | **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
 | `operators can't view their account balance`   | `operators don't have their account balance` | Describes inability, not state |
 | `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
 | `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
+
+If you identify multiple distinct problems, open a separate issue for each. Do not combine them in a single issue.
 
 Ensure each Problem issue is properly interlinked with its parent Goal issue:
 
