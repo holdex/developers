@@ -33,15 +33,7 @@ There are three core contribution pillars:
 1. **Problem** – an issue that is on our way to achieving the Goal
 1. **Solution** – the actual deliverable which resolves the problem
 
-> [!NOTE]
-> In this guide you will get an overview of the contribution workflow: from
-> finding a Goal, identifying a Problem, and the process of delivering your
-> solutions.
-
 ### Goal
-
-Understanding the Goal and its business context is crucial for successful
-contribution.
 
 To find a Goal to work on, browse GitHub Issues in the relevant repository and
 filter for issues with the `Goal:` prefix. Prioritize issues based on their
@@ -54,11 +46,9 @@ As soon as you get involved, you must:
 1. review the [Spec](#specs) linked from the Goal issue and assess outstanding Problems,
 1. provide an estimated time of achieving (ETA) the Goal.
 
-Each Goal issue must link to a Spec and include an ETA.
-
 > [!NOTE]
-> Goals follow the naming pattern: `Goal: [statement]` and are created and
-> managed by Partner level contributors.
+> Goals follow the naming pattern: `Goal: [statement]` and must link to a Spec
+> with an ETA.
 
 ### Problem
 
@@ -90,14 +80,12 @@ section, describing the recommended approach or workaround before work begins.
 
 Describe what the user cannot do and why it matters.
 
-## Solution
+# Solution
 
 Describe the recommended approach or workaround.
 ```
 
 ### Solution
-
-The third pillar of successful contribution is the Solution.
 
 Different problems may require different sets of skills.  
 Whether it's code, design, or marketing material, we expect a lean and clean
@@ -310,14 +298,6 @@ _"What am I building?"_
 > | -------------------------------------------------- | --------------------------------------------------- |
 > | `docs(typefully): log in with shared account`      | `docs(typefully): document shared account`          |
 > | `docs(api): authenticate with OAuth`               | `docs(api): add OAuth section to README`            |
-
-#### Before Submitting, Ask
-
-1. Does it use `type(scope [Optional]): action` format?
-1. Could a non-technical user understand the benefit?
-1. Is it in the present tense?
-1. Does it focus on user capability (not code)?
-1. Is it under 65 characters?
 
 #### Design PRs
 
