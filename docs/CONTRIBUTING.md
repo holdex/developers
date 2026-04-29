@@ -43,7 +43,8 @@ lead.
 As soon as you get involved, you must:
 
 1. assign yourself to the Goal issue.
-1. review the [Spec](#specs) linked from the Goal issue and assess outstanding Problems,
+1. review the [Spec](#specs) linked from the Goal issue and assess outstanding
+   Problems,
 1. provide an estimated time of achieving (ETA) the Goal.
 
 > [!NOTE]
@@ -80,7 +81,7 @@ section, describing the recommended approach or workaround before work begins.
 
 Describe what the user cannot do and why it matters.
 
-# Solution
+## Solution
 
 Describe the recommended approach or workaround.
 ```
@@ -138,8 +139,8 @@ Describe what users can do, not how the system works internally.
 ```
 
 Sections are defined by the author. Keep them user-focused and scoped to
-observable behavior. Include a `## Design` section using the markup described
-in [Design PRs](#design-prs) when the Goal has a design component.
+observable behavior. Include a `## Design` section using the markup described in
+[Design PRs](#design-prs) when the Goal has a design component.
 
 #### Discussing a Spec
 
