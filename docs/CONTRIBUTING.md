@@ -346,7 +346,6 @@ Follow these steps in order from start to submission:
    PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
    to the corresponding Problem issue using a closing keyword.
 1. **Assign yourself** so it is clear who is working on it.
-1. **Resolve all CI checks** — PRs with failing checks will be rejected.
 1. **Report your time** spent across all stages: planning (40%), implementation,
    and QA (20–30%). Open the PR early so time tracking starts from the
    beginning, including investigation.
@@ -355,9 +354,11 @@ Follow these steps in order from start to submission:
    design, or any deployable artifact), add a link to the deployed preview or
    prototype in the PR description.
 1. **Mark as ready for review** only once all steps above are complete.
+1. **Resolve all CI checks** — CI runs after marking ready; do not request
+   approval until all checks pass.
 
 > [!WARNING]
-> Do not merge without an approved review.
+> Do not merge without an approved review and passing CI checks.
 
 ### Review Process
 
