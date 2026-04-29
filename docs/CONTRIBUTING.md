@@ -125,8 +125,7 @@ but what the Goal aims to deliver. The canonical Spec is a markdown file in
 may supplement it, but the markdown file is what the development team builds
 against.
 
-Specs are created and maintained by Partner level contributors. A Goal must not
-be opened without a linked Spec.
+A Goal must not be opened without a linked Spec.
 
 #### Lifecycle
 
