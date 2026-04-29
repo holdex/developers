@@ -46,21 +46,19 @@ contribution.
 To find a Goal to work on, browse GitHub Issues in the relevant repository and
 filter for issues with the `Goal:` prefix. Prioritize issues based on their
 impact and urgency. If you are unsure which Goal to choose, please consult your
-lead. Pick one that matches your skills, then proceed with the steps below.
+lead.
 
 As soon as you get involved, you must:
 
 1. assign yourself to the Goal issue.
-1. review the Spec (linked from the Goal issue),
-1. assess progress and outstanding Problems and
+1. review the [Spec](#specs) linked from the Goal issue and assess outstanding Problems,
 1. provide an estimated time of achieving (ETA) the Goal.
 
 Each Goal issue must link to a Spec and include an ETA.
 
 > [!NOTE]
-> A Goal is represented as a GitHub issue in the relevant repository and has the
-> following naming pattern: `Goal: [statement]`.  
-> Goals are created and managed by Partner level contributors.
+> Goals follow the naming pattern: `Goal: [statement]` and are created and
+> managed by Partner level contributors.
 
 ### Problem
 
@@ -70,8 +68,9 @@ Goal not achieved, and what specifically is the problem?"
 
 > [!NOTE]
 > Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
-> using the naming pattern: `Problem: [statement]`. Keep the name short (under
-> 65 characters) and crystal clear.
+> using the naming pattern: `Problem: [statement]`. Keep it short (under 65
+> characters). Add it as a **sub-issue** of the Goal and include the Goal issue
+> link in the description.
 
 The statement must be a **job story** — describe what a specific user
 **cannot do** or what is broken for them. Ask:
@@ -83,12 +82,6 @@ _"What can [user] not do because of this problem?"_
 | `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
 | `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
 
-Ensure each Problem issue is properly interlinked with its parent Goal issue:
-
-- Add the Problem as a **sub-issue** of the Goal using GitHub's sub-issue
-  feature.
-- Add the Goal issue link to the Problem description.
-
 Every Problem issue body must include both a `# Problem` and a `# Solution`
 section, describing the recommended approach or workaround before work begins.
 
@@ -97,7 +90,7 @@ section, describing the recommended approach or workaround before work begins.
 
 Describe what the user cannot do and why it matters.
 
-# Solution
+## Solution
 
 Describe the recommended approach or workaround.
 ```
@@ -134,13 +127,13 @@ described in the Spec must move the corresponding sections from
 `docs/specs/<feature>.md` into the appropriate file in `docs/`. When the Spec
 file has no remaining sections, delete it — the Goal is fully documented.
 
-```
+```text
 docs/specs/<feature>.md   ← only unimplemented sections
 docs/<feature>.md         ← only what is currently shipped
 ```
 
-Never add unimplemented behavior to `docs/`. Never leave implemented behavior
-in `docs/specs/`.
+Never add unimplemented behavior to `docs/`. Never leave implemented behavior in
+`docs/specs/`.
 
 #### Format
 
@@ -151,21 +144,14 @@ _Goal: <link to Goal issue>_
 
 What this Goal enables for users.
 
-## Design
-
-- [/page](https://figma.com/your-design-file-url)
-  - ./page/{params}
-    - (group)
-      - [[state]](https://figma.com/your-design-file-url)
-
 ## [Section]
 
 Describe what users can do, not how the system works internally.
 ```
 
 Sections are defined by the author. Keep them user-focused and scoped to
-observable behavior. The `## Design` section follows the same markup described
-in [Design PRs](#design-prs).
+observable behavior. Include a `## Design` section using the markup described
+in [Design PRs](#design-prs) when the Goal has a design component.
 
 #### Discussing a Spec
 
@@ -243,7 +229,8 @@ Before marking your PR as ready for review, confirm:
 - [ ] PR title follows `type(scope): action` naming convention
 - [ ] Preview link is included (if applicable)
 - [ ] README is updated to reflect any functional changes
-- [ ] Spec sections moved to `docs/` for any behavior this PR delivers (if applicable)
+- [ ] Spec sections moved to `docs/` for any behavior this PR delivers (if
+      applicable)
 
 ### Commit Signature Verification
 
