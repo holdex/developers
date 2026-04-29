@@ -16,6 +16,7 @@ approachable and respectful.
   - [Goal](#goal)
   - [Problem](#problem)
   - [Solution](#solution)
+  - [Specs](#specs)
 - [Communication Guidelines](#communication-guidelines)
 - [PR Requirements](#pr-requirements)
   - [Commit Signature Verification](#commit-signature-verification)
@@ -32,35 +33,23 @@ There are three core contribution pillars:
 1. **Problem** – an issue that is on our way to achieving the Goal
 1. **Solution** – the actual deliverable which resolves the problem
 
-> [!NOTE]
-> In this guide you will get an overview of the contribution workflow: from
-> finding a Goal, identifying a Problem, and the process of delivering your
-> solutions.
-
 ### Goal
-
-Understanding the Goal and its business context is crucial for successful
-contribution.
 
 To find a Goal to work on, browse GitHub Issues in the relevant repository and
 filter for issues with the `Goal:` prefix. Prioritize issues based on their
 impact and urgency. If you are unsure which Goal to choose, please consult your
-lead. Pick one that matches your skills, then proceed with the steps below.
+lead.
 
 As soon as you get involved, you must:
 
 1. assign yourself to the Goal issue.
-1. analyze specifications (the Specs),
-1. assess progress and outstanding Problems and
+1. review the [Spec](#specs) linked from the Goal issue and assess outstanding
+   Problems,
 1. provide an estimated time of achieving (ETA) the Goal.
 
-Each Goal description must include Specs (a Google Document with commenting
-permissions) and an ETA.
-
 > [!NOTE]
-> A Goal is represented as a GitHub issue in the relevant repository and has the
-> following naming pattern: `Goal: [statement]`.  
-> Goals are created and managed by Partner level contributors.
+> Goals follow the naming pattern: `Goal: [statement]` and must link to a Spec
+> with an ETA.
 
 ### Problem
 
@@ -70,8 +59,9 @@ Goal not achieved, and what specifically is the problem?"
 
 > [!NOTE]
 > Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
-> using the naming pattern: `Problem: [statement]`. Keep the name short (under
-> 65 characters) and crystal clear.
+> using the naming pattern: `Problem: [statement]`. Keep it short (under 65
+> characters). Add it as a **sub-issue** of the Goal and include the Goal issue
+> link in the description.
 
 The statement must be a **job story** — describe what a specific user
 **cannot do** or what is broken for them. Ask:
@@ -83,12 +73,6 @@ _"What can [user] not do because of this problem?"_
 | `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
 | `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
 
-Ensure each Problem issue is properly interlinked with its parent Goal issue:
-
-- Add the Problem as a **sub-issue** of the Goal using GitHub's sub-issue
-  feature.
-- Add the Goal issue link to the Problem description.
-
 Every Problem issue body must include both a `# Problem` and a `# Solution`
 section, describing the recommended approach or workaround before work begins.
 
@@ -97,14 +81,12 @@ section, describing the recommended approach or workaround before work begins.
 
 Describe what the user cannot do and why it matters.
 
-# Solution
+## Solution
 
 Describe the recommended approach or workaround.
 ```
 
 ### Solution
-
-The third pillar of successful contribution is the Solution.
 
 Different problems may require different sets of skills.  
 Whether it's code, design, or marketing material, we expect a lean and clean
@@ -117,13 +99,63 @@ solution from the contributor.
 
 For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
 
+### Specs
+
+A Spec describes the intended behavior for a Goal — not what currently exists,
+but what the Goal aims to deliver. The canonical Spec is a markdown file in
+`docs/specs/`. When external stakeholders need to collaborate, a Google Document
+may supplement it, but the markdown file is what the development team builds
+against.
+
+A Goal must not be opened without a linked Spec.
+
+#### Lifecycle
+
+A Spec file shrinks as the Goal is implemented. Each PR that delivers behavior
+described in the Spec must move the corresponding sections from
+`docs/specs/<feature>.md` into the appropriate file in `docs/`. When the Spec
+file has no remaining sections, delete it — the Goal is fully documented.
+
+```text
+docs/specs/<feature>.md   ← only unimplemented sections
+docs/<feature>.md         ← only what is currently shipped
+```
+
+Never add unimplemented behavior to `docs/`. Never leave implemented behavior in
+`docs/specs/`.
+
+#### Format
+
+```md
+_Goal: <link to Goal issue>_
+
+## Overview
+
+What this Goal enables for users.
+
+## [Section]
+
+Describe what users can do, not how the system works internally.
+```
+
+Sections are defined by the author. Keep them user-focused and scoped to
+observable behavior. Include a `## Design` section using the markup described in
+[Design PRs](#design-prs) when the Goal has a design component.
+
+#### Discussing a Spec
+
+If the Spec PR is not yet merged, propose changes via review comments on that
+PR. If the Spec is already merged, open a new PR against the spec file. Do not
+use Goal issue comments for scope discussions — they belong in the Spec.
+
 ## Communication Guidelines
 
 ### Discussion channels
 
 Direct discussions to the appropriate channel at all times:
 
-- **Spec document** — clarifications about Goal scope or business context
+- **Spec file** — clarifications about Goal scope or business context; propose
+  changes via PR or review comments on an open Spec PR
 - **Problem issues** — tracking obstacles that prevent achieving the Goal
 - **Goal issues** — linking Specs, tracking Problems, and monitoring progress
   only
@@ -136,7 +168,8 @@ Direct discussions to the appropriate channel at all times:
 If you identify a potential new problem but are unsure whether it is planned:
 
 1. Check if there is an existing Problem issue related to your concern.
-1. If not, ask for clarification in the Spec document.
+1. If not, open a PR against the Spec file, or leave a review comment if the
+   Spec PR is not yet merged.
 1. If necessary, create a new Problem issue and discuss it there.
 
 If someone's action is required to unblock progress, assign them to the Goal
@@ -185,6 +218,8 @@ Before marking your PR as ready for review, confirm:
 - [ ] PR title follows `type(scope): action` naming convention
 - [ ] Preview link is included (if applicable)
 - [ ] README is updated to reflect any functional changes
+- [ ] Spec sections moved to `docs/` for any behavior this PR delivers (if
+      applicable)
 
 ### Commit Signature Verification
 
@@ -265,24 +300,16 @@ _"What am I building?"_
 > | `docs(typefully): log in with shared account`      | `docs(typefully): document shared account`          |
 > | `docs(api): authenticate with OAuth`               | `docs(api): add OAuth section to README`            |
 
-#### Before Submitting, Ask
-
-1. Does it use `type(scope [Optional]): action` format?
-1. Could a non-technical user understand the benefit?
-1. Is it in the present tense?
-1. Does it focus on user capability (not code)?
-1. Is it under 65 characters?
-
 #### Design PRs
 
 Design PRs use `docs(ui)` as the type and scope. e.g.:
 `docs(ui): design table component`
 
-Initiate a PR with a note in the DESIGN.md file detailing the addressed design
-aspects. Structure the design file with the following markup:
+Add a `## Design` section to the relevant Spec file. Structure it with the
+following markup:
 
 ```text
-## Feature
+## Design
 - [/page](https://figma.com/your-design-file-url)
   - ./page/{params}
     - (group)
@@ -300,16 +327,13 @@ aspects. Structure the design file with the following markup:
 Example:
 
 ```text
-## Credit Vaults
+## Design
 - [/lending](https://figma.com/your-design-file-url)
   - ./vaults/{poolAddr}
     - (Auction)
       - [[Withdraw Popup]](https://figma.com/your-design-file-url)
       - [[Bid Popup]](https://figma.com/your-design-file-url)
 ```
-
-If there isn't an existing DESIGN.md file, create one and link it from
-README.md.
 
 ### PR Lifecycle
 
@@ -322,7 +346,6 @@ Follow these steps in order from start to submission:
    PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
    to the corresponding Problem issue using a closing keyword.
 1. **Assign yourself** so it is clear who is working on it.
-1. **Resolve all CI checks** — PRs with failing checks will be rejected.
 1. **Report your time** spent across all stages: planning (40%), implementation,
    and QA (20–30%). Open the PR early so time tracking starts from the
    beginning, including investigation.
@@ -331,9 +354,11 @@ Follow these steps in order from start to submission:
    design, or any deployable artifact), add a link to the deployed preview or
    prototype in the PR description.
 1. **Mark as ready for review** only once all steps above are complete.
+1. **Resolve all CI checks** — CI runs after marking ready; do not request
+   approval until all checks pass.
 
 > [!WARNING]
-> Do not merge without an approved review.
+> Do not merge without an approved review and passing CI checks.
 
 ### Review Process
 
