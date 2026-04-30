@@ -15,7 +15,7 @@ with Holdex:
 | Your Service Time | Paid Days per Year         |
 | ----------------- | -------------------------- |
 | 0 – 6 months      | 0 days                     |
-| 6 months – 1 year | 10 days (pro-rated)        |
+| 6 months – 1 year | 10 days        |
 | 1 – 3 years       | 14 days                    |
 | 3+ years          | 14 days + special allowance |
 
