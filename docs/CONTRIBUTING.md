@@ -109,10 +109,9 @@ A Spec describes the intended behavior for a Goal — not what currently exists,
 but what the Goal aims to deliver. The canonical Spec is a markdown file in
 `docs/specs/`.
 
-Google Documents may be used for early ideation and discussion with external
-stakeholders who are not on GitHub. Before a Goal is opened, that content must
-graduate to a markdown spec. A Goal description never links a Google Document
-as its Spec.
+Google Documents may be used for early ideation and discussion. Before a Goal
+is opened, that content must graduate to a markdown spec. A Goal description
+never links a Google Document as its Spec.
 
 If a Google Document was used, link to it directly in the Goal issue
 description — not in the Spec. The Spec contains only unimplemented behavior.
