@@ -50,6 +50,10 @@ As soon as you get involved, you must:
 > [!NOTE]
 > Goals follow the naming pattern: `Goal: [statement]` and must link to a Spec
 > with an ETA.
+>
+> Before the Spec PR merges, link to the PR. After it merges, update the Goal
+> description to link to the file on `main`:
+> `https://github.com/<org>/<repo>/blob/main/docs/specs/<feature>.md`
 
 ### Problem
 
@@ -111,10 +115,17 @@ A Goal must not be opened without a linked Spec.
 
 #### Lifecycle
 
-A Spec file shrinks as the Goal is implemented. Each PR that delivers behavior
-described in the Spec must move the corresponding sections from
-`docs/specs/<feature>.md` into the appropriate file in `docs/`. When the Spec
-file has no remaining sections, delete it — the Goal is fully documented.
+`docs/specs/<feature>.md` is the backlog of unimplemented behavior for a Goal.
+
+It shrinks as the Goal is implemented. Each PR that delivers behavior described
+in the Spec must move the corresponding sections from `docs/specs/<feature>.md`
+into the appropriate file in `docs/`. When the Spec file has no remaining
+sections, delete it — the Goal is fully documented.
+
+It can also grow. When scope is added after the Spec is merged, open a new PR
+against the spec file to add the new sections. Create Problem issues for the
+added scope. The same rule applies — sections must graduate to `docs/` as they
+are implemented.
 
 ```text
 docs/specs/<feature>.md   ← only unimplemented sections
