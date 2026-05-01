@@ -106,15 +106,10 @@ For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
 ### Specs
 
 A Spec describes the intended behavior for a Goal — not what currently exists,
-but what the Goal aims to deliver. The canonical Spec is a markdown file in
-`docs/specs/`.
+but what the Goal aims to deliver. It is a markdown file in `docs/specs/`.
 
-Google Documents may be used for early ideation and discussion. Before a Goal
-is opened, that content must graduate to a markdown spec. A Goal description
-never links a Google Document as its Spec.
-
-If a Google Document was used, link to it directly in the Goal issue
-description — not in the Spec. The Spec contains only unimplemented behavior.
+A Google Document may be used for ideation before the Spec is written.
+If one exists, link it in the Goal issue description, not in the Spec.
 
 A Goal must not be opened without a linked Spec.
 
