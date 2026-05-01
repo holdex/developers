@@ -1,8 +1,5 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to our project! Your accepted
-contributions will be reflected in our repositories and related websites.
-
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectful.
 
@@ -30,7 +27,7 @@ approachable and respectful.
 There are three core contribution pillars:
 
 1. **Goal** – a business aim
-1. **Problem** – an issue that is on our way to achieving the Goal
+1. **Problem** – a barrier to achieving the Goal
 1. **Solution** – the actual deliverable which resolves the problem
 
 ### Goal
@@ -57,9 +54,8 @@ As soon as you get involved, you must:
 
 ### Problem
 
-Once a Goal is clear, you must identify what prevents its achievement. Anything
-that acts as a barrier is considered a "Problem." Ask yourself: "Why is this
-Goal not achieved, and what specifically is the problem?"
+Once a Goal is clear, identify what prevents its achievement. Anything that
+acts as a barrier is a Problem.
 
 > [!NOTE]
 > Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
@@ -92,7 +88,6 @@ Describe the recommended approach or workaround.
 
 ### Solution
 
-Different problems may require different sets of skills.  
 Whether it's code, design, or marketing material, we expect a lean and clean
 solution from the contributor.
 
@@ -163,7 +158,7 @@ use Goal issue comments for scope discussions — they belong in the Spec.
 
 ### Discussion channels
 
-Direct discussions to the appropriate channel at all times:
+Direct discussions to the appropriate channel:
 
 - **Spec file** — clarifications about Goal scope or business context; propose
   changes via PR or review comments on an open Spec PR
@@ -188,9 +183,8 @@ issue so the dependency is visible.
 
 ### Referencing issues and PRs
 
-When referencing issues or pull requests, use a list item format to enable
-automatic title rendering and improve readability. This ensures that GitHub
-automatically expands the reference to show the issue/PR title.
+When referencing issues or pull requests, use a list item format — GitHub
+automatically expands it to show the title.
 
 **Correct** — use a list item:
 
@@ -212,11 +206,8 @@ Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
 
 ## PR Requirements
 
-All PRs, whether for source code, design, or copy changes, must comply with the
-following requirements.
-
 > [!WARNING]
-> PRs that do not correspond to the following criteria will be rejected.
+> PRs that do not meet the following requirements will be rejected.
 
 Before marking your PR as ready for review, confirm:
 
@@ -234,10 +225,8 @@ Before marking your PR as ready for review, confirm:
 
 ### Commit Signature Verification
 
-For the security and integrity of our project, we require all contributors to
-sign their commits.  
-For detailed instructions on why and how to sign your commits refer to
-[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+All commits must be signed. See [GitHub's documentation on commit signature
+verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 > [!NOTE]
 > We recommend signing commits using an
@@ -257,9 +246,8 @@ You must be able to complete your PR within 3–4 hours.
 If the solution requires more time, then decompose it into smaller independent
 PRs. In case your smaller PRs can't be used on production, use feature flags.
 
-We usually reject and close PRs which do not have activity for the last 24
-hours, unless there is a clear comment explaining the reason why that PR is
-stalled.
+PRs with no activity for 24 hours are closed unless a comment explains the
+delay.
 
 When introducing functional changes, cross-check the README and update it in the
 same PR. If your change affects anything documented there — setup steps,
@@ -291,15 +279,9 @@ PR names must be:
 | `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
 | `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
-A feature isn't a button, toggle, or handler — it's
-**what the user gains from it**. Ask _"What will users be able to do?"_ not
-_"What am I building?"_
-
-1. **Replace UI labels with actions**: Wrong: "Add dropdown for filters" →
-   Correct: "Filter search results by category"
-1. **Describe outcomes, not components**: Wrong: "Fix API error handling" →
-   Correct: "Gracefully recover from connection errors"
-1. **Use user action verbs**: _View, Play, Customize, Save_, etc.
+A feature isn't a button, toggle, or handler — it's what the user gains from
+it. Ask _"What will users be able to do?"_ not _"What am I building?"_ Use
+action verbs: _View, Play, Customize, Save_.
 
 > [!WARNING]
 > This rule applies to **all PR types**, including `docs`. Do not use verbs that
@@ -392,17 +374,13 @@ the PR.
 
 #### Scout Approach
 
-If you ever have free time, be proactive and apply the scout approach: own the
-job, look for PRs that still need reviewers, and offer timely feedback so work
-keeps moving.
+When not actively working on a PR, look for PRs that need reviewers and offer
+timely feedback to keep work moving.
 
 #### Code Quality
 
-Aim for solutions that work correctly 99.9% of the time. Be independent and
-thorough in your QA — reviewers are not QA team members but are there for a
-final safety check. We expect contributors to deliver bug-free software,
-understanding that perfection is an ideal. Stand firm in your solutions and
-avoid unnecessary revisions based on subjective feedback.
+Deliver bug-free software. Push back on subjective feedback — reviewers are a
+final safety check, not a QA team.
 
 ---
 
