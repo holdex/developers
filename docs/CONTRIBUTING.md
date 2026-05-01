@@ -114,6 +114,10 @@ stakeholders who are not on GitHub. Before a Goal is opened, that content must
 graduate to a markdown spec. A Goal description never links a Google Document
 as its Spec.
 
+If a Google Document was used, include a link to it in the Spec under an
+`## Ideation` section. The section is optional — only add it when a document
+exists. It graduates to `docs/` with the rest of the spec when the Goal ships.
+
 A Goal must not be opened without a linked Spec.
 
 #### Lifecycle
@@ -142,6 +146,10 @@ Never add unimplemented behavior to `docs/`. Never leave implemented behavior in
 
 ```md
 _Goal: <link to Goal issue>_
+
+## Ideation (optional)
+
+- [Google Doc](https://docs.google.com/...)
 
 ## Overview
 
