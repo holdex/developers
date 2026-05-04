@@ -133,7 +133,11 @@ Never add unimplemented behavior to `docs/`. Never leave implemented behavior in
 #### Format
 
 ```md
-_Goal: <link to Goal issue>_
+---
+goal: <link to Goal issue>
+---
+
+# Feature Name
 
 ## Overview
 
