@@ -23,8 +23,8 @@ These days cover **everything**: vacation, personal days, sick days, and public
 holidays. Default values above apply unless your individual agreement specifies
 otherwise.
 
-> These are your **annual entitlements** — days are not granted all at once.
-> See [How Do You Earn Days?](#how-do-you-earn-days-accrual) below for how they
+> These are your **annual entitlements** — days are not granted all at once. See
+> [How Do You Earn Days?](#how-do-you-earn-days-accrual) below for how they
 > accrue over the year.
 
 ## How Do You Earn Days? (Accrual)
@@ -32,7 +32,7 @@ otherwise.
 Days are **accrued gradually** throughout your leave year — you do not receive
 the full entitlement up front. The formula is:
 
-```
+```text
 paidLeaveAmount = (totalEligibleLeaves / 365) × daysElapsed
 ```
 

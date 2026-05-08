@@ -54,8 +54,8 @@ As soon as you get involved, you must:
 
 ### Problem
 
-Once a Goal is clear, identify what prevents its achievement. Anything that
-acts as a barrier is a Problem.
+Once a Goal is clear, identify what prevents its achievement. Anything that acts
+as a barrier is a Problem.
 
 > [!NOTE]
 > Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
@@ -103,8 +103,8 @@ For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
 A Spec describes the intended behavior for a Goal — not what currently exists,
 but what the Goal aims to deliver. It is a markdown file in `docs/specs/`.
 
-A Google Document may be used for ideation before the Spec is written.
-If one exists, link it in the Goal issue description, not in the Spec.
+A Google Document may be used for ideation before the Spec is written. If one
+exists, link it in the Goal issue description, not in the Spec.
 
 A Goal must not be opened without a linked Spec.
 
@@ -229,8 +229,8 @@ Before marking your PR as ready for review, confirm:
 
 ### Commit Signature Verification
 
-All commits must be signed. See [GitHub's documentation on commit signature
-verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+All commits must be signed. See
+[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 > [!NOTE]
 > We recommend signing commits using an
@@ -283,9 +283,9 @@ PR names must be:
 | `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
 | `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
 
-A feature isn't a button, toggle, or handler — it's what the user gains from
-it. Ask _"What will users be able to do?"_ not _"What am I building?"_ Use
-action verbs: _View, Play, Customize, Save_.
+A feature isn't a button, toggle, or handler — it's what the user gains from it.
+Ask _"What will users be able to do?"_ not _"What am I building?"_ Use action
+verbs: _View, Play, Customize, Save_.
 
 > [!WARNING]
 > This rule applies to **all PR types**, including `docs`. Do not use verbs that
