@@ -59,7 +59,8 @@ trial and follow our team's principles.
 
 ## I don't have access to open a PR in the repository. What do I do?
 
-Fork the repository and create a PR using a [Fork Strategy](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
+Fork the repository and create a PR using a
+[Fork Strategy](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
 
 ## What is the trial duration?
 
