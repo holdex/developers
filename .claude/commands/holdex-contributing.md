@@ -13,10 +13,11 @@ All PRs and issues must follow the
   - Good: `employees can't safely handle fund disbursements`
   - Bad: `fund handling issue`
 - Link each Problem as a **sub-issue** of its parent Goal issue.
-- When referencing other issues or PRs, always use a **list item**, never inline:
+- When referencing other issues or PRs, always use a **list item**, never
+  inline:
 
   ```md
-  - https://github.com/holdex/hr-internal/issues/123
+  - <https://github.com/holdex/hr-internal/issues/123>
   ```
 
 ## Pull Requests
