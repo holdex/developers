@@ -21,7 +21,7 @@ If no PR is found for the current branch, ask the user for the PR number or URL.
 ## Post the comment
 
 ```bash
-gh pr comment <number> --repo <owner/repo> --body "@holdex pr submit-time $ARGUMENTS"
+gh pr comment <PR_URL> --body "@holdex pr submit-time $ARGUMENTS"
 ```
 
 Confirm the comment was posted and show the PR URL.
