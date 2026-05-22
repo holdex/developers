@@ -52,6 +52,46 @@ As soon as you get involved, you must:
 > description to link to the file on `main`:
 > `https://github.com/<org>/<repo>/blob/main/docs/specs/<feature>.md`
 
+#### Goal description
+
+The Goal issue description may only use the sections below (plus app-managed
+warning blocks at the end). Do not add instructions, scope notes, or design
+decisions here — those belong in the Spec file.
+
+```text
+# Spec
+
+https://github.com/<org>/<repo>/blob/main/docs/specs/<name>.md
+
+# Deadline
+
+ETA: 01-Jan-2026
+
+# Stakeholders Interview
+
+- https://docs.google.com/document/d/...
+```
+
+- **Spec** (required): exactly one URL to `docs/specs/<name>.md` on the `main`
+  branch. No other text in this section.
+- **Deadline** (required when assignees are present): must include a line
+  `ETA: <date>`. Use `ETA: undefined` when no date is known yet. Prefer
+  `ETA: DD-MMM-YYYY` (for example, `ETA: 01-Jan-2026`). You can set or update
+  the date with `@holdex issue set-eta` (see
+  [Wizard docs](https://wizard.holdex.io/docs/commands)).
+- **Stakeholders Interview** (optional): Google Document URLs for ideation or
+  discovery, as a bullet list (one URL per line). Does not replace the Spec link.
+- **Custom sections** (optional): additional H1 headings for grouping issue or
+  PR references only — for example, `# Blocked by` followed by issue or PR
+  links. No free-form text inside these sections.
+
+Wizard may auto-create `docs/specs/<name>.md` (frontmatter only) when a Goal is
+opened without a valid Spec URL, and update the Goal description with the link.
+
+Google Docs can be added with `@holdex goal create-google-doc` or
+`@holdex goal attach-google-doc <url>`, or from the **Create Google Document**
+button in the GitHub sidebar on Goal issues ([Wizard Browser Extension][1]).
+
 ### Problem
 
 Once a Goal is clear, identify what prevents its achievement. Anything that acts
@@ -103,19 +143,28 @@ For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
 A Spec describes the intended behavior for a Goal — not what currently exists,
 but what the Goal aims to deliver. It is a markdown file in `docs/specs/`.
 
-A Google Document may be used for ideation before the Spec is written. If one
-exists, link it in the Goal issue description, not in the Spec.
+Link it from the Goal issue under `# Spec` — see
+[Goal description](#goal-description) for the required format. Use
+`# Stakeholders Interview` in the Goal description for Google Documents used
+during ideation (not in the Spec file).
 
 A Goal must not be opened without a linked Spec.
 
 #### Lifecycle
 
+When a Goal is opened, [Wizard][2] may create an empty
+`docs/specs/<feature>.md` (frontmatter only) and link it from the Goal if no Spec
+URL is present yet.
+
 `docs/specs/<feature>.md` is the backlog of unimplemented behavior for a Goal.
 
 It shrinks as the Goal is implemented. Each PR that delivers behavior described
 in the Spec must move the corresponding sections from `docs/specs/<feature>.md`
-into the appropriate file in `docs/`. When the Spec file has no remaining
-sections, delete it — the Goal is fully documented.
+into the appropriate file in `docs/`. A spec may graduate to more than one file
+in `docs/` when its sections cover different areas. When all sections have
+graduated, keep the file as frontmatter only — do not delete it. The `# Spec`
+link in the Goal description must keep working, and the Goal can be reopened
+without re-creating the file.
 
 It can also grow. When scope is added after the Spec is merged, open a new PR
 against the spec file to add the new sections. Create Problem issues for the
@@ -292,10 +341,10 @@ verbs: _View, Play, Customize, Save_.
 > describe what you did ("document", "update", "add") — use verbs that describe
 > what users can now do.
 >
-> | **Good** ✅                                        | **Bad** ❌                                          |
-> | -------------------------------------------------- | --------------------------------------------------- |
-> | `docs(typefully): log in with shared account`      | `docs(typefully): document shared account`          |
-> | `docs(api): authenticate with OAuth`               | `docs(api): add OAuth section to README`            |
+> | **Good** ✅                                   | **Bad** ❌                                 |
+> | --------------------------------------------- | ------------------------------------------ |
+> | `docs(typefully): log in with shared account` | `docs(typefully): document shared account` |
+> | `docs(api): authenticate with OAuth`          | `docs(api): add OAuth section to README`   |
 
 #### Design PRs
 
