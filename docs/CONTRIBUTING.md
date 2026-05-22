@@ -11,7 +11,6 @@ approachable and respectful.
 
 - [Getting started](#getting-started)
   - [Goal](#goal)
-    - [Goal description](#goal-description)
   - [Problem](#problem)
   - [Solution](#solution)
   - [Specs](#specs)
