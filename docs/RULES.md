@@ -23,6 +23,7 @@ Every rule is a standalone markdown file in `docs/rules/` with YAML frontmatter:
 id: XXX-NNN
 title: "Short description of the rule"
 status: "active"
+depends_on: "XXX-NNN"   # optional — ID of the rule that must be applied first
 enforcement: "manual"
 severity: "error"
 problem: "One-line statement of the situation this rule addresses"  # optional
@@ -77,6 +78,29 @@ any existing references.
 - IDs are permanent — never change or reuse a retired ID
 - When inserting between existing IDs, use the midpoint
   (e.g. `DEV-015` between `DEV-010` and `DEV-020`)
+
+## Sequencing with depends_on
+
+When one rule must be applied before another, declare the prerequisite with
+`depends_on`. Only one dependency per rule — chains resolve transitively:
+
+```yaml
+depends_on: "SAL-260"
+```
+
+If rule C depends on B and B depends on A, only B needs to declare A —
+C picks up the full chain automatically.
+
+A CI script validates the dependency graph on every PR that touches
+`docs/rules/` or the README:
+
+1. **No cycles** — the graph must be a DAG. A → B → A is an authoring
+   error and fails the check.
+2. **README order** — within each README section, no rule may be listed
+   before its dependency. Out-of-order entries fail the check.
+
+When adding `depends_on` to a rule, also verify the README index lists
+the dependency above it in the same section.
 
 ## Status lifecycle
 
