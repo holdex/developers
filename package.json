@@ -1,0 +1,11 @@
+{
+  "name": "developers",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "git config core.hooksPath .githooks"
+  },
+  "devDependencies": {
+    "rumdl": "0.2.27"
+  }
+}

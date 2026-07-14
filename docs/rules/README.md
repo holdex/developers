@@ -53,6 +53,8 @@ What a pull request must satisfy before it merges.
 - [DEV-350](./DEV-350.md): mark a design PR docs(ui) with a Design section
 - [DEV-360](./DEV-360.md): follow the PR lifecycle
 - [DEV-370](./DEV-370.md): report time across all stages
+- [DEV-380](./DEV-380.md): enforce markdown lint on push with a pinned rumdl
+  hook
 
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
