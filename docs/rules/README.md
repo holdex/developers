@@ -23,6 +23,18 @@ including their own.
 - [DEV-030](./DEV-030.md): carry the shared rule frontmatter
 - [DEV-040](./DEV-040.md): reference rules by ID and follow the repo linter
 
+### 1. Contribution model
+
+How work flows from a business aim to a delivered change: Goal, Problem,
+Solution, Spec.
+
+- [DEV-110](./DEV-110.md): work from a Goal issue
+- [DEV-120](./DEV-120.md): keep the Goal description to the allowed sections
+- [DEV-130](./DEV-130.md): frame each Problem as a job-story sub-issue
+- [DEV-140](./DEV-140.md): deliver the Solution as a pull request
+- [DEV-150](./DEV-150.md): keep the Spec as unimplemented behavior and graduate
+  it
+
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
 
