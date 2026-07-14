@@ -22,6 +22,7 @@ including their own.
   Criteria
 - [DEV-030](./DEV-030.md): carry the shared rule frontmatter
 - [DEV-040](./DEV-040.md): reference a rule by ID as a followable link
+- [DEV-050](./DEV-050.md): keep the Problem statement short
 
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
