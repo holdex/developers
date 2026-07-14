@@ -21,7 +21,7 @@ including their own.
 - [DEV-020](./DEV-020.md): structure a rule as Problem, Solution, Acceptance
   Criteria
 - [DEV-030](./DEV-030.md): carry the shared rule frontmatter
-- [DEV-040](./DEV-040.md): reference rules by ID and follow the repo linter
+- [DEV-040](./DEV-040.md): reference a rule by ID as a followable link
 
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
