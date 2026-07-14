@@ -19,10 +19,6 @@ document threads them with the workflow narrative.
   - [Specs](#specs)
 - [Communication Guidelines](#communication-guidelines)
 - [PR Requirements](#pr-requirements)
-  - [Commit Signature Verification](#commit-signature-verification)
-  - [Scoping](#scoping)
-  - [Naming](#naming)
-  - [PR Lifecycle](#pr-lifecycle)
   - [Review Process](#review-process)
 
 ## Getting started
@@ -81,7 +77,7 @@ Describe what users can do, not how the system works internally.
 
 Sections are author-defined. Keep them user-focused and scoped to observable
 behavior. Include a `## Design` section using the markup described in
-[Design PRs](#design-prs) when the Goal has a design component.
+[DEV-350](./rules/DEV-350.md) when the Goal has a design component.
 
 #### Discussing a Spec
 
@@ -91,202 +87,28 @@ use Goal issue comments for scope discussions; they belong in the Spec.
 
 ## Communication Guidelines
 
-### Discussion channels
+Two rules govern where discussion goes and how work is referenced:
 
-Direct discussions to the appropriate channel:
-
-- **Spec file** — clarifications about Goal scope or business context; propose
-  changes via PR or review comments on an open Spec PR
-- **Problem issues** — tracking obstacles that prevent achieving the Goal
-- **Goal issues** — linking Specs, tracking Problems, and monitoring progress
-  only
-
-> [!IMPORTANT]
-> Do not post Problem status updates, PR notifications, or progress updates in
-> Goal issues. The Goal → Problem → PR chain makes these redundant and adds
-> noise.
-
-If you identify a potential new problem but are unsure whether it is planned:
-
-1. Check if there is an existing Problem issue related to your concern.
-1. If not, open a PR against the Spec file, or leave a review comment if the
-   Spec PR is not yet merged.
-1. If necessary, create a new Problem issue and discuss it there.
-
-If someone's action is required to unblock progress, assign them to the Goal
-issue so the dependency is visible.
-
-### Referencing issues and PRs
-
-When referencing issues or pull requests, use a list item format — GitHub
-automatically expands it to show the title.
-
-**Correct** — use a list item:
-
-```md
-See these related items:
-
-- <issue_or_pr_url>
-- <another_issue_or_pr_url>
-- #4
-- #12
-```
-
-**Incorrect** — avoid inline pasting:
-
-```md
-Check this out: <issue_or_pr_url> Related: <issue_or_pr_url> See
-<issue_or_pr_url> for details
-```
+- [DEV-210](./rules/DEV-210.md): route discussion to the right channel
+- [DEV-220](./rules/DEV-220.md): reference issues and PRs as list items
 
 ## PR Requirements
 
 > [!WARNING]
-> PRs that do not meet the following requirements will be rejected.
+> PRs that do not meet these requirements will be rejected.
 
-Before marking your PR as ready for review, confirm:
+Before marking your PR ready for review, confirm each requirement, linked to the
+rule that defines it:
 
-- [ ] Commits are signed
-- [ ] PR scope fits within 3–4 hours of work
-- [ ] All CI checks pass
-- [ ] PR is linked to a Problem issue
-- [ ] At least one reviewer is assigned
-- [ ] Time is reported
-- [ ] PR title follows `type(scope): action` naming convention
-- [ ] Preview link is included (if applicable)
-- [ ] README is updated to reflect any functional changes
-- [ ] Spec sections moved to `docs/` for any behavior this PR delivers (if
-      applicable)
-
-### Commit Signature Verification
-
-All commits must be signed. See
-[GitHub's documentation on commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
-
-> [!NOTE]
-> We recommend signing commits using an
-> [SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification).
-> Ensure your Git version supports SSH signature verification (Git 2.34 or
-> later).
-
-### Scoping
-
-> [!TIP]
-> Here's a [good resource](https://youtu.be/bmSAYlu0NcY?si=2lLQeY1PGCY9tcvX) on
-> software design philosophy.
-
-When planning the scope of work, make sure you
-[keep PRs small](https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/).
-You must be able to complete your PR within 3–4 hours.  
-If the solution requires more time, then decompose it into smaller independent
-PRs. In case your smaller PRs can't be used on production, use feature flags.
-
-PRs with no activity for 24 hours are closed unless a comment explains the
-delay.
-
-When introducing functional changes, cross-check the README and update it in the
-same PR. If your change affects anything documented there — setup steps,
-environment requirements, file references — the README must stay in sync.
-
-When adding new documentation files, ensure they are reachable via interlinking
-from the root entry point. Do not create orphaned files.
-
-Do not duplicate content across files. Each piece of information — procedures,
-templates, configuration steps — must live in exactly one place. Reference it
-from other docs rather than copying it.
-
-### Naming
-
-> [!NOTE]
-> We use PR titles to communicate changes to all stakeholders, including
-> non-technical users.
-
-PR names must be:
-
-1. **User-focused**: Describe what users gain, not technical implementation
-1. **Follow [Conventional Commits](https://www.conventionalcommits.org)**
-1. **Clear & simple** (present tense, action-oriented)
-1. **Under 65 characters**
-
-| **Good Examples** ✅   | **Bad Examples** ❌            | **Why?**           |
-| ---------------------- | ------------------------------ | ------------------ |
-| `feat(ui): play music` | `Create player`                | Missing scope/type |
-| `fix(sdk): mute sound` | `Fix: add file to mute sound`  | Technical details  |
-| `test(api): open door` | `Feat: modified door function` | Vague, past tense  |
-
-A feature isn't a button, toggle, or handler — it's what the user gains from it.
-Ask _"What will users be able to do?"_ not _"What am I building?"_ Use action
-verbs: _View, Play, Customize, Save_.
-
-> [!WARNING]
-> This rule applies to **all PR types**, including `docs`. Do not use verbs that
-> describe what you did ("document", "update", "add") — use verbs that describe
-> what users can now do.
->
-> | **Good** ✅                                   | **Bad** ❌                                 |
-> | --------------------------------------------- | ------------------------------------------ |
-> | `docs(typefully): log in with shared account` | `docs(typefully): document shared account` |
-> | `docs(api): authenticate with OAuth`          | `docs(api): add OAuth section to README`   |
-
-#### Design PRs
-
-Design PRs use `docs(ui)` as the type and scope. e.g.:
-`docs(ui): design table component`
-
-Add a `## Design` section to the relevant Spec file. Structure it with the
-following markup:
-
-```text
-## Design
-- [/page](https://figma.com/your-design-file-url)
-  - ./page/{params}
-    - (group)
-      - [[state]](https://figma.com/your-design-file-url)
-```
-
-**Key:**
-
-- **`/...`** — a page
-- **`{...}`** — a dynamic URL parameter
-- **`(...)`** — a grouping of related features or components
-- **`[...]`** — a specific state (e.g. popup or modal)
-- Indentation represents nesting hierarchy
-
-Example:
-
-```text
-## Design
-- [/lending](https://figma.com/your-design-file-url)
-  - ./vaults/{poolAddr}
-    - (Auction)
-      - [[Withdraw Popup]](https://figma.com/your-design-file-url)
-      - [[Bid Popup]](https://figma.com/your-design-file-url)
-```
-
-### PR Lifecycle
-
-Follow these steps in order from start to submission:
-
-1. **Open a [draft
-   PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)**
-   right away when you start working on a Problem.
-1. **[Link the
-   PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)**
-   to the corresponding Problem issue using a closing keyword.
-1. **Assign yourself** so it is clear who is working on it.
-1. **Report your time** spent across all stages: planning (40%), implementation,
-   and QA (20–30%). Open the PR early so time tracking starts from the
-   beginning, including investigation.
-1. **Assign at least one reviewer** (team or individual).
-1. **Include a preview link** — if your changes are visually verifiable (UI,
-   design, or any deployable artifact), add a link to the deployed preview or
-   prototype in the PR description.
-1. **Mark as ready for review** only once all steps above are complete.
-1. **Resolve all CI checks** — CI runs after marking ready; do not request
-   approval until all checks pass.
-
-> [!WARNING]
-> Do not merge without an approved review and passing CI checks.
+- [ ] Commits are signed ([DEV-310](./rules/DEV-310.md))
+- [ ] PR scope fits a few hours ([DEV-320](./rules/DEV-320.md))
+- [ ] README and docs stay in sync ([DEV-330](./rules/DEV-330.md))
+- [ ] Title follows `type(scope): action` ([DEV-340](./rules/DEV-340.md))
+- [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
+- [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
+- [ ] Time is reported ([DEV-370](./rules/DEV-370.md))
+- [ ] The PR is linked to a Problem ([DEV-140](./rules/DEV-140.md))
+- [ ] Spec sections graduated to `docs/` ([DEV-150](./rules/DEV-150.md))
 
 ### Review Process
 

@@ -35,6 +35,25 @@ Solution, Spec.
 - [DEV-150](./DEV-150.md): keep the Spec as unimplemented behavior and graduate
   it
 
+### 2. Communication
+
+Where discussion goes and how work is referenced.
+
+- [DEV-210](./DEV-210.md): route discussion to the right channel
+- [DEV-220](./DEV-220.md): reference issues and PRs as list items
+
+### 3. PR requirements
+
+What a pull request must satisfy before it merges.
+
+- [DEV-310](./DEV-310.md): sign every commit
+- [DEV-320](./DEV-320.md): scope a PR to a few hours
+- [DEV-330](./DEV-330.md): keep docs in sync and each fact in one place
+- [DEV-340](./DEV-340.md): name a PR for what users gain
+- [DEV-350](./DEV-350.md): mark a design PR docs(ui) with a Design section
+- [DEV-360](./DEV-360.md): follow the PR lifecycle
+- [DEV-370](./DEV-370.md): report time across all stages
+
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
 
