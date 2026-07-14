@@ -13,6 +13,7 @@ envision.
 Align with:
 
 - [Contributing Guidelines](./docs/CONTRIBUTING.md)
+- [Writing Rules](./docs/RULES.md)
 - [Advocacy Guidelines](./docs/ADVOCACY.md)
 - [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
 - [Leave Policy](./docs/LEAVE_POLICY.md)
