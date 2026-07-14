@@ -1,13 +1,11 @@
 # Developer Rules
 
 The org-wide contribution conventions as a **rules system**: small numbered
-files that each enforce one checkable behavior. Repos such as
-[holdex/partnerships](https://github.com/holdex/partnerships) (`REF-`) and
-[holdex/partners](https://github.com/holdex/partners) (`SAL-`) run their own
-rules systems and inherit the authoring standard defined here.
+files that each enforce one checkable behavior.
 
 Rules are grouped by category. Each `DEV-` rule enforces one behavior and
-carries acceptance criteria you can check.
+carries acceptance criteria you can check. The Authoring category doubles as the
+shared standard that any other rules system can adopt.
 
 ## Categories
 
