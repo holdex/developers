@@ -7,6 +7,12 @@ approachable and respectful.
 > You can use [Wizard GitHub App][2] and [Wizard Browser Extension][1] to
 > simplify some of the workflows described in these Guidelines.
 
+These conventions are being restructured into a
+[rules system](./rules/README.md): small numbered files that each enforce one
+checkable behavior. The Authoring rules (`DEV-0xx`) define how a rule is
+written; the remaining categories migrate the sections below into rules. This
+document threads them with the workflow narrative.
+
 ## Table of Contents
 
 - [Getting started](#getting-started)
@@ -80,7 +86,8 @@ ETA: 01-Jan-2026
   the date with `@holdex issue set-eta` (see
   [Wizard docs](https://wizard.holdex.io/docs/commands)).
 - **Stakeholders Interview** (optional): Google Document URLs for ideation or
-  discovery, as a bullet list (one URL per line). Does not replace the Spec link.
+  discovery, as a bullet list (one URL per line). Does not replace the Spec
+  link.
 - **Custom sections** (optional): additional H1 headings for grouping issue or
   PR references only — for example, `# Blocked by` followed by issue or PR
   links. No free-form text inside these sections.
@@ -152,9 +159,8 @@ A Goal must not be opened without a linked Spec.
 
 #### Lifecycle
 
-When a Goal is opened, [Wizard][2] may create an empty
-`docs/specs/<feature>.md` (frontmatter only) and link it from the Goal if no Spec
-URL is present yet.
+When a Goal is opened, [Wizard][2] may create an empty `docs/specs/<feature>.md`
+(frontmatter only) and link it from the Goal if no Spec URL is present yet.
 
 `docs/specs/<feature>.md` is the backlog of unimplemented behavior for a Goal.
 
