@@ -2,3 +2,4 @@
 .claude/worktrees/
 .claude/todos/
 .claude/cache/
+node_modules/

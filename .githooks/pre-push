@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+# Exit immediately on error, treat unset variables as errors, fail on pipe errors
+set -euo pipefail
+
+ROOT=$(git rev-parse --show-toplevel)
+RUMDL="$ROOT/node_modules/.bin/rumdl"
+
+# Intentionally only use the npm-pinned rumdl (package.json devDependency),
+# never a globally installed binary (e.g. via cargo/brew) on PATH. Different
+# rumdl versions format markdown differently, so falling back to whatever
+# version a dev happens to have installed causes the pre-push hook to
+# reformat files inconsistently across machines and block pushes with
+# unrelated formatting diffs. See:
+# https://github.com/holdex/marketing-website/issues/1138
+if [ ! -x "$RUMDL" ]; then
+  echo "rumdl not found — run npm install in the repo root"
+  exit 1
+fi
+
+cd "$ROOT"
+
+# git passes one line per ref being pushed via stdin:
+# <local_ref> <local_sha> <remote_ref> <remote_sha>
+while IFS=' ' read -r local_ref local_sha remote_ref remote_sha; do
+  # All-zeros local SHA means the ref is being deleted — nothing to check
+  if [ "$local_sha" = "0000000000000000000000000000000000000000" ]; then
+    continue
+  fi
+
+  if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+    # All-zeros remote SHA means the branch doesn't exist on the remote yet.
+    # Diffing against git's empty-tree object would treat every file in the repo
+    # as "added" and lint the whole tree, blocking the push on unrelated
+    # pre-existing formatting debt. Instead, scope to only what this branch
+    # changed relative to its base: the merge-base against the default branch.
+    # Fall back to the empty-tree object if that can't be resolved (e.g. no
+    # origin/HEAD and no origin/main), so a first push is never left unchecked.
+    default_ref=$(git symbolic-ref --quiet --short refs/remotes/origin/HEAD 2>/dev/null || echo "origin/main")
+    base=$(git merge-base "$default_ref" "$local_sha" 2>/dev/null || echo "4b825dc642cb6eb9a060e54bf8d69288fbee4904")
+  else
+    # Branch already exists — only check files changed in the commits being pushed
+    base="$remote_sha"
+  fi
+
+  # List markdown files touched by the commits about to be pushed.
+  # --diff-filter=ACMR keeps Added/Copied/Modified/Renamed (the new path) and
+  # excludes Deleted, so renamed-away or removed files aren't linted (they no
+  # longer exist on disk and would fail rumdl with "File not found").
+  files=$(git diff --name-only --diff-filter=ACMR "$base" "$local_sha" -- '*.md' 2>/dev/null || true)
+
+  if [ -n "$files" ]; then
+    echo "$files" | xargs "$RUMDL" check --fix
+
+    # If rumdl modified any files the working tree will be dirty — block the push
+    if ! git diff --quiet; then
+      echo ""
+      echo "rumdl check --fix modified the following files — commit the fixes and push again:"
+      git diff --name-only
+      exit 1
+    fi
+  fi
+done
+
+exit 0

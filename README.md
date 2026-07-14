@@ -24,6 +24,12 @@ Align with:
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
 
+## Setup
+
+After cloning, run `npm install` once to install the pinned `rumdl` version and
+enable the markdown lint check on push (`postinstall` sets `core.hooksPath` to
+`.githooks` automatically). See [DEV-380](./docs/rules/DEV-380.md).
+
 ## Claude Code Skills
 
 Clone this repository locally and symlink the commands directory to make all
