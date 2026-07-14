@@ -1,28 +1,26 @@
 # Writing Rules
 
-Some Holdex repos run a **rules system**: a set of small, numbered files that
-each enforce one operating behavior. Today these are the `REF-` rules in
-[holdex/partnerships](https://github.com/holdex/partnerships) (the IRP funnel)
-and the `SAL-` rules in [holdex/partners](https://github.com/holdex/partners)
-(the ICP funnel).
+A **rules system** is a set of small, numbered files that each enforce one
+operating behavior, applied as a checklist against a real subject.
 
-This document is the shared standard for authoring any such rule. Anything
-program-specific, such as the numbering scheme, funnel stages, or extra
-frontmatter, is defined in that repo's own rules index, not here.
+This document is the shared standard for authoring such a rule. It is
+independent of any particular rules system: anything system-specific, such as
+the numbering prefix, extra frontmatter, or how rules are grouped, is defined by
+that system's own rules index, not here.
 
 ## What a rule is
 
 A rule captures **one enforceable behavior** that you can check against a given
-subject (a partner, a lead, a document). If you cannot write a pass or fail
-acceptance check for it, it is not a rule yet. It is a note or a principle.
+subject. If you cannot write a pass or fail acceptance check for it, it is not a
+rule yet. It is a note or a principle.
 
 Keep one behavior per file. Do not bundle several unrelated behaviors into one
 rule, and do not split one behavior across several rules.
 
 ## File layout
 
-One rule per file, named by its ID (for example `REF-290.md`, `SAL-010.md`).
-Each file is frontmatter followed by a body.
+One rule per file, named by its ID: a short system prefix and a number (for
+example `ABC-010.md`). Each file is frontmatter followed by a body.
 
 ### Frontmatter
 
@@ -37,9 +35,8 @@ These fields are shared across every rules system:
 | `severity` | `error` or `warning` |
 | `depends_on` | Rule IDs that must hold before this one applies |
 
-A program may add its own fields (for example funnel `stage`, `stage_order`, and
-`sequence` in `REF-`). Those are documented in that program's rules index, not
-here.
+A rules system may add its own fields (for example a stage and an ordering).
+Those are documented in that system's rules index, not here.
 
 ## Body structure
 
@@ -65,8 +62,7 @@ The body follows a fixed shape:
 
 ## Cross-references
 
-- Reference another rule by its ID as a link (for example a link to `REF-240`),
-  so dependencies are traceable.
+- Reference another rule by its ID as a link, so dependencies are traceable.
 - For issue and PR references, use the list-item format defined in the
   [Contributing Guidelines](./CONTRIBUTING.md#referencing-issues-and-prs).
 - **Link style is governed by each repo's own `rumdl` config, not by this
