@@ -54,8 +54,13 @@ What a pull request must satisfy before it merges.
 - [DEV-360](./DEV-360.md): follow the PR lifecycle
 - [DEV-370](./DEV-370.md): report time across all stages
 
-The remaining categories are migrating from the
-[Contributing Guidelines](../CONTRIBUTING.md) into rules.
+### 4. Review
+
+How to review, and the quality bar work is held to.
+
+- [DEV-410](./DEV-410.md): reject with Request Changes for objective problems
+- [DEV-420](./DEV-420.md): scout open PRs when idle
+- [DEV-430](./DEV-430.md): deliver bug-free work; review is a safety check
 
 ## Rule file format
 

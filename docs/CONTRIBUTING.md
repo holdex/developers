@@ -7,11 +7,10 @@ approachable and respectful.
 > You can use [Wizard GitHub App][2] and [Wizard Browser Extension][1] to
 > simplify some of the workflows described in these Guidelines.
 
-These conventions are being restructured into a
-[rules system](./rules/README.md): small numbered files that each enforce one
-checkable behavior. The Authoring rules (`DEV-0xx`) define how a rule is
-written; the remaining categories migrate the sections below into rules. This
-document threads them with the workflow narrative.
+The enforceable conventions live in a [rules system](./rules/README.md): small
+numbered `DEV-` files that each enforce one checkable behavior. This document is
+the narrative guide over them, threading the rules with the workflow context.
+When a rule and this guide ever disagree, the rule is the source of truth.
 
 ## Table of Contents
 
@@ -112,32 +111,10 @@ rule that defines it:
 
 ### Review Process
 
-#### Giving a Review
-
-If a PR is not ready to merge, you **must** use **Request Changes** (reject). Do
-not leave a plain comment when rejection is warranted — comments do not block
-merging, are not recorded as rejections, and prevent the author from
-re-requesting a review.
-
-Use **Request Changes** (reject) for objective problems:
-
-- PR doesn't solve the stated problem.
-- A bug is introduced.
-- Code style is inconsistent.
-- Required guidelines are violated.
-
-Use **Comment** for optional improvements or suggestions that should not block
-the PR.
-
-#### Scout Approach
-
-When not actively working on a PR, look for PRs that need reviewers and offer
-timely feedback to keep work moving.
-
-#### Code Quality
-
-Deliver bug-free software. Push back on subjective feedback — reviewers are a
-final safety check, not a QA team.
+- [DEV-410](./rules/DEV-410.md): reject with Request Changes for objective
+  problems
+- [DEV-420](./rules/DEV-420.md): scout open PRs when idle
+- [DEV-430](./rules/DEV-430.md): deliver bug-free work; review is a safety check
 
 ---
 
