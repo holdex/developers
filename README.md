@@ -5,24 +5,35 @@ starts here.
 
 ## For Developers
 
-_Developers_ are everyone creating value—business developers, designers,
+_Developers_ are everyone creating value: business developers, designers,
 engineers, marketers, and beyond. We build businesses, products, partnerships,
 customer relationships, processes, and delivery methods, crafting the future we
 envision.
 
-Align with:
-
-- [Contributing Guidelines](./docs/CONTRIBUTING.md)
-- [Developer Rules](./docs/rules/README.md)
-- [Advocacy Guidelines](./docs/ADVOCACY.md)
-- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
-- [Leave Policy](./docs/LEAVE_POLICY.md)
-- [Compensation Guide](./docs/COMPENSATION.md)
-- [Referral Program](./docs/REFERRAL.md)
-- [Expenses](./docs/EXPENSES.md)
+Everything is indexed from the [documentation index](./docs/README.md): start
+there to reach the contributing guide, the developer rules, and the rest.
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
+
+## Setup
+
+### Local
+
+After cloning, run `npm install` once to install the pinned `rumdl` version and
+enable the markdown lint and rules-audit checks on push (`postinstall` sets
+`core.hooksPath` to `.githooks` automatically).
+
+### Stage / Preview
+
+This repository is documentation, not a deployed service. Open a pull request to
+preview changes: reviewers read the rendered markdown on the PR branch before it
+merges.
+
+### Production
+
+The `main` branch is the published source of truth, and merged changes are live
+for the whole organization immediately. There is no separate hosting to deploy.
 
 ## Claude Code Skills
 
