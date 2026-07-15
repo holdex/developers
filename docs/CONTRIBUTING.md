@@ -33,15 +33,19 @@ There are three core contribution pillars:
 1. **Problem**: a barrier to achieving the Goal
 1. **Solution**: the deliverable that resolves the Problem
 
-Each pillar is enforced by a rule in the [Contribution model](./rules/README.md)
+Each pillar is enforced by rules in the [Contribution model](./rules/README.md)
 category:
 
-- [DEV-110](./rules/DEV-110.md): work from a Goal issue
+- [DEV-110](./rules/DEV-110.md): start from a Goal and take ownership
 - [DEV-120](./rules/DEV-120.md): keep the Goal description to the allowed
   sections
-- [DEV-130](./rules/DEV-130.md): frame each Problem as a job-story sub-issue
-- [DEV-140](./rules/DEV-140.md): deliver the Solution as a pull request
-- [DEV-150](./rules/DEV-150.md): keep the Spec as unimplemented behavior and
+- [DEV-130](./rules/DEV-130.md): understand and agree the Spec before starting
+- [DEV-140](./rules/DEV-140.md): give an ETA once the goal is clear
+- [DEV-150](./rules/DEV-150.md): identify the business Problems blocking the
+  goal
+- [DEV-160](./rules/DEV-160.md): write a clear Problem statement
+- [DEV-170](./rules/DEV-170.md): deliver work as a pull request
+- [DEV-180](./rules/DEV-180.md): keep the Spec as unimplemented behavior and
   graduate it
 
 Goals can be managed with Wizard: set an ETA with `@holdex issue set-eta`, and
@@ -53,7 +57,7 @@ in the GitHub sidebar ([Wizard Browser Extension][1]).
 
 A Spec describes the intended behavior for a Goal, not what currently exists but
 what the Goal aims to deliver. It is a markdown file in `docs/specs/`, linked
-from the Goal under `# Spec`. [DEV-150](./rules/DEV-150.md) governs how its
+from the Goal under `# Spec`. [DEV-180](./rules/DEV-180.md) governs how its
 sections graduate into `docs/` as behavior ships:
 
 ```text
