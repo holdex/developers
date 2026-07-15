@@ -110,8 +110,9 @@ rule that defines it:
 - [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
 - [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
 - [ ] Time is reported ([DEV-370](./rules/DEV-370.md))
-- [ ] The PR is linked to a Problem ([DEV-140](./rules/DEV-140.md))
-- [ ] Spec sections graduated to `docs/` ([DEV-150](./rules/DEV-150.md))
+- [ ] The PR is linked to its Problem ([DEV-360](./rules/DEV-360.md))
+- [ ] Spec sections graduated to `docs/` ([DEV-180](./rules/DEV-180.md))
+- [ ] Markdown lint passes on push ([DEV-380](./rules/DEV-380.md))
 
 ### Review Process
 
