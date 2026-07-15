@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 // Audits the developer rules system (docs/rules/DEV-*.md) against the authoring
-// rules those files themselves define. Mechanical checks only; wording quality
-// is still a human review. Exits non-zero (listing every failure) if any rule
-// breaks structure, frontmatter, linking, or index invariants, so the pre-push
-// hook can block the push. Run directly with `npm run check:rules`.
+// rules those files themselves define, plus the docs-tree reachability that
+// DEV-337 requires. Mechanical checks only; wording quality is still a human
+// review. Exits non-zero (listing every failure) if any rule breaks structure,
+// frontmatter, linking, or index invariants, or a doc is orphaned, so the
+// pre-push hook can block the push. Run directly with `npm run check:rules`.
 
-import { readFileSync, readdirSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const RULES_DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "docs", "rules");
+const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const DOCS_DIR = join(REPO_ROOT, "docs");
+const RULES_DIR = join(DOCS_DIR, "rules");
 const PROBLEM_MAX = 250; // DEV-050
 
 const errors = [];
@@ -98,6 +101,45 @@ for (const id of ids.keys()) {
 }
 for (const m of new Set([...readme.matchAll(/\[(DEV-\d+)\]/g)].map((x) => x[1]))) {
   if (!ids.has(m)) fail("README.md", `links ${m} which does not exist`);
+}
+
+// DEV-337: docs/README.md indexes the tree, and every doc is reachable from the
+// root README by following local markdown links (no orphans).
+const rel = (p) => p.slice(REPO_ROOT.length + 1);
+
+const walkMarkdown = (dir) => {
+  const out = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walkMarkdown(p));
+    else if (entry.name.endsWith(".md")) out.push(p);
+  }
+  return out;
+};
+
+if (!existsSync(join(DOCS_DIR, "README.md"))) {
+  fail("docs/README.md", "missing docs index");
+}
+
+// Breadth-first crawl from the root README, following only local .md links.
+const rootReadme = join(REPO_ROOT, "README.md");
+const reachable = new Set();
+const queue = [rootReadme];
+while (queue.length) {
+  const file = queue.shift();
+  if (reachable.has(file)) continue;
+  reachable.add(file);
+  if (!existsSync(file)) continue;
+  for (const m of readFileSync(file, "utf8").matchAll(/\]\(([^)\s]+)\)/g)) {
+    const target = m[1].split("#")[0];
+    if (!target.endsWith(".md") || /^[a-z]+:/i.test(target)) continue;
+    const abs = resolve(dirname(file), target);
+    if (!reachable.has(abs)) queue.push(abs);
+  }
+}
+
+for (const md of walkMarkdown(DOCS_DIR)) {
+  if (!reachable.has(md)) fail(rel(md), "is orphaned: not reachable from the root README");
 }
 
 if (errors.length) {
