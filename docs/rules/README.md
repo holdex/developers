@@ -24,6 +24,21 @@ including their own.
 - [DEV-040](./DEV-040.md): reference a rule by ID as a followable link
 - [DEV-050](./DEV-050.md): keep the Problem statement short
 
+### 1. Contribution model
+
+How work flows from a business aim to a delivered change: Goal, Problem,
+Solution, Spec.
+
+- [DEV-110](./DEV-110.md): take ownership of a Goal
+- [DEV-120](./DEV-120.md): keep the Goal description to the allowed sections
+- [DEV-130](./DEV-130.md): understand and agree the Spec first
+- [DEV-140](./DEV-140.md): give an ETA once the goal is clear
+- [DEV-150](./DEV-150.md): map every barrier blocking the goal
+- [DEV-160](./DEV-160.md): write a clear Problem statement
+- [DEV-170](./DEV-170.md): deliver work as a pull request
+- [DEV-180](./DEV-180.md): keep the Spec as unimplemented behavior and graduate
+  it
+
 The remaining categories are migrating from the
 [Contributing Guidelines](../CONTRIBUTING.md) into rules.
 

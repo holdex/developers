@@ -16,9 +16,6 @@ document threads them with the workflow narrative.
 ## Table of Contents
 
 - [Getting started](#getting-started)
-  - [Goal](#goal)
-  - [Problem](#problem)
-  - [Solution](#solution)
   - [Specs](#specs)
 - [Communication Guidelines](#communication-guidelines)
 - [PR Requirements](#pr-requirements)
@@ -32,160 +29,42 @@ document threads them with the workflow narrative.
 
 There are three core contribution pillars:
 
-1. **Goal** – a business aim
-1. **Problem** – a barrier to achieving the Goal
-1. **Solution** – the actual deliverable which resolves the problem
+1. **Goal**: a business aim
+1. **Problem**: a barrier to achieving the Goal
+1. **Solution**: the deliverable that resolves the Problem
 
-### Goal
+Each pillar is enforced by rules in the [Contribution model](./rules/README.md)
+category:
 
-To find a Goal to work on, browse GitHub Issues in the relevant repository and
-filter for issues with the `Goal:` prefix. Prioritize issues based on their
-impact and urgency. If you are unsure which Goal to choose, please consult your
-lead.
+- [DEV-110](./rules/DEV-110.md): take ownership of a Goal
+- [DEV-120](./rules/DEV-120.md): keep the Goal description to the allowed
+  sections
+- [DEV-130](./rules/DEV-130.md): understand and agree the Spec first
+- [DEV-140](./rules/DEV-140.md): give an ETA once the goal is clear
+- [DEV-150](./rules/DEV-150.md): map every barrier blocking the goal
+- [DEV-160](./rules/DEV-160.md): write a clear Problem statement
+- [DEV-170](./rules/DEV-170.md): deliver work as a pull request
+- [DEV-180](./rules/DEV-180.md): keep the Spec as unimplemented behavior and
+  graduate it
 
-As soon as you get involved, you must:
-
-1. assign yourself to the Goal issue.
-1. review the [Spec](#specs) linked from the Goal issue and assess outstanding
-   Problems,
-1. provide an estimated time of achieving (ETA) the Goal.
-
-> [!NOTE]
-> Goals follow the naming pattern: `Goal: [statement]` and must link to a Spec
-> with an ETA.
->
-> Before the Spec PR merges, link to the PR. After it merges, update the Goal
-> description to link to the file on `main`:
-> `https://github.com/<org>/<repo>/blob/main/docs/specs/<feature>.md`
-
-#### Goal description
-
-The Goal issue description may only use the sections below (plus app-managed
-warning blocks at the end). Do not add instructions, scope notes, or design
-decisions here — those belong in the Spec file.
-
-```text
-# Spec
-
-https://github.com/<org>/<repo>/blob/main/docs/specs/<name>.md
-
-# Deadline
-
-ETA: 01-Jan-2026
-
-# Stakeholders Interview
-
-- https://docs.google.com/document/d/...
-```
-
-- **Spec** (required): exactly one URL to `docs/specs/<name>.md` on the `main`
-  branch. No other text in this section.
-- **Deadline** (required when assignees are present): must include a line
-  `ETA: <date>`. Use `ETA: undefined` when no date is known yet. Prefer
-  `ETA: DD-MMM-YYYY` (for example, `ETA: 01-Jan-2026`). You can set or update
-  the date with `@holdex issue set-eta` (see
-  [Wizard docs](https://wizard.holdex.io/docs/commands)).
-- **Stakeholders Interview** (optional): Google Document URLs for ideation or
-  discovery, as a bullet list (one URL per line). Does not replace the Spec
-  link.
-- **Custom sections** (optional): additional H1 headings for grouping issue or
-  PR references only — for example, `# Blocked by` followed by issue or PR
-  links. No free-form text inside these sections.
-
-Wizard may auto-create `docs/specs/<name>.md` (frontmatter only) when a Goal is
-opened without a valid Spec URL, and update the Goal description with the link.
-
-Google Docs can be added with `@holdex goal create-google-doc` or
-`@holdex goal attach-google-doc <url>`, or from the **Create Google Document**
-button in the GitHub sidebar on Goal issues ([Wizard Browser Extension][1]).
-
-### Problem
-
-Once a Goal is clear, identify what prevents its achievement. Anything that acts
-as a barrier is a Problem.
-
-> [!NOTE]
-> Report each Problem as a [GitHub Issue](https://docs.github.com/en/issues)
-> using the naming pattern: `Problem: [statement]`. Keep it short (under 65
-> characters). Add it as a **sub-issue** of the Goal and include the Goal issue
-> link in the description.
-
-The statement must be a **job story** — describe what a specific user
-**cannot do** or what is broken for them. Ask:
-_"What can [user] not do because of this problem?"_
-
-| **Good** ✅                                    | **Bad** ❌                                   | **Why?**                       |
-| ---------------------------------------------- | -------------------------------------------- | ------------------------------ |
-| `operators can't view their account balance`   | `operators don't have their account balance` | Describes inability, not state |
-| `users can't submit a form without refreshing` | `form submission issue`                      | Vague, no actor or action      |
-| `admins can't export reports as CSV`           | `CSV export missing`                         | No subject, not a job story    |
-
-Every Problem issue body must include both a `# Problem` and a `# Solution`
-section, describing the recommended approach or workaround before work begins.
-
-```md
-# Problem
-
-Describe what the user cannot do and why it matters.
-
-## Solution
-
-Describe the recommended approach or workaround.
-```
-
-### Solution
-
-Whether it's code, design, or marketing material, we expect a lean and clean
-solution from the contributor.
-
-> [!NOTE]
-> Solution is presented in GitHub as a
-> [Pull Request (PR)](https://docs.github.com/en/pull-requests) in compliance
-> with [PR Requirements](#pr-requirements).
-
-For reimbursable work-related costs, see [Expenses](./EXPENSES.md).
+Goals can be managed with Wizard, which sets the ETA, attaches Google Documents,
+and more. See the [Wizard commands](https://wizard.holdex.io/docs/commands), or
+use the **Create Google Document** button in the GitHub sidebar
+([Wizard Browser Extension][1]).
 
 ### Specs
 
-A Spec describes the intended behavior for a Goal — not what currently exists,
-but what the Goal aims to deliver. It is a markdown file in `docs/specs/`.
-
-Link it from the Goal issue under `# Spec` — see
-[Goal description](#goal-description) for the required format. Use
-`# Stakeholders Interview` in the Goal description for Google Documents used
-during ideation (not in the Spec file).
-
-A Goal must not be opened without a linked Spec.
-
-#### Lifecycle
-
-When a Goal is opened, [Wizard][2] may create an empty `docs/specs/<feature>.md`
-(frontmatter only) and link it from the Goal if no Spec URL is present yet.
-
-`docs/specs/<feature>.md` is the backlog of unimplemented behavior for a Goal.
-
-It shrinks as the Goal is implemented. Each PR that delivers behavior described
-in the Spec must move the corresponding sections from `docs/specs/<feature>.md`
-into the appropriate file in `docs/`. A spec may graduate to more than one file
-in `docs/` when its sections cover different areas. When all sections have
-graduated, keep the file as frontmatter only — do not delete it. The `# Spec`
-link in the Goal description must keep working, and the Goal can be reopened
-without re-creating the file.
-
-It can also grow. When scope is added after the Spec is merged, open a new PR
-against the spec file to add the new sections. Create Problem issues for the
-added scope. The same rule applies — sections must graduate to `docs/` as they
-are implemented.
+A Spec describes the intended behavior for a Goal, not what currently exists but
+what the Goal aims to deliver. It is a markdown file in `docs/specs/`, linked
+from the Goal under `# Spec`. [DEV-180](./rules/DEV-180.md) governs how its
+sections graduate into `docs/` as behavior ships:
 
 ```text
 docs/specs/<feature>.md   ← only unimplemented sections
 docs/<feature>.md         ← only what is currently shipped
 ```
 
-Never add unimplemented behavior to `docs/`. Never leave implemented behavior in
-`docs/specs/`.
-
-#### Format
+#### Spec format
 
 ```md
 ---
@@ -203,15 +82,15 @@ What this Goal enables for users.
 Describe what users can do, not how the system works internally.
 ```
 
-Sections are defined by the author. Keep them user-focused and scoped to
-observable behavior. Include a `## Design` section using the markup described in
+Sections are author-defined. Keep them user-focused and scoped to observable
+behavior. Include a `## Design` section using the markup described in
 [Design PRs](#design-prs) when the Goal has a design component.
 
 #### Discussing a Spec
 
 If the Spec PR is not yet merged, propose changes via review comments on that
 PR. If the Spec is already merged, open a new PR against the spec file. Do not
-use Goal issue comments for scope discussions — they belong in the Spec.
+use Goal issue comments for scope discussions; they belong in the Spec.
 
 ## Communication Guidelines
 
