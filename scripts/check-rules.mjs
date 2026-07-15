@@ -154,9 +154,10 @@ for (const md of walkMarkdown(DOCS_DIR)) {
     fail(rel(md), "is not indexed by its directory's README (unreachable through the index spine)");
 }
 
-// DEV-338: the root README opens with a title + description, links the docs
-// index (its one spine child, which leads to everything else), and documents
-// Local, Stage/Preview, and Production.
+// DEV-338: the root README opens with a title + description and documents
+// Local, Stage/Preview, and Production. Its link to the docs index is DEV-337's
+// concern (already enforced by the spine reachability check above), not
+// re-checked here.
 if (!existsSync(rootReadme)) {
   fail("README.md", "repository has no root README");
 } else {
@@ -168,8 +169,6 @@ if (!existsSync(rootReadme)) {
     const description = afterH1.split(/^##\s/m)[0].replace(/^\s*(#.*)?$/gm, "").trim();
     if (!description) fail("README.md", "has no description before the first section");
   }
-  if (!/\]\([^)]*docs\/README\.md\)/.test(readme))
-    fail("README.md", "does not link the docs index (docs/README.md)");
   if (!/^##\s+(setup|installation|getting started)\b/im.test(readme))
     fail("README.md", "has no Setup / Installation section");
   for (const [label, re] of [
