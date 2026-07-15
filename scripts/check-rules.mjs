@@ -142,6 +142,34 @@ for (const md of walkMarkdown(DOCS_DIR)) {
   if (!reachable.has(md)) fail(rel(md), "is orphaned: not reachable from the root README");
 }
 
+// DEV-338: the root README opens with a title + description, links the docs
+// index and Contributing, and documents Local, Stage/Preview, and Production.
+if (!existsSync(rootReadme)) {
+  fail("README.md", "repository has no root README");
+} else {
+  const readme = readFileSync(rootReadme, "utf8");
+  const h1 = readme.match(/^#\s+\S.*$/m);
+  if (!h1) fail("README.md", "has no H1 title");
+  else {
+    const afterH1 = readme.slice(readme.indexOf(h1[0]) + h1[0].length);
+    const description = afterH1.split(/^##\s/m)[0].replace(/^\s*(#.*)?$/gm, "").trim();
+    if (!description) fail("README.md", "has no description before the first section");
+  }
+  if (!/\]\([^)]*docs\/README\.md\)/.test(readme))
+    fail("README.md", "does not link the docs index (docs/README.md)");
+  if (!/\]\([^)]*docs\/CONTRIBUTING\.md\)/.test(readme))
+    fail("README.md", "does not link the Contributing Guidelines (docs/CONTRIBUTING.md)");
+  if (!/^##\s+(setup|installation|getting started)\b/im.test(readme))
+    fail("README.md", "has no Setup / Installation section");
+  for (const [label, re] of [
+    ["Local", /^###\s+.*\blocal\b/im],
+    ["Stage/Preview", /^###\s+.*\b(stage|preview)\b/im],
+    ["Production", /^###\s+.*\bproduction\b/im],
+  ]) {
+    if (!re.test(readme)) fail("README.md", `Setup is missing a ${label} subsection`);
+  }
+}
+
 if (errors.length) {
   console.error(`Rules audit failed (${errors.length} issue${errors.length > 1 ? "s" : ""}):`);
   for (const e of errors) console.error(`  - ${e}`);

@@ -55,6 +55,7 @@ What a pull request must satisfy before it merges.
 - [DEV-330](./DEV-330.md): keep docs in sync
 - [DEV-335](./DEV-335.md): keep each fact in one canonical place
 - [DEV-337](./DEV-337.md): index every docs tree from a README
+- [DEV-338](./DEV-338.md): give the repository a complete root README
 - [DEV-340](./DEV-340.md): name a PR for what users gain
 - [DEV-350](./DEV-350.md): mark a design PR docs(ui) with a Design section
 - [DEV-360](./DEV-360.md): follow the PR lifecycle

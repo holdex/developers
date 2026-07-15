@@ -19,9 +19,23 @@ improvements.
 
 ## Setup
 
+### Local
+
 After cloning, run `npm install` once to install the pinned `rumdl` version and
-enable the markdown lint check on push (`postinstall` sets `core.hooksPath` to
-`.githooks` automatically). See [DEV-380](./docs/rules/DEV-380.md).
+enable the markdown lint and rules-audit checks on push (`postinstall` sets
+`core.hooksPath` to `.githooks` automatically). See
+[DEV-380](./docs/rules/DEV-380.md).
+
+### Stage / Preview
+
+This repository is documentation, not a deployed service. Open a pull request to
+preview changes: reviewers read the rendered markdown on the PR branch before it
+merges.
+
+### Production
+
+The `main` branch is the published source of truth, and merged changes are live
+for the whole organization immediately. There is no separate hosting to deploy.
 
 ## Claude Code Skills
 

@@ -108,6 +108,7 @@ rule that defines it:
 - [ ] Each fact lives in one canonical place ([DEV-335](./rules/DEV-335.md))
 - [ ] New docs are indexed and reachable from the root
       ([DEV-337](./rules/DEV-337.md))
+- [ ] The root README stays complete ([DEV-338](./rules/DEV-338.md))
 - [ ] Title follows `type(scope): action` ([DEV-340](./rules/DEV-340.md))
 - [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
 - [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
