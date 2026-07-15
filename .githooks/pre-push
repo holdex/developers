@@ -60,6 +60,14 @@ while IFS=' ' read -r local_ref local_sha remote_ref remote_sha; do
       exit 1
     fi
   fi
+
+  # When any rule file changed, audit the whole rules system. The checks are
+  # holistic (cross-file: id-to-filename, dependency resolution, index
+  # completeness), so a change to one rule can break an invariant in another.
+  rules_changed=$(echo "$files" | grep -E '^docs/rules/' || true)
+  if [ -n "$rules_changed" ]; then
+    node "$ROOT/scripts/check-rules.mjs"
+  fi
 done
 
 exit 0
