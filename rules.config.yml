@@ -1,0 +1,33 @@
+# Per-repo settings for the shared rules audit (scripts/check-rules.mjs).
+# The script is identical across repos; only this file differs. See
+# holdex/wizard#1614.
+
+idPrefix: DEV
+rulesDir: docs/rules
+indexFile: docs/rules/README.md
+
+# Rule filenames: "id" means the file is the id (DEV-010.md); "id-slug" means
+# the id is a prefix followed by a slug (HR-010-onboard.md).
+filenameStyle: id
+
+# Whether the body repeats the frontmatter title as its H2 heading.
+titleAsH2: false
+
+# Body section headings, at the levels this repo uses.
+headingProblem: "## Problem"
+headingSolution: "## Solution"
+headingAcceptance: "### Acceptance Criteria"
+
+# Cross-rule link style: "inline" is `](./DEV-010.md)`; "reference" is a
+# `[hr-010]: ./HR-010-...md` definition.
+linkStyle: inline
+
+requiredFrontmatter:
+  - id
+
+problemMaxLength: 250
+requireAcceptance: true
+noDashes: true
+depsPointLower: false
+checkDocsSpine: true
+checkRootReadme: true
