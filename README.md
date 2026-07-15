@@ -10,9 +10,8 @@ engineers, marketers, and beyond. We build businesses, products, partnerships,
 customer relationships, processes, and delivery methods, crafting the future we
 envision.
 
-Browse the full [documentation index](./docs/README.md). Start with the
-[Contributing Guidelines](./docs/CONTRIBUTING.md) and the
-[Developer Rules](./docs/rules/README.md).
+Everything is indexed from the [documentation index](./docs/README.md): start
+there to reach the contributing guide, the developer rules, and the rest.
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
@@ -23,8 +22,7 @@ improvements.
 
 After cloning, run `npm install` once to install the pinned `rumdl` version and
 enable the markdown lint and rules-audit checks on push (`postinstall` sets
-`core.hooksPath` to `.githooks` automatically). See
-[DEV-380](./docs/rules/DEV-380.md).
+`core.hooksPath` to `.githooks` automatically).
 
 ### Stage / Preview
 

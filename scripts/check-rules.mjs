@@ -7,7 +7,7 @@
 // pre-push hook can block the push. Run directly with `npm run check:rules`.
 
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { dirname, join, resolve } from "node:path";
+import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -104,7 +104,13 @@ for (const m of new Set([...readme.matchAll(/\[(DEV-\d+)\]/g)].map((x) => x[1]))
 }
 
 // DEV-337: docs/README.md indexes the tree, and every doc is reachable from the
-// root README by following local markdown links (no orphans).
+// root README through the index SPINE only. From a README, a spine link is
+// either a sibling .md in the same directory or an immediate subdirectory's
+// README.md. Deeper links are cross-references, not index structure: they are
+// ignored here, so a grandchild can never be reached by a shortcut from an
+// ancestor, only through its own directory's README. This enforces that each
+// doc is indexed by its nearest README and parents link child indexes, not
+// files.
 const rel = (p) => p.slice(REPO_ROOT.length + 1);
 
 const walkMarkdown = (dir) => {
@@ -121,7 +127,6 @@ if (!existsSync(join(DOCS_DIR, "README.md"))) {
   fail("docs/README.md", "missing docs index");
 }
 
-// Breadth-first crawl from the root README, following only local .md links.
 const rootReadme = join(REPO_ROOT, "README.md");
 const reachable = new Set();
 const queue = [rootReadme];
@@ -130,20 +135,25 @@ while (queue.length) {
   if (reachable.has(file)) continue;
   reachable.add(file);
   if (!existsSync(file)) continue;
+  const dir = dirname(file);
   for (const m of readFileSync(file, "utf8").matchAll(/\]\(([^)\s]+)\)/g)) {
     const target = m[1].split("#")[0];
     if (!target.endsWith(".md") || /^[a-z]+:/i.test(target)) continue;
-    const abs = resolve(dirname(file), target);
-    if (!reachable.has(abs)) queue.push(abs);
+    const abs = resolve(dir, target);
+    const sameDir = dirname(abs) === dir;
+    const childIndex = basename(abs) === "README.md" && dirname(dirname(abs)) === dir;
+    if ((sameDir || childIndex) && !reachable.has(abs)) queue.push(abs);
   }
 }
 
 for (const md of walkMarkdown(DOCS_DIR)) {
-  if (!reachable.has(md)) fail(rel(md), "is orphaned: not reachable from the root README");
+  if (!reachable.has(md))
+    fail(rel(md), "is not indexed by its directory's README (unreachable through the index spine)");
 }
 
 // DEV-338: the root README opens with a title + description, links the docs
-// index and Contributing, and documents Local, Stage/Preview, and Production.
+// index (its one spine child, which leads to everything else), and documents
+// Local, Stage/Preview, and Production.
 if (!existsSync(rootReadme)) {
   fail("README.md", "repository has no root README");
 } else {
@@ -157,8 +167,6 @@ if (!existsSync(rootReadme)) {
   }
   if (!/\]\([^)]*docs\/README\.md\)/.test(readme))
     fail("README.md", "does not link the docs index (docs/README.md)");
-  if (!/\]\([^)]*docs\/CONTRIBUTING\.md\)/.test(readme))
-    fail("README.md", "does not link the Contributing Guidelines (docs/CONTRIBUTING.md)");
   if (!/^##\s+(setup|installation|getting started)\b/im.test(readme))
     fail("README.md", "has no Setup / Installation section");
   for (const [label, re] of [
