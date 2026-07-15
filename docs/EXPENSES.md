@@ -30,3 +30,15 @@ travel, conference fees, lodging — when directly tied to your work at Holdex a
 pre-approved by your manager.
 
 Expenses incurred without prior written approval will not be reimbursed.
+
+## What does not qualify
+
+AI tooling (Claude, ChatGPT, Copilot, and similar) is not reimbursable. A paid
+AI plan is a basic cost of doing the work, on the same footing as your internet
+connection, electricity, or a desk and chair. You bear it yourself.
+
+The value of an AI plan depends on how you use it: two people on the same plan
+can burn through credits in a day or stay inside the standard monthly range.
+Sponsoring credits would pay for inefficiency rather than fix it. The way to run
+out less often is to get better at using the tool, not to get a bigger
+allowance.
