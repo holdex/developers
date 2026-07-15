@@ -5,21 +5,14 @@ starts here.
 
 ## For Developers
 
-_Developers_ are everyone creating value—business developers, designers,
+_Developers_ are everyone creating value: business developers, designers,
 engineers, marketers, and beyond. We build businesses, products, partnerships,
 customer relationships, processes, and delivery methods, crafting the future we
 envision.
 
-Align with:
-
-- [Contributing Guidelines](./docs/CONTRIBUTING.md)
-- [Developer Rules](./docs/rules/README.md)
-- [Advocacy Guidelines](./docs/ADVOCACY.md)
-- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
-- [Leave Policy](./docs/LEAVE_POLICY.md)
-- [Compensation Guide](./docs/COMPENSATION.md)
-- [Referral Program](./docs/REFERRAL.md)
-- [Expenses](./docs/EXPENSES.md)
+Browse the full [documentation index](./docs/README.md). Start with the
+[Contributing Guidelines](./docs/CONTRIBUTING.md) and the
+[Developer Rules](./docs/rules/README.md).
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.

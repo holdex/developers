@@ -52,11 +52,11 @@ use the **Create Google Document** button in the GitHub sidebar
 A Spec describes the intended behavior for a Goal, not what currently exists but
 what the Goal aims to deliver. It is a markdown file in `docs/specs/`, linked
 from the Goal under `# Spec`. [DEV-180](./rules/DEV-180.md) governs how its
-sections graduate into `docs/` as behavior ships:
+sections graduate into `docs/product/` as behavior ships:
 
 ```text
-docs/specs/<feature>.md   ← only unimplemented sections
-docs/<feature>.md         ← only what is currently shipped
+docs/specs/<feature>.md     ← only unimplemented sections
+docs/product/<feature>.md   ← only what is currently shipped
 ```
 
 #### Spec format
@@ -106,12 +106,14 @@ rule that defines it:
 - [ ] PR scope fits a few hours ([DEV-320](./rules/DEV-320.md))
 - [ ] README and docs stay in sync ([DEV-330](./rules/DEV-330.md))
 - [ ] Each fact lives in one canonical place ([DEV-335](./rules/DEV-335.md))
+- [ ] New docs are indexed and reachable from the root
+      ([DEV-337](./rules/DEV-337.md))
 - [ ] Title follows `type(scope): action` ([DEV-340](./rules/DEV-340.md))
 - [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
 - [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
 - [ ] Time is reported ([DEV-370](./rules/DEV-370.md))
 - [ ] The PR is linked to its Problem ([DEV-360](./rules/DEV-360.md))
-- [ ] Spec sections graduated to `docs/` ([DEV-180](./rules/DEV-180.md))
+- [ ] Spec sections graduated to `docs/product/` ([DEV-180](./rules/DEV-180.md))
 - [ ] Markdown lint passes on push ([DEV-380](./rules/DEV-380.md))
 - [ ] User-facing docs updated in the same PR ([DEV-390](./rules/DEV-390.md))
 
