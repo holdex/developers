@@ -52,7 +52,8 @@ What a pull request must satisfy before it merges.
 
 - [DEV-310](./DEV-310.md): sign every commit
 - [DEV-320](./DEV-320.md): scope a PR to a few hours
-- [DEV-330](./DEV-330.md): keep docs in sync and each fact in one place
+- [DEV-330](./DEV-330.md): keep docs in sync
+- [DEV-335](./DEV-335.md): keep each fact in one canonical place
 - [DEV-340](./DEV-340.md): name a PR for what users gain
 - [DEV-350](./DEV-350.md): mark a design PR docs(ui) with a Design section
 - [DEV-360](./DEV-360.md): follow the PR lifecycle

@@ -105,6 +105,7 @@ rule that defines it:
 - [ ] Commits are signed ([DEV-310](./rules/DEV-310.md))
 - [ ] PR scope fits a few hours ([DEV-320](./rules/DEV-320.md))
 - [ ] README and docs stay in sync ([DEV-330](./rules/DEV-330.md))
+- [ ] Each fact lives in one canonical place ([DEV-335](./rules/DEV-335.md))
 - [ ] Title follows `type(scope): action` ([DEV-340](./rules/DEV-340.md))
 - [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
 - [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
