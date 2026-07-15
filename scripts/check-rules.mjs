@@ -145,8 +145,16 @@ while (queue.length) {
   reachable.add(file);
   if (!existsSync(file)) continue;
   const dir = dirname(file);
-  for (const m of readFileSync(file, "utf8").matchAll(/\]\(([^)\s]+)\)/g)) {
-    const target = m[1].split("#")[0];
+  const body = readFileSync(file, "utf8");
+  // Follow both inline links `](target)` and reference-link definitions
+  // `[label]: target`, so a repo may use either link style and still index its
+  // tree through the same spine.
+  const targets = [
+    ...[...body.matchAll(/\]\(([^)\s]+)\)/g)].map((m) => m[1]),
+    ...[...body.matchAll(/^\s*\[[^\]]+\]:\s*(\S+)/gm)].map((m) => m[1]),
+  ];
+  for (const raw of targets) {
+    const target = raw.split("#")[0];
     if (!target.endsWith(".md") || /^[a-z]+:/i.test(target)) continue;
     const abs = resolve(dir, target);
     const sameDir = dirname(abs) === dir;
