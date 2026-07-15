@@ -58,7 +58,8 @@ What a pull request must satisfy before it merges.
 - [DEV-338](./DEV-338.md): give the repository a complete root README
 - [DEV-340](./DEV-340.md): name a PR for what users gain
 - [DEV-350](./DEV-350.md): mark a design PR docs(ui) with a Design section
-- [DEV-360](./DEV-360.md): follow the PR lifecycle
+- [DEV-360](./DEV-360.md): open work as a draft PR linked to its Problem
+- [DEV-365](./DEV-365.md): mark a PR ready only when it is complete
 - [DEV-370](./DEV-370.md): report time across all stages
 - [DEV-380](./DEV-380.md): enforce markdown lint on push with a pinned rumdl
   hook

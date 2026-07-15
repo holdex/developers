@@ -111,7 +111,8 @@ rule that defines it:
 - [ ] The root README stays complete ([DEV-338](./rules/DEV-338.md))
 - [ ] Title follows `type(scope): action` ([DEV-340](./rules/DEV-340.md))
 - [ ] Design PRs carry a Design section ([DEV-350](./rules/DEV-350.md))
-- [ ] The PR lifecycle is followed and CI passes ([DEV-360](./rules/DEV-360.md))
+- [ ] Marked ready only when complete, CI passing
+      ([DEV-365](./rules/DEV-365.md))
 - [ ] Time is reported ([DEV-370](./rules/DEV-370.md))
 - [ ] The PR is linked to its Problem ([DEV-360](./rules/DEV-360.md))
 - [ ] Spec sections graduated to `docs/product/` ([DEV-180](./rules/DEV-180.md))
