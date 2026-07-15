@@ -70,6 +70,7 @@ What a pull request must satisfy before it merges.
 How to review, and the quality bar work is held to.
 
 - [DEV-410](./DEV-410.md): reject with Request Changes for objective problems
+- [DEV-415](./DEV-415.md): re-request review explicitly after addressing changes
 - [DEV-420](./DEV-420.md): scout open PRs when idle
 - [DEV-430](./DEV-430.md): deliver bug-free work; review is a safety check
 

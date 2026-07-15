@@ -123,6 +123,8 @@ rule that defines it:
 
 - [DEV-410](./rules/DEV-410.md): reject with Request Changes for objective
   problems
+- [DEV-415](./rules/DEV-415.md): re-request review explicitly after addressing
+  changes
 - [DEV-420](./rules/DEV-420.md): scout open PRs when idle
 - [DEV-430](./rules/DEV-430.md): deliver bug-free work; review is a safety check
 
