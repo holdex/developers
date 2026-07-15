@@ -59,6 +59,7 @@ What a pull request must satisfy before it merges.
 - [DEV-370](./DEV-370.md): report time across all stages
 - [DEV-380](./DEV-380.md): enforce markdown lint on push with a pinned rumdl
   hook
+- [DEV-390](./DEV-390.md): update user-facing docs in the same PR
 
 ### 4. Review
 

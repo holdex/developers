@@ -112,6 +112,7 @@ rule that defines it:
 - [ ] The PR is linked to its Problem ([DEV-360](./rules/DEV-360.md))
 - [ ] Spec sections graduated to `docs/` ([DEV-180](./rules/DEV-180.md))
 - [ ] Markdown lint passes on push ([DEV-380](./rules/DEV-380.md))
+- [ ] User-facing docs updated in the same PR ([DEV-390](./rules/DEV-390.md))
 
 ### Review Process
 
