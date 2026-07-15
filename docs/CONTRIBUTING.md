@@ -36,10 +36,10 @@ There are three core contribution pillars:
 Each pillar is enforced by rules in the [Contribution model](./rules/README.md)
 category:
 
-- [DEV-110](./rules/DEV-110.md): start from a Goal and take ownership
+- [DEV-110](./rules/DEV-110.md): take ownership of a Goal
 - [DEV-120](./rules/DEV-120.md): keep the Goal description to the allowed
   sections
-- [DEV-130](./rules/DEV-130.md): understand and agree the Spec before starting
+- [DEV-130](./rules/DEV-130.md): understand and agree the Spec first
 - [DEV-140](./rules/DEV-140.md): give an ETA once the goal is clear
 - [DEV-150](./rules/DEV-150.md): map every barrier blocking the goal
 - [DEV-160](./rules/DEV-160.md): write a clear Problem statement
@@ -47,10 +47,10 @@ category:
 - [DEV-180](./rules/DEV-180.md): keep the Spec as unimplemented behavior and
   graduate it
 
-Goals can be managed with Wizard: set an ETA with `@holdex issue set-eta`, and
-attach Google Documents with `@holdex goal create-google-doc` or
-`@holdex goal attach-google-doc <url>`, or the **Create Google Document** button
-in the GitHub sidebar ([Wizard Browser Extension][1]).
+Goals can be managed with Wizard, which sets the ETA, attaches Google Documents,
+and more. See the [Wizard commands](https://wizard.holdex.io/docs/commands), or
+use the **Create Google Document** button in the GitHub sidebar
+([Wizard Browser Extension][1]).
 
 ### Specs
 
