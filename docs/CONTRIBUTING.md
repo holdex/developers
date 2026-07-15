@@ -41,8 +41,7 @@ category:
   sections
 - [DEV-130](./rules/DEV-130.md): understand and agree the Spec before starting
 - [DEV-140](./rules/DEV-140.md): give an ETA once the goal is clear
-- [DEV-150](./rules/DEV-150.md): identify the business Problems blocking the
-  goal
+- [DEV-150](./rules/DEV-150.md): map every barrier blocking the goal
 - [DEV-160](./rules/DEV-160.md): write a clear Problem statement
 - [DEV-170](./rules/DEV-170.md): deliver work as a pull request
 - [DEV-180](./rules/DEV-180.md): keep the Spec as unimplemented behavior and
