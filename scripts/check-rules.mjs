@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Audits a rules system (docs/rules/<PREFIX>-*.md) against the shared authoring
-// standard those files define, plus the docs-tree reachability the standard
+// Audits a rules system (docs/rules/<PREFIX>-*.md) against the authoring rules
+// those files themselves define, plus the docs-tree reachability that DEV-337
 // requires. The script is identical across every Holdex repo that adopts the
 // standard; the only per-repo setting is the id prefix in rules.config.yml (see
 // holdex/wizard#1614). Mechanical checks only; wording quality is still a human
@@ -65,13 +65,13 @@ for (const file of files) {
       : [],
   );
 
-  // Body opens Problem, Solution, then nested Acceptance Criteria.
+  // DEV-020: body opens Problem, Solution, then nested Acceptance Criteria.
   if (!/^## Problem$/m.test(text)) fail(ref, "missing `## Problem`");
   if (!/^## Solution$/m.test(text)) fail(ref, "missing `## Solution`");
   if (!/^### Acceptance Criteria$/m.test(text))
     fail(ref, "missing `### Acceptance Criteria` (must nest under `###`)");
 
-  // Problem paragraph length.
+  // DEV-050: Problem paragraph length.
   const problem = text.match(/## Problem\s*\n+([\s\S]*?)\n\n/);
   if (problem) {
     const len = problem[1].replace(/\s+/g, " ").trim().length;
@@ -82,21 +82,21 @@ for (const file of files) {
   if (/[—–]/.test(text)) fail(ref, "contains an em/en dash");
 }
 
-// depends_on entries resolve.
+// DEV-040: depends_on entries resolve.
 for (const [id, list] of deps) {
   for (const dep of list) {
     if (!ids.has(dep)) fail(ids.get(id), `depends_on ${dep} does not resolve`);
   }
 }
 
-// No dependency cycles.
+// DEV-040 sanity: no dependency cycles.
 const inCycle = (node, seen) =>
   seen.has(node) || (deps.get(node) || []).some((d) => inCycle(d, new Set([...seen, node])));
 for (const id of deps.keys()) {
   if (inCycle(id, new Set())) fail(ids.get(id), `is part of a dependency cycle`);
 }
 
-// Every prose rule link resolves.
+// DEV-040: every prose rule link resolves.
 for (const file of files) {
   const text = readFileSync(join(RULES_DIR, file), "utf8");
   for (const m of text.matchAll(new RegExp(`\\]\\(\\.\\/(${P}-\\d+)\\.md\\)`, "g"))) {
@@ -113,8 +113,8 @@ for (const m of new Set([...readme.matchAll(new RegExp(`\\[(${P}-\\d+)\\]`, "g")
   if (!ids.has(m)) fail("docs/rules/README.md", `links ${m} which does not exist`);
 }
 
-// docs README indexes the tree, and every doc is reachable from the root README
-// through the index SPINE only. From a README, a spine link is either a sibling
+// DEV-337: docs README indexes the tree, and every doc is reachable from the
+// root README through the index SPINE only. From a README, a spine link is a sibling
 // .md in the same directory or an immediate subdirectory's README.md. Deeper
 // links are cross-references, not index structure: they are ignored here, so a
 // grandchild can never be reached by a shortcut from an ancestor, only through
@@ -168,9 +168,9 @@ for (const md of walkMarkdown(DOCS_DIR)) {
     fail(rel(md), "is not indexed by its directory's README (unreachable through the index spine)");
 }
 
-// The root README opens with a title + description and documents Local,
-// Stage/Preview, and Production. Its link to the docs index is the spine
-// reachability check's concern above, not re-checked here.
+// DEV-338: the root README opens with a title + description and documents Local,
+// Stage/Preview, and Production. Its link to the docs index is DEV-337's concern
+// (the spine reachability check above), not re-checked here.
 if (!existsSync(rootReadme)) {
   fail("README.md", "repository has no root README");
 } else {
