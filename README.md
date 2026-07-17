@@ -1,6 +1,6 @@
 # Developer Guidelines
 
-Welcome to our Developer Guidelines! Your journey to shape the future of DeFi
+Welcome to our Developer Guidelines! Your journey to shape the future of AI and Fintech
 starts here.
 
 ## For Developers

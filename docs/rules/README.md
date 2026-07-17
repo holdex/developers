@@ -35,6 +35,7 @@ Solution, Spec.
 - [DEV-130](./DEV-130.md): understand and agree the Spec first
 - [DEV-140](./DEV-140.md): give an ETA once the goal is clear
 - [DEV-150](./DEV-150.md): map every barrier blocking the goal
+- [DEV-155](./DEV-155.md): log a bottleneck as a Problem and design it out
 - [DEV-160](./DEV-160.md): write a clear Problem statement
 - [DEV-170](./DEV-170.md): deliver work as a pull request
 - [DEV-180](./DEV-180.md): keep the Spec as unimplemented behavior and graduate
