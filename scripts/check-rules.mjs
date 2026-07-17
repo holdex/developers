@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-// Audits the developer rules system (docs/rules/DEV-*.md) against the authoring
-// rules those files themselves define, plus the docs-tree reachability that
-// DEV-337 requires. Mechanical checks only; wording quality is still a human
+// Audits a rules system (docs/rules/<PREFIX>-*.md) against the authoring rules
+// those files themselves define, plus the docs-tree reachability that DEV-337
+// requires. The script is identical across every Holdex repo that adopts the
+// standard; the only per-repo setting is the id prefix in rules.config.yml (see
+// holdex/wizard#1614). Mechanical checks only; wording quality is still a human
 // review. Exits non-zero (listing every failure) if any rule breaks structure,
 // frontmatter, linking, or index invariants, or a doc is orphaned, so the
 // pre-push hook can block the push. Run directly with `npm run check:rules`.
@@ -15,11 +17,16 @@ const DOCS_DIR = join(REPO_ROOT, "docs");
 const RULES_DIR = join(DOCS_DIR, "rules");
 const PROBLEM_MAX = 250; // DEV-050
 
+// The only per-repo setting: the rule id prefix (e.g. DEV, HR). Everything else
+// is the fixed org standard, identical in every repo.
+const P = readFileSync(join(REPO_ROOT, "rules.config.yml"), "utf8")
+  .match(/^idPrefix:\s*"?([A-Za-z]+)"?\s*$/m)[1];
+
 const errors = [];
 const fail = (file, msg) => errors.push(`${file}: ${msg}`);
 
 const files = readdirSync(RULES_DIR)
-  .filter((f) => /^DEV-\d+\.md$/.test(f))
+  .filter((f) => new RegExp(`^${P}-\\d+\\.md$`).test(f))
   .sort();
 
 const ids = new Map(); // id -> filename
@@ -37,7 +44,7 @@ for (const file of files) {
   }
   const fm = fmMatch[1];
 
-  const idMatch = fm.match(/^id:\s*(DEV-\d+)\s*$/m);
+  const idMatch = fm.match(new RegExp(`^id:\\s*(${P}-\\d+)\\s*$`, "m"));
   if (!idMatch) {
     fail(ref, "frontmatter has no id");
     continue;
@@ -92,7 +99,7 @@ for (const id of deps.keys()) {
 // DEV-040: every prose rule link resolves.
 for (const file of files) {
   const text = readFileSync(join(RULES_DIR, file), "utf8");
-  for (const m of text.matchAll(/\]\(\.\/(DEV-\d+)\.md\)/g)) {
+  for (const m of text.matchAll(new RegExp(`\\]\\(\\.\\/(${P}-\\d+)\\.md\\)`, "g"))) {
     if (!ids.has(m[1])) fail(`docs/rules/${file}`, `links ${m[1]} which does not exist`);
   }
 }
@@ -102,18 +109,17 @@ const readme = readFileSync(join(RULES_DIR, "README.md"), "utf8");
 for (const id of ids.keys()) {
   if (!readme.includes(`[${id}]`)) fail("docs/rules/README.md", `does not list ${id}`);
 }
-for (const m of new Set([...readme.matchAll(/\[(DEV-\d+)\]/g)].map((x) => x[1]))) {
+for (const m of new Set([...readme.matchAll(new RegExp(`\\[(${P}-\\d+)\\]`, "g"))].map((x) => x[1]))) {
   if (!ids.has(m)) fail("docs/rules/README.md", `links ${m} which does not exist`);
 }
 
-// DEV-337: docs/README.md indexes the tree, and every doc is reachable from the
-// root README through the index SPINE only. From a README, a spine link is
-// either a sibling .md in the same directory or an immediate subdirectory's
-// README.md. Deeper links are cross-references, not index structure: they are
-// ignored here, so a grandchild can never be reached by a shortcut from an
-// ancestor, only through its own directory's README. This enforces that each
-// doc is indexed by its nearest README and parents link child indexes, not
-// files.
+// DEV-337: docs README indexes the tree, and every doc is reachable from the
+// root README through the index SPINE only. From a README, a spine link is a sibling
+// .md in the same directory or an immediate subdirectory's README.md. Deeper
+// links are cross-references, not index structure: they are ignored here, so a
+// grandchild can never be reached by a shortcut from an ancestor, only through
+// its own directory's README. This enforces that each doc is indexed by its
+// nearest README and parents link child indexes, not files.
 const rel = (p) => p.slice(REPO_ROOT.length + 1);
 
 const walkMarkdown = (dir) => {
@@ -139,8 +145,16 @@ while (queue.length) {
   reachable.add(file);
   if (!existsSync(file)) continue;
   const dir = dirname(file);
-  for (const m of readFileSync(file, "utf8").matchAll(/\]\(([^)\s]+)\)/g)) {
-    const target = m[1].split("#")[0];
+  const body = readFileSync(file, "utf8");
+  // Follow both inline links `](target)` and reference-link definitions
+  // `[label]: target`, so a repo may use either link style and still index its
+  // tree through the same spine.
+  const targets = [
+    ...[...body.matchAll(/\]\(([^)\s]+)\)/g)].map((m) => m[1]),
+    ...[...body.matchAll(/^\s*\[[^\]]+\]:\s*(\S+)/gm)].map((m) => m[1]),
+  ];
+  for (const raw of targets) {
+    const target = raw.split("#")[0];
     if (!target.endsWith(".md") || /^[a-z]+:/i.test(target)) continue;
     const abs = resolve(dir, target);
     const sameDir = dirname(abs) === dir;
@@ -154,10 +168,9 @@ for (const md of walkMarkdown(DOCS_DIR)) {
     fail(rel(md), "is not indexed by its directory's README (unreachable through the index spine)");
 }
 
-// DEV-338: the root README opens with a title + description and documents
-// Local, Stage/Preview, and Production. Its link to the docs index is DEV-337's
-// concern (already enforced by the spine reachability check above), not
-// re-checked here.
+// DEV-338: the root README opens with a title + description and documents Local,
+// Stage/Preview, and Production. Its link to the docs index is DEV-337's concern
+// (the spine reachability check above), not re-checked here.
 if (!existsSync(rootReadme)) {
   fail("README.md", "repository has no root README");
 } else {

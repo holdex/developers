@@ -1,0 +1,5 @@
+# Per-repo setting for the shared rules audit (scripts/check-rules.mjs).
+# The script is identical across every repo; only the id prefix differs.
+# See holdex/wizard#1614.
+
+idPrefix: DEV
