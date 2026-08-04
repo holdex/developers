@@ -1,0 +1,55 @@
+name: Audit Rules
+
+# The pre-push hook runs the same audit, but a hook can be skipped with
+# --no-verify and is not installed on every machine a branch is pushed from.
+# This is the check that cannot be bypassed.
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "README.md"
+      - "scripts/check-rules.mjs"
+      - "rules.config.yml"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+jobs:
+  audit:
+    # Drafts are work in progress; a rule is expected to be half written there.
+    # The audit starts mattering when the PR is ready for review, and the
+    # ready_for_review event above runs it the moment it is marked ready.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Both sides of the comparison are needed to list the changed rules.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Audit the rules system
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          # Compare against the merge base, not the base branch tip. A plain
+          # two-dot diff against the tip reports every file the base branch
+          # moved on since this PR forked, which would pull rules the PR never
+          # touched into scope and fail it on somebody else's work.
+          base=$(git merge-base "origin/$BASE_REF" HEAD)
+
+          # Mirror the pre-push hook: system invariants across the whole tree,
+          # the authoring standard only on the rules this PR touches. --rules is
+          # always passed, empty list included, because without it the script
+          # runs a full audit and a docs-only PR would fail on every rule that
+          # predates the audit.
+          changed_rules=$(git diff --name-only --diff-filter=ACMR "$base" HEAD -- 'docs/rules/*.md')
+          node scripts/check-rules.mjs --rules $changed_rules

@@ -7,6 +7,25 @@
 // review. Exits non-zero (listing every failure) if any rule breaks structure,
 // frontmatter, linking, or index invariants, or a doc is orphaned, so the
 // pre-push hook can block the push. Run directly with `npm run check:rules`.
+//
+// Two scopes, deliberately different:
+//
+//   System invariants (dependency resolution and cycles, prose link targets,
+//   index completeness, docs reachability, root README) always run across the
+//   whole tree. They are cross-file by nature: a change to one file can orphan
+//   or break another, so checking only what changed would miss the breakage.
+//
+//   The authoring standard for an individual rule (frontmatter, heading
+//   structure, Problem length, writing conventions) runs only on the rule files
+//   listed after `--rules`, i.e. the ones a push actually touches. A repo
+//   adopting the audit part-way through its life would otherwise be blocked by
+//   every pre-existing rule it did not write today. Rules are brought up to
+//   standard as they are edited.
+//
+// Without `--rules` every rule is in scope, which is the full audit for CI or a
+// manual `npm run check:rules`. The flag is what carries the scope, not the
+// presence of arguments: a push that changes a doc but no rule passes
+// `--rules` with nothing after it, and must not silently become a full audit.
 
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
@@ -29,6 +48,14 @@ const files = readdirSync(RULES_DIR)
   .filter((f) => new RegExp(`^${P}-\\d+\\.md$`).test(f))
   .sort();
 
+// Rule files whose authoring standard is in scope: everything after `--rules`
+// (any path is accepted; only rule files matter here), or all of them when the
+// flag is absent. Every rule is still read below, because the system invariants
+// need the whole set.
+const flag = process.argv.indexOf("--rules");
+const named = flag === -1 ? null : process.argv.slice(flag + 1).map((a) => basename(a));
+const inScope = (file) => named === null || named.includes(file);
+
 const ids = new Map(); // id -> filename
 const deps = new Map(); // id -> [ids]
 
@@ -39,19 +66,19 @@ for (const file of files) {
   const text = readFileSync(join(RULES_DIR, file), "utf8");
   const fmMatch = text.match(/^---\n([\s\S]*?)\n---/);
   if (!fmMatch) {
-    fail(ref, "missing frontmatter block");
+    if (inScope(file)) fail(ref, "missing frontmatter block");
     continue;
   }
   const fm = fmMatch[1];
 
   const idMatch = fm.match(new RegExp(`^id:\\s*(${P}-\\d+)\\s*$`, "m"));
   if (!idMatch) {
-    fail(ref, "frontmatter has no id");
+    if (inScope(file)) fail(ref, "frontmatter has no id");
     continue;
   }
   const id = idMatch[1];
   const base = file.replace(/\.md$/, "");
-  if (id !== base) fail(ref, `id ${id} does not match filename`);
+  if (id !== base && inScope(file)) fail(ref, `id ${id} does not match filename`);
   ids.set(id, ref);
 
   const depMatch = fm.match(/^depends_on:\s*\[(.*?)\]\s*$/m);
@@ -64,6 +91,10 @@ for (const file of files) {
           .filter(Boolean)
       : [],
   );
+
+  // Everything below is the authoring standard for this one rule, so it applies
+  // only when the rule itself is in scope.
+  if (!inScope(file)) continue;
 
   // DEV-020: body opens Problem, Solution, then nested Acceptance Criteria.
   if (!/^## Problem$/m.test(text)) fail(ref, "missing `## Problem`");
@@ -198,4 +229,10 @@ if (errors.length) {
   for (const e of errors) console.error(`  - ${e}`);
   process.exit(1);
 }
-console.log(`Rules audit passed: ${files.length} rules, no issues.`);
+const scoped = files.filter(inScope).length;
+console.log(
+  named === null
+    ? `Rules audit passed: ${files.length} rules, no issues.`
+    : `Rules audit passed: system invariants across ${files.length} rules, ` +
+      `authoring standard on the ${scoped} changed, no issues.`,
+);
