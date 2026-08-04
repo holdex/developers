@@ -38,13 +38,18 @@ jobs:
 
       - name: Audit the rules system
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
         run: |
+          # Compare against the merge base, not the base branch tip. A plain
+          # two-dot diff against the tip reports every file the base branch
+          # moved on since this PR forked, which would pull rules the PR never
+          # touched into scope and fail it on somebody else's work.
+          base=$(git merge-base "origin/$BASE_REF" HEAD)
+
           # Mirror the pre-push hook: system invariants across the whole tree,
           # the authoring standard only on the rules this PR touches. --rules is
           # always passed, empty list included, because without it the script
           # runs a full audit and a docs-only PR would fail on every rule that
           # predates the audit.
-          changed_rules=$(git diff --name-only --diff-filter=ACMR "$BASE_SHA" "$HEAD_SHA" -- 'docs/rules/*.md')
+          changed_rules=$(git diff --name-only --diff-filter=ACMR "$base" HEAD -- 'docs/rules/*.md')
           node scripts/check-rules.mjs --rules $changed_rules
