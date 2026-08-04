@@ -71,16 +71,19 @@ while IFS=' ' read -r local_ref local_sha remote_ref remote_sha; do
   # rule, still triggers the audit and cannot silently break a dependency or
   # index link.
   #
-  # The changed rule files are passed as arguments. The script checks the
+  # The changed rule files are passed after --rules. The script checks the
   # authoring standard of an individual rule only for the rules named there, so a
   # push is blocked by the rules it touches, never by pre-existing ones it does
-  # not. Rules are brought up to standard as they are edited.
+  # not. Rules are brought up to standard as they are edited. The flag is always
+  # passed, even when the list is empty: without it the script runs a full audit,
+  # so a push that changes a doc but no rule would be blocked by every
+  # pre-existing rule in the tree.
   docs_changed=$(git diff --name-only "$base" "$local_sha" -- 'docs/' 'README.md' 2>/dev/null || true)
   if [ -n "$docs_changed" ]; then
     changed_rules=$(git diff --name-only --diff-filter=ACMR "$base" "$local_sha" -- 'docs/rules/*.md' 2>/dev/null || true)
     # Unquoted on purpose: the newline-separated list becomes one argument per
     # rule file. Paths in this repo have no spaces.
-    node "$ROOT/scripts/check-rules.mjs" $changed_rules
+    node "$ROOT/scripts/check-rules.mjs" --rules $changed_rules
   fi
 done
 

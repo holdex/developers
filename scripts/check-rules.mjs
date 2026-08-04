@@ -17,11 +17,15 @@
 //
 //   The authoring standard for an individual rule (frontmatter, heading
 //   structure, Problem length, writing conventions) runs only on the rule files
-//   passed as arguments, i.e. the ones a push actually touches. A repo adopting
-//   the audit part-way through its life would otherwise be blocked by every
-//   pre-existing rule it did not write today. Rules are brought up to standard
-//   as they are edited. With no arguments every rule is in scope, which is the
-//   full audit for CI or a manual `npm run check:rules`.
+//   listed after `--rules`, i.e. the ones a push actually touches. A repo
+//   adopting the audit part-way through its life would otherwise be blocked by
+//   every pre-existing rule it did not write today. Rules are brought up to
+//   standard as they are edited.
+//
+// Without `--rules` every rule is in scope, which is the full audit for CI or a
+// manual `npm run check:rules`. The flag is what carries the scope, not the
+// presence of arguments: a push that changes a doc but no rule passes
+// `--rules` with nothing after it, and must not silently become a full audit.
 
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
@@ -44,12 +48,13 @@ const files = readdirSync(RULES_DIR)
   .filter((f) => new RegExp(`^${P}-\\d+\\.md$`).test(f))
   .sort();
 
-// Rule files whose authoring standard is in scope: the ones named on the command
-// line (any path is accepted; only rule files matter here), or all of them when
-// none are named. Every rule is still read below, because the system invariants
+// Rule files whose authoring standard is in scope: everything after `--rules`
+// (any path is accepted; only rule files matter here), or all of them when the
+// flag is absent. Every rule is still read below, because the system invariants
 // need the whole set.
-const named = process.argv.slice(2).map((a) => basename(a));
-const inScope = (file) => named.length === 0 || named.includes(file);
+const flag = process.argv.indexOf("--rules");
+const named = flag === -1 ? null : process.argv.slice(flag + 1).map((a) => basename(a));
+const inScope = (file) => named === null || named.includes(file);
 
 const ids = new Map(); // id -> filename
 const deps = new Map(); // id -> [ids]
@@ -226,7 +231,7 @@ if (errors.length) {
 }
 const scoped = files.filter(inScope).length;
 console.log(
-  scoped === files.length
+  named === null
     ? `Rules audit passed: ${files.length} rules, no issues.`
     : `Rules audit passed: system invariants across ${files.length} rules, ` +
       `authoring standard on the ${scoped} changed, no issues.`,
