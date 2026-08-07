@@ -13,7 +13,7 @@ instead of filing a new one:
 
 - `<commit-url> @<github-handle>` — report the commit/author that introduced
   the bug (e.g.
-  `https://github.com/holdex/my-repo/commit/1234567890 @johndoe`).
+  `https://github.com/holdex/my-repo/commit/1234567890 @usershandle`).
 - `dispute <commit-url> @<github-handle>` — dispute a previous bug report
   after the PR it was filed on has already been merged, to correct an
   incorrect attribution.
