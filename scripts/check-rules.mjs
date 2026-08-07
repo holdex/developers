@@ -27,9 +27,17 @@
 // presence of arguments: a push that changes a doc but no rule passes
 // `--rules` with nothing after it, and must not silently become a full audit.
 
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync as readRaw, readdirSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+
+// Every pattern below is written against LF. A Windows checkout with
+// `core.autocrlf=true` puts CRLF in the working tree, so `/^---\n/` stops
+// matching and every rule reads as having no frontmatter, failing the whole
+// audit on files that are perfectly valid. `.gitattributes` keeps markdown at
+// LF on checkout; stripping CR here keeps the audit correct on clones made
+// before that landed, and on any file that reaches us with CRLF anyway.
+const readFileSync = (path) => readRaw(path, "utf8").replace(/\r\n/g, "\n");
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOCS_DIR = join(REPO_ROOT, "docs");
@@ -38,7 +46,7 @@ const PROBLEM_MAX = 250; // DEV-050
 
 // The only per-repo setting: the rule id prefix (e.g. DEV, HR). Everything else
 // is the fixed org standard, identical in every repo.
-const P = readFileSync(join(REPO_ROOT, "rules.config.yml"), "utf8")
+const P = readFileSync(join(REPO_ROOT, "rules.config.yml"))
   .match(/^idPrefix:\s*"?([A-Za-z]+)"?\s*$/m)[1];
 
 const errors = [];
@@ -63,7 +71,7 @@ for (const file of files) {
   // Report every rule failure against its repo-relative path, so the message
   // names the offending rule and doubles as a clickable link to it.
   const ref = `docs/rules/${file}`;
-  const text = readFileSync(join(RULES_DIR, file), "utf8");
+  const text = readFileSync(join(RULES_DIR, file));
   const fmMatch = text.match(/^---\n([\s\S]*?)\n---/);
   if (!fmMatch) {
     if (inScope(file)) fail(ref, "missing frontmatter block");
@@ -129,14 +137,14 @@ for (const id of deps.keys()) {
 
 // DEV-040: every prose rule link resolves.
 for (const file of files) {
-  const text = readFileSync(join(RULES_DIR, file), "utf8");
+  const text = readFileSync(join(RULES_DIR, file));
   for (const m of text.matchAll(new RegExp(`\\]\\(\\.\\/(${P}-\\d+)\\.md\\)`, "g"))) {
     if (!ids.has(m[1])) fail(`docs/rules/${file}`, `links ${m[1]} which does not exist`);
   }
 }
 
 // Index: README lists every rule, and links no rule that does not exist.
-const readme = readFileSync(join(RULES_DIR, "README.md"), "utf8");
+const readme = readFileSync(join(RULES_DIR, "README.md"));
 for (const id of ids.keys()) {
   if (!readme.includes(`[${id}]`)) fail("docs/rules/README.md", `does not list ${id}`);
 }
@@ -176,7 +184,7 @@ while (queue.length) {
   reachable.add(file);
   if (!existsSync(file)) continue;
   const dir = dirname(file);
-  const body = readFileSync(file, "utf8");
+  const body = readFileSync(file);
   // Follow both inline links `](target)` and reference-link definitions
   // `[label]: target`, so a repo may use either link style and still index its
   // tree through the same spine.
@@ -205,7 +213,7 @@ for (const md of walkMarkdown(DOCS_DIR)) {
 if (!existsSync(rootReadme)) {
   fail("README.md", "repository has no root README");
 } else {
-  const readme = readFileSync(rootReadme, "utf8");
+  const readme = readFileSync(rootReadme);
   const h1 = readme.match(/^#\s+\S.*$/m);
   if (!h1) fail("README.md", "has no H1 title");
   else {
