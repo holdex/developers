@@ -27,10 +27,15 @@ All PRs and issues must follow the
   - Good: `docs: protect client funds from unauthorized contractor custody`
   - Bad: `Add FUND_HANDLING.md`
 - **Scope**: fits within 3–4 hours of work. Decompose if larger.
+- **`fix` PRs**: must carry a `@holdex bug commit <commit-url> && bug author
+  @<handle>` comment attributing the commit/author that introduced the bug —
+  use the `/report-bug` command. Required before marking ready for review.
 - **Lifecycle** (in order):
   1. Open as a **draft PR** immediately when starting work.
   1. Link to the Problem issue using a closing keyword (`Closes #123`).
   1. Assign yourself.
+  1. If the PR title starts with `fix`, post the bug attribution comment
+     (`/report-bug`).
   1. Resolve all CI checks.
   1. Assign at least one reviewer.
   1. Mark ready for review only when all steps above are done.
