@@ -1,0 +1,17 @@
+# Without this, a Windows checkout with `core.autocrlf=true` (the Windows
+# default) writes CRLF into the working tree while the committed content is LF.
+# The scripts that parse these files are written against LF, so the pre-push
+# audit fails on files that are perfectly valid, and the push is refused.
+# Pinning the checkout to LF keeps the working tree byte-identical to what is
+# committed, on every platform.
+
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
