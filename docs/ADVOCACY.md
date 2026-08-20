@@ -49,4 +49,4 @@ mandatory description:
 
 Engage actively: Share Holdex news/updates, interact with our community, respond
 to comments/questions, and tag [@holdexio](https://x.com/holdex.io) and
-[@zolotokrylin](https://bsky.app/profile/zolotokrylin.bsky.social)
+[@zolotokrylin on Bluesky](https://bsky.app/profile/zolotokrylin.bsky.social)
