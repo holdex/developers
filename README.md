@@ -3,6 +3,12 @@
 Welcome to our Developer Guidelines! Your journey to shape the future of AI and Fintech
 starts here.
 
+## For Contributors
+
+If you are adding or updating documentation in this or any other Holdex repo,
+read [How to Create and Manage Rules](./docs/RULES.md) to understand the
+difference between rules, specs, and end-user docs, and how to author each.
+
 ## For Developers
 
 _Developers_ are everyone creating value: business developers, designers,
