@@ -40,10 +40,9 @@ Four levels, each with its own traits, culture, and goals.
 
 **Entry** operates with a student mindset: bug-free execution, fast learning,
 clear communication, and taking feedback well. Entry follows the
-[principles](https://holdex.io/c/learn/principles) and
-[GitHub strategy](https://holdex.io/c/learn/github-strategy), understands the
-goals handed to them, and researches, estimates, and presents solutions while
-helping other Entry-level teammates.
+[Developer Guidelines](../README.md), understands the goals handed to them, and
+researches, estimates, and presents solutions while helping other Entry-level
+teammates.
 
 **Intermediate** is a confident executor: solves complex problems, leads small
 parts of a project, helps Entry-level teammates, and holds strong opinions.
