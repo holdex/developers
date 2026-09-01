@@ -16,4 +16,3 @@ Working here: policies and programs.
 - [Expenses](./EXPENSES.md)
 - [Leave Policy](./LEAVE_POLICY.md)
 - [Referral Program](./REFERRAL.md)
-- [Trial](./TRIAL.md)
