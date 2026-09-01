@@ -23,9 +23,10 @@ month, and the levels below set what that skill looks like at each stage.
 
 Acquisition covers client acquisition and retention: sales and business
 development. It's commission-based on closed deals, and if you bring in a lead
-that gets onboarded and you're positioned to manage that account going forward,
-a salary component is added on top of commission. The rate and how the salary
-component is sized are documented in
+that gets onboarded and you're positioned to join as
+[Partner](https://github.com/holdex/marketing-website/blob/main/src/content/jobs/partner.md)
+for that account, a salary component is added on top of commission. The rate and
+how the salary component is sized are documented in
 [hr-internal](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
 (private): ask your lead for access.
 
