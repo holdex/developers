@@ -22,10 +22,12 @@ cost-effectiveness. Developers are paid per code delivered, billed hourly per
 month, and the levels below set what that skill looks like at each stage.
 
 Acquisition covers client acquisition and retention: sales and business
-development. It's commission-based, 10% of a deal's value in its first year. If
-you bring in a lead that gets onboarded and you're positioned to manage that
-account as its Product Owner, a salary component is added on top of commission,
-sized to what the account's cashflow supports.
+development. It's commission-based on closed deals, and if you bring in a lead
+that gets onboarded and you're positioned to manage that account as its Product
+Owner, a salary component is added on top of commission. The rate and how the
+salary component is sized are documented in
+[hr-internal](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
+(private): ask your lead for access.
 
 The two tracks are judged on different things by design. Delivery is judged on
 skill and problems solved, the same principle [DEV-440](./rules/DEV-440.md)
