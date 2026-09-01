@@ -86,11 +86,3 @@ How members represent Holdex in public.
 
 - [DEV-510](./DEV-510.md): set up your public profiles for Holdex
 - [DEV-520](./DEV-520.md): advocate for Holdex across public channels
-
-## Rule file format
-
-The file format is itself defined by the Rule Authoring rules above:
-[DEV-020](./DEV-020.md) fixes the body shape, [DEV-030](./DEV-030.md) the shared
-frontmatter, and [DEV-040](./DEV-040.md) how rules reference each other. A rules
-system in another repo may add its own frontmatter fields, documented in that
-repo's own rules index.
