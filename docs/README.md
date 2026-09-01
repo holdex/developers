@@ -1,9 +1,5 @@
 # Contributing Guidelines
 
-The index for the `docs/` tree, grouped by who reads it. The repo-root
-[README](../README.md) is the entry point and links here; this file links every
-document below it, so nothing is orphaned (see [DEV-337](./rules/DEV-337.md)).
-
 ## Contributors
 
 How work is proposed, built, reviewed, and shipped.
@@ -15,7 +11,6 @@ How work is proposed, built, reviewed, and shipped.
 
 Working here: policies and programs.
 
-- [Advocacy](./ADVOCACY.md)
 - [Application Success](./APPLICATION_SUCCESS.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Compensation](./COMPENSATION.md)

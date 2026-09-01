@@ -10,7 +10,8 @@ shared standard that any other rules system can adopt.
 ## Categories
 
 Rules are numbered by category: DEV-0xx Authoring, DEV-1xx Contribution model,
-DEV-2xx Communication, DEV-3xx PR requirements, DEV-4xx Review.
+DEV-2xx Communication, DEV-3xx PR requirements, DEV-4xx Review, DEV-5xx
+Advocacy.
 
 ### 0. Authoring
 
@@ -76,6 +77,13 @@ How to review, and the quality bar work is held to.
 - [DEV-420](./DEV-420.md): scout open PRs when idle
 - [DEV-430](./DEV-430.md): deliver bug-free work; review is a safety check
 - [DEV-440](./DEV-440.md): judge work by value delivered, not effort spent
+
+### 5. Advocacy
+
+How members represent Holdex in public.
+
+- [DEV-510](./DEV-510.md): advocate for Holdex across public channels
+- [DEV-520](./DEV-520.md): set up your public profiles for Holdex
 
 ## Rule file format
 
