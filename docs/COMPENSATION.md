@@ -23,12 +23,10 @@ month, and the levels below set what that skill looks like at each stage.
 
 Acquisition covers client acquisition and retention: sales and business
 development. It's commission-based on closed deals, and if you bring in a lead
-that gets onboarded and you're positioned to join as
-[Partner](https://github.com/holdex/marketing-website/blob/main/src/content/jobs/partner.md)
-for that account, a salary component is added on top of commission. The rate and
-how the salary component is sized are documented in
-[hr-internal](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
-(private): ask your lead for access.
+that gets onboarded and you're positioned to join as Partner for that account, a
+salary component is added on top of commission. The rate and how the salary
+component is sized are set by leadership case by case: ask your lead for the
+current terms.
 
 The two tracks are judged on different things by design. Delivery is judged on
 skill and problems solved, the same principle [DEV-440](./rules/DEV-440.md)
