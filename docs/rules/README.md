@@ -82,8 +82,8 @@ How to review, and the quality bar work is held to.
 
 How members represent Holdex in public.
 
-- [DEV-510](./DEV-510.md): advocate for Holdex across public channels
-- [DEV-520](./DEV-520.md): set up your public profiles for Holdex
+- [DEV-510](./DEV-510.md): set up your public profiles for Holdex
+- [DEV-520](./DEV-520.md): advocate for Holdex across public channels
 
 ## Rule file format
 
