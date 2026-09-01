@@ -29,8 +29,18 @@ that is Planning, PR requirements, and Review below.
 
 ### 1. Planning
 
-How work flows from a business aim to a delivered change: Goal, Problem,
-Solution, Spec.
+Three pillars carry this: Goal, Problem, Solution. A [Goal](./DEV-110.md) states
+the business aim and links exactly one [Spec](./DEV-125.md), where the team
+defines that aim well enough to interview stakeholders and negotiate it until
+everyone [agrees](./DEV-130.md), not just understands. Once the Spec is agreed,
+[Problems are derived from it](./DEV-150.md): every barrier between today and
+the Spec becomes exactly one Problem, filed as
+[a sub-issue of the Goal](./DEV-160.md). A Solution is always
+[a pull request](./DEV-170.md) opened against a Problem; a Problem can take more
+than one PR to resolve, and the one that closes the gap
+[closes the Problem with a closing keyword](./DEV-360.md). As a PR ships a piece
+of the Spec, that piece [graduates out of it](./DEV-180.md), so the Spec always
+holds just what is not yet built.
 
 - [DEV-110](./DEV-110.md): take ownership of a Goal
 - [DEV-120](./DEV-120.md): keep the Goal description to the allowed sections
