@@ -1,9 +1,8 @@
-# Documentation
+# Contributing Guidelines
 
 The index for the `docs/` tree, grouped by who reads it. The repo-root
 [README](../README.md) is the entry point and links here; this file links every
-document below it, so nothing is orphaned (see
-[DEV-337](./rules/DEV-337.md)).
+document below it, so nothing is orphaned (see [DEV-337](./rules/DEV-337.md)).
 
 ## Contributors
 
