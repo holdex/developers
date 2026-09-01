@@ -21,12 +21,8 @@ Working here: policies and programs.
 
 ## Product (end users)
 
-Shipped, user-facing product documentation lives under `docs/product/`, added as
-features ship. It is the only subtree meant to render as an end-user docs site.
 See [DEV-180](./rules/DEV-180.md) and [DEV-390](./rules/DEV-390.md).
 
 ## Specs (developers)
 
-Intended, not-yet-shipped behavior lives under `docs/specs/`, a planning
-artifact for developers rather than end-user documentation. See
-[DEV-180](./rules/DEV-180.md).
+See [DEV-180](./rules/DEV-180.md).
