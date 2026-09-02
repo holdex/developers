@@ -1,7 +1,6 @@
 # Compensation Guide
 
-**Goal:** Reward impact, not titles or location. Pay is based on merit, what you
-deliver independently.
+**Goal:** Reward impact, not titles or location. Pay follows what you deliver.
 
 > Open roles: [holdex.io/c/jobs](https://holdex.io/c/jobs) | Mission:
 > [holdex.io/about](https://holdex.io/about)
