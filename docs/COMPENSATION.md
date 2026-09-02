@@ -24,9 +24,7 @@ month, and the levels below set what that skill looks like at each stage.
 Acquisition covers client acquisition and retention: sales and business
 development. It's commission-based on closed deals, and if you bring in a lead
 that gets onboarded and you're positioned to join as Partner for that account, a
-salary component is added on top of commission. The rate and how the salary
-component is sized are set by leadership case by case: ask your lead for the
-current terms.
+fixed rate is added on top of commission, per Pay by Level below.
 
 The two tracks are judged on different things by design. Delivery is judged on
 skill and problems solved, the same principle [DEV-440](./rules/DEV-440.md)
@@ -48,7 +46,7 @@ solution, while helping other Entry-level teammates.
 **Intermediate** is a confident executor: solves complex problems, leads small
 parts of a project, helps Entry-level teammates, and holds strong opinions.
 Where Entry solves the Problems it's given, Intermediate additionally breaks a
-whole Goal into its full set of Problems, per [DEV-150](./rules/DEV-150.md):
+whole Goal into its full set of Problems (per [DEV-150](./rules/DEV-150.md)),
 identifies real problems rather than symptoms, prioritizes them, and reviews
 Entry-level teammates' work.
 
@@ -72,8 +70,8 @@ contractor's own Rate Card in
 is fixed, not the total: more hours delivered still means more pay, per Core
 Rules above.
 
-Partner is paid a fixed rate plus a percentage in the venture. The exact terms
-are in
+Partner is paid a fixed rate plus a percentage of the deals they close. The
+exact terms are in
 [BD_COMPENSATION.md](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
 (private).
 
@@ -84,6 +82,7 @@ a status earned once.
 
 ## Growth Path
 
-Entry moves through learn, execute, ask. Intermediate moves through solve,
-teach, lead small. Lead moves through own, delegate, coach. Partner moves
-through strategize, scale, say no.
+Entry grows by learning, executing, and asking questions. Intermediate grows by
+solving, teaching, and leading small pieces of work. Lead grows by owning
+projects, delegating, and coaching. Partner grows by setting strategy, scaling
+the business, and knowing when to say no.
