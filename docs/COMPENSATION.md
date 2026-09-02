@@ -42,13 +42,15 @@ Four levels, each with its own traits, culture, and goals.
 **Entry** operates with a student mindset: bug-free execution, fast learning,
 clear communication, and taking feedback well. Entry follows the
 [Developer Guidelines](../README.md), understands the goals handed to them, and
-researches, estimates, and presents solutions while helping other Entry-level
-teammates.
+solves the Problems already scoped for it: researches, estimates, and presents a
+solution, while helping other Entry-level teammates.
 
 **Intermediate** is a confident executor: solves complex problems, leads small
 parts of a project, helps Entry-level teammates, and holds strong opinions.
-Intermediate breaks work into problems, researches solutions, identifies real
-problems rather than symptoms, prioritizes, and reviews juniors' work.
+Where Entry solves the Problems it's given, Intermediate additionally breaks a
+whole Goal into its full set of Problems, per [DEV-150](./rules/DEV-150.md):
+identifies real problems rather than symptoms, prioritizes them, and reviews
+Entry-level teammates' work.
 
 **Lead** owns projects end to end: runs full projects, delegates, coaches the
 team, aligns work with the business, and inspires. Lead sets timelines, ensures
@@ -57,6 +59,28 @@ delivery, and distributes work to whoever fits it best.
 **Partner** thinks in the big picture: owns multiple projects, shapes strategy,
 says no when needed, and grows the culture. Partner defines business goals and
 priorities and improves the rules and values everyone else works within.
+
+## Pay by Level
+
+Entry is the trial phase run by [holdex/trial](https://github.com/holdex/trial):
+unpaid, and it ends when the trial goal clears and the contributor graduates to
+Intermediate.
+
+Intermediate and Lead are paid a fixed hourly rate for the level, set in each
+contractor's own Rate Card in
+[holdex/contractor-terms](https://github.com/holdex/contractor-terms). The rate
+is fixed, not the total: more hours delivered still means more pay, per Core
+Rules above.
+
+Partner is paid a fixed rate plus a percentage in the venture. The exact terms
+are in
+[BD_COMPENSATION.md](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
+(private).
+
+Every level above Entry requires ongoing compliance with the Developer
+Guidelines. Falling out of compliance is a demotion back to Entry, not a
+warning: the rate that comes with a level is conditional on holding the bar, not
+a status earned once.
 
 ## Growth Path
 
