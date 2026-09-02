@@ -63,11 +63,11 @@ Entry is the trial phase run by [holdex/trial](https://github.com/holdex/trial):
 unpaid, and it ends when the trial goal clears and the contributor graduates to
 Intermediate.
 
-Intermediate and Lead are paid a fixed hourly rate for the level, set in each
-contractor's own Rate Card in
-[holdex/contractor-terms](https://github.com/holdex/contractor-terms). The rate
-is fixed, not the total: more hours delivered still means more pay, per Core
-Rules above.
+Intermediate and Lead are paid an hourly rate agreed per engagement and recorded
+in your own Special Terms, which HR prepares from the template in
+[holdex/contractor-terms](https://github.com/holdex/contractor-terms) and stores
+privately. Ask your lead for your number. The rate is fixed for the engagement,
+not the total: more hours delivered still means more pay, per Core Rules above.
 
 Partner is paid a fixed rate plus a percentage of the deals they close. The
 exact numbers are set by leadership per deal: ask your lead for the current
