@@ -71,9 +71,8 @@ is fixed, not the total: more hours delivered still means more pay, per Core
 Rules above.
 
 Partner is paid a fixed rate plus a percentage of the deals they close. The
-exact terms are in
-[BD_COMPENSATION.md](https://github.com/holdex/hr-internal/blob/main/docs/BD_COMPENSATION.md)
-(private).
+exact numbers are set by leadership per deal: ask your lead for the current
+terms.
 
 Every level above Entry requires ongoing compliance with the Developer
 Guidelines. Falling out of compliance is a demotion back to Entry, not a
