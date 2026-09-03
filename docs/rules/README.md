@@ -91,7 +91,7 @@ How to review, and the quality bar work is held to.
 - [DEV-420](./DEV-420.md): scout open PRs when idle
 - [DEV-430](./DEV-430.md): deliver bug-free work; review is a safety check
 - [DEV-440](./DEV-440.md): judge work by value delivered, not effort spent
-- [DEV-450](./DEV-450.md): resolve every inline thread before merging
+- [DEV-450](./DEV-450.md): resolve every inline thread with its answer
 
 ### 5. Advocacy
 
