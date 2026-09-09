@@ -100,3 +100,4 @@ How members represent Holdex in public.
 
 - [DEV-510](./DEV-510.md): set up your public profiles for Holdex
 - [DEV-520](./DEV-520.md): advocate for Holdex across public channels
+- [DEV-530](./DEV-530.md): keep Holdex's public accounts on one identity line
