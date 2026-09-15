@@ -94,6 +94,8 @@ How to review, and the quality bar work is held to.
 - [DEV-440](./DEV-440.md): judge work by value delivered, not effort spent
 - [DEV-450](./DEV-450.md): come equipped with a paid AI agent
 - [DEV-460](./DEV-460.md): resolve every inline thread with its answer
+- [DEV-470](./DEV-470.md): raise one point per inline comment
+- [DEV-475](./DEV-475.md): answer every thread asked of you in one review
 
 ### 5. Advocacy
 
