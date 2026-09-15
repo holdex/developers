@@ -30,24 +30,22 @@
 
 Make sure you are aligned with our Core Values and follow the rules below.
 
+The [rules system](./rules/README.md) defines each of these as a checkable
+behavior. The rules that carry these values day to day:
+
 ### Ownership
 
-1. Ensure the quality of your work. It is a sign of poor ownership and lack of
-   confidence when you expect someone to deal with your incomplete work.
-1. Assign yourself to the Goal or Problem you are working on so others are aware
-   of it.
+- [DEV-110](./rules/DEV-110.md): take ownership of a Goal
+- [DEV-360](./rules/DEV-360.md): open work as a draft PR linked to its Problem
+- [DEV-430](./rules/DEV-430.md): deliver bug-free work; review is a safety check
 
 ### Communication
 
-1. Use `@mention` only when the person truly needs to be notified or take action
-   — otherwise, use reactions (likes, thumbs up, etc.) for acknowledgment.
-1. Leave daily updates on relevant tasks/problems to maintain visibility and
-   simplicity for the team.
-1. Keep all communication task-focused: work topics, deliverables, questions,
-   status, decisions, outcomes only. No personal compliments/flattery, unrelated
-   hesitation/fear, or extra personal remarks.
-1. Work async. Keep meetings to a minimum — one team sync per week is the norm.
-   Do not schedule meetings unless truly necessary.
+- [DEV-230](./rules/DEV-230.md): keep a message to the work, point first
+- [DEV-235](./rules/DEV-235.md): aim criticism at the work, not the person
+- [DEV-240](./rules/DEV-240.md): mention someone only to ask them to act
+- [DEV-245](./rules/DEV-245.md): post a daily update on the work you own
+- [DEV-250](./rules/DEV-250.md): settle it async before calling a meeting
 
 ### Availability
 
