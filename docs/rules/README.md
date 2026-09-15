@@ -67,6 +67,7 @@ Where discussion goes, how a message is written, and how work is referenced.
 - [DEV-240](./DEV-240.md): mention someone only to ask them to act
 - [DEV-245](./DEV-245.md): post a daily update on the work you own
 - [DEV-250](./DEV-250.md): settle it async before calling a meeting
+- [DEV-260](./DEV-260.md): define every term the reader has not seen
 
 ### 3. PR requirements
 
