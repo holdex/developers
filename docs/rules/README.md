@@ -58,10 +58,15 @@ what is not yet built.
 
 ### 2. Communication
 
-Where discussion goes and how work is referenced.
+Where discussion goes, how a message is written, and how work is referenced.
 
 - [DEV-210](./DEV-210.md): route discussion to the right channel
 - [DEV-220](./DEV-220.md): reference issues and PRs as list items
+- [DEV-230](./DEV-230.md): keep a message to the work, point first
+- [DEV-235](./DEV-235.md): aim criticism at the work, not the person
+- [DEV-240](./DEV-240.md): mention someone only to ask them to act
+- [DEV-245](./DEV-245.md): post a daily update on the work you own
+- [DEV-250](./DEV-250.md): settle it async before calling a meeting
 
 ### 3. PR requirements
 
@@ -94,6 +99,8 @@ How to review, and the quality bar work is held to.
 - [DEV-440](./DEV-440.md): judge work by value delivered, not effort spent
 - [DEV-450](./DEV-450.md): come equipped with a paid AI agent
 - [DEV-460](./DEV-460.md): resolve every inline thread with its answer
+- [DEV-470](./DEV-470.md): raise one point per inline comment
+- [DEV-475](./DEV-475.md): answer every thread asked of you in one review
 
 ### 5. Advocacy
 
