@@ -1,0 +1,32 @@
+# Git hooks for this repo, managed by lefthook (https://lefthook.dev).
+# `npm install` installs them. This file is the one place to edit hook logic:
+# git runs it on every push, and CI runs the same commands on every PR.
+
+pre-push:
+  # rumdl --fix rewrites files in place. Fail the push when it did, so the
+  # fixes get committed instead of pushed around.
+  fail_on_changes: always
+  fail_on_changes_diff: true
+  commands:
+    markdown:
+      # {push_files} is what this push adds. On a branch with no upstream yet
+      # lefthook diffs against the default branch, not the whole repo.
+      glob: "*.md"
+      # The npm-pinned rumdl only, never a global one: versions format
+      # differently and would block pushes with unrelated reformatting.
+      run: node_modules/.bin/rumdl check --fix {push_files}
+      priority: 1
+    rules:
+      # Authoring standard for the rules this push touches, so a push is
+      # blocked by its own rules, never by pre-existing ones.
+      glob: "docs/rules/*.md"
+      run: node scripts/check-rules.mjs --rules {push_files}
+      priority: 2
+    rules-system:
+      # Cross-file invariants (dependencies, index, reachability) over the whole
+      # tree, on any push. `--rules` with no names keeps the authoring standard
+      # out of scope. lefthook skips every pre-push command when a push only
+      # deletes files, so hooks.yml also runs this outside lefthook: deleting a
+      # rule is exactly what breaks these invariants.
+      run: node scripts/check-rules.mjs --rules
+      priority: 3

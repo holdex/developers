@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "git config core.hooksPath .githooks",
+    "postinstall": "git config --unset-all core.hooksPath || true; lefthook install",
     "check:rules": "node scripts/check-rules.mjs"
   },
   "devDependencies": {
+    "lefthook": "2.1.14",
     "rumdl": "0.2.27"
   }
 }

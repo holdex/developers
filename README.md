@@ -12,8 +12,9 @@ improvements.
 ### Local
 
 After cloning, run `npm install` once to install the pinned `rumdl` version and
-enable the markdown lint and rules-audit checks on push (`postinstall` sets
-`core.hooksPath` to `.githooks` automatically).
+enable the markdown lint and rules-audit checks on push (`postinstall` runs
+`lefthook install`). The hooks live in `lefthook.yml`, and CI runs the same
+file.
 
 ### Stage / Preview
 
