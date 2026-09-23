@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # lefthook diffs against the merge base, so it needs the history.
+          # lefthook diffs against the base branch, so it needs its commits.
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -45,9 +45,12 @@ jobs:
         env:
           BASE_REF: ${{ github.event.pull_request.base.ref }}
         run: |
-          # checkout does not set origin/HEAD. Without it lefthook cannot find
-          # the base branch and lints unrelated files.
+          # lefthook reads the base branch from origin/HEAD, which checkout
+          # does not set, then diffs against the LOCAL branch of that name,
+          # which checkout does not create. The PR checkout is the merge of
+          # this PR into the base, so that diff is exactly this PR's changes.
           git remote set-head origin "$BASE_REF"
+          git branch "$BASE_REF" "origin/$BASE_REF"
           node_modules/.bin/lefthook run pre-push
 
       - name: Audit the rules system
