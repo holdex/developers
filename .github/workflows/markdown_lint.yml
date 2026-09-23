@@ -1,4 +1,4 @@
-name: Validate Markdown and PR naming
+name: Validate PR naming
 
 on:
   pull_request:
@@ -30,6 +30,8 @@ jobs:
       - uses: ./.holdex-actions/.github/actions/composed/pr-checks
         with:
           run-prettier: false
-          run-markdown: true
+          # Markdown lint runs from lefthook.yml in hooks.yml, with the same
+          # pinned rumdl as the local pre-push hook.
+          run-markdown: false
           run-commits: true
           package-manager: bun
