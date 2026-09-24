@@ -12,9 +12,9 @@ improvements.
 ### Local
 
 After cloning, run `npm install` once to install the pinned `rumdl` version and
-enable the markdown lint and rules-audit checks on push (`postinstall` runs
+enable the markdown lint and rules-audit checks on commit (`postinstall` runs
 `lefthook install`). The hooks live in `lefthook.yml`, and CI runs the same
-file.
+file. To skip them once, run `LEFTHOOK=0 git commit`; CI still checks.
 
 ### Stage / Preview
 

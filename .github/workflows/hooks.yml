@@ -1,6 +1,6 @@
 name: Run Git Hooks
 
-# Runs the pre-push hooks from lefthook.yml on the files this PR changes.
+# Runs the pre-commit hooks from lefthook.yml on the files this PR changes.
 # A local hook can be skipped with --no-verify or never installed, so this is
 # the check that cannot be bypassed. Same config as local, nothing to sync.
 
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # lefthook diffs against the base branch, so it needs its commits.
+          # The diff below needs the base branch's commits.
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -41,20 +41,20 @@ jobs:
 
       - run: npm ci
 
-      - name: Run the pre-push hooks
+      - name: Run the hooks on the files this PR changes
         env:
           BASE_REF: ${{ github.event.pull_request.base.ref }}
         run: |
-          # lefthook reads the base branch from origin/HEAD, which checkout
-          # does not set, then diffs against the LOCAL branch of that name,
-          # which checkout does not create. The PR checkout is the merge of
-          # this PR into the base, so that diff is exactly this PR's changes.
-          git remote set-head origin "$BASE_REF"
-          git branch "$BASE_REF" "origin/$BASE_REF"
-          node_modules/.bin/lefthook run pre-push
+          # Three dots: changes since the merge base, so files that moved on
+          # the base branch are never linted. Deleted files are left out.
+          # -z: lefthook reads stdin as NUL-separated paths, not lines.
+          # pipefail: a failed diff must fail the job, not pass an empty list.
+          set -o pipefail
+          git diff -z --name-only --diff-filter=ACMR "origin/$BASE_REF...HEAD" |
+            node_modules/.bin/lefthook run pre-commit --files-from-stdin
 
       - name: Audit the rules system
-        # lefthook skips every command when a PR only deletes files, and a
+        # The step above sees no file list when a PR only deletes docs, and a
         # deleted rule is what breaks dependencies and the index. This runs the
         # cross-file checks on every PR, with no file list to get wrong.
         run: node scripts/check-rules.mjs --rules

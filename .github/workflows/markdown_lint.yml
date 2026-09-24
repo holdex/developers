@@ -31,7 +31,7 @@ jobs:
         with:
           run-prettier: false
           # Markdown lint runs from lefthook.yml in hooks.yml, with the same
-          # pinned rumdl as the local pre-push hook.
+          # pinned rumdl as the local pre-commit hook.
           run-markdown: false
           run-commits: true
           package-manager: bun
