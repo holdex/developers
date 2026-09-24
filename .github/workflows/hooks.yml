@@ -1,0 +1,60 @@
+name: Run Git Hooks
+
+# Runs the pre-push hooks from lefthook.yml on the files this PR changes.
+# A local hook can be skipped with --no-verify or never installed, so this is
+# the check that cannot be bypassed. Same config as local, nothing to sync.
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**.md"
+      - "docs/**"
+      - "lefthook.yml"
+      - "scripts/check-rules.mjs"
+      - "rules.config.yml"
+      - "package.json"
+      - "package-lock.json"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+jobs:
+  hooks:
+    # Drafts are work in progress. The hooks start mattering when the PR is
+    # ready for review; the ready_for_review event runs them the moment it is.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # lefthook diffs against the base branch, so it needs its commits.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run the pre-push hooks
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          # lefthook reads the base branch from origin/HEAD, which checkout
+          # does not set, then diffs against the LOCAL branch of that name,
+          # which checkout does not create. The PR checkout is the merge of
+          # this PR into the base, so that diff is exactly this PR's changes.
+          git remote set-head origin "$BASE_REF"
+          git branch "$BASE_REF" "origin/$BASE_REF"
+          node_modules/.bin/lefthook run pre-push
+
+      - name: Audit the rules system
+        # lefthook skips every command when a PR only deletes files, and a
+        # deleted rule is what breaks dependencies and the index. This runs the
+        # cross-file checks on every PR, with no file list to get wrong.
+        run: node scripts/check-rules.mjs --rules
