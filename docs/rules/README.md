@@ -4,18 +4,21 @@ The org-wide contribution conventions as a **rules system**: small numbered
 files that each enforce one checkable behavior.
 
 Rules are grouped by category. Each `DEV-` rule enforces one behavior and
-carries acceptance criteria you can check. The Authoring category doubles as the
-shared standard that any other rules system can adopt.
+carries acceptance criteria you can check. The Rule Authoring category doubles
+as the shared standard that any other rules system can adopt.
 
 ## Categories
 
-Rules are numbered by category: DEV-0xx Authoring, DEV-1xx Contribution model,
-DEV-2xx Communication, DEV-3xx PR requirements, DEV-4xx Review.
+Rules are numbered by category: DEV-0xx Rule Authoring, DEV-1xx Planning,
+DEV-2xx Communication, DEV-3xx PR requirements, DEV-4xx Review, DEV-5xx
+Advocacy. Planning, PR requirements, and Review are stages of the same
+contribution, not competing definitions of it.
 
-### 0. Authoring
+### 0. Rule Authoring
 
 How to write a rule. These rules define the shape every other rule follows,
-including their own.
+including their own. Not to be confused with authoring a contribution itself,
+that is Planning, PR requirements, and Review below.
 
 - [DEV-010](./DEV-010.md): enforce one behavior per rule file
 - [DEV-020](./DEV-020.md): structure a rule as Problem, Solution, Acceptance
@@ -24,10 +27,22 @@ including their own.
 - [DEV-040](./DEV-040.md): reference a rule by ID as a followable link
 - [DEV-050](./DEV-050.md): keep the Problem statement short
 
-### 1. Contribution model
+### 1. Planning
 
-How work flows from a business aim to a delivered change: Goal, Problem,
-Solution, Spec.
+Three pillars carry this: Goal, Problem, Solution. A
+[Goal (DEV-110)](./DEV-110.md) states the business aim and links exactly one
+[Spec (DEV-125)](./DEV-125.md), where the team defines that aim well enough to
+interview stakeholders and negotiate it until everyone
+[agrees (DEV-130)](./DEV-130.md), not just understands. Once the Spec is agreed,
+[Problems are derived from it (DEV-150)](./DEV-150.md): every barrier between
+today and the Spec becomes exactly one Problem, filed as
+[a sub-issue of the Goal (DEV-160)](./DEV-160.md). A Solution is always
+[a pull request (DEV-170)](./DEV-170.md) opened against a Problem; a Problem can
+take more than one PR to resolve, and the one that closes the gap
+[closes the Problem with a closing keyword (DEV-360)](./DEV-360.md). As a PR
+ships a piece of the Spec, that piece
+[graduates out of it (DEV-180)](./DEV-180.md), so the Spec always holds just
+what is not yet built.
 
 - [DEV-110](./DEV-110.md): take ownership of a Goal
 - [DEV-120](./DEV-120.md): keep the Goal description to the allowed sections
@@ -43,10 +58,16 @@ Solution, Spec.
 
 ### 2. Communication
 
-Where discussion goes and how work is referenced.
+Where discussion goes, how a message is written, and how work is referenced.
 
 - [DEV-210](./DEV-210.md): route discussion to the right channel
 - [DEV-220](./DEV-220.md): reference issues and PRs as list items
+- [DEV-230](./DEV-230.md): keep a message to the work, point first
+- [DEV-235](./DEV-235.md): aim criticism at the work, not the person
+- [DEV-240](./DEV-240.md): mention someone only to ask them to act
+- [DEV-245](./DEV-245.md): post a daily update on the work you own
+- [DEV-250](./DEV-250.md): settle it async before calling a meeting
+- [DEV-260](./DEV-260.md): define every term the reader has not seen
 
 ### 3. PR requirements
 
@@ -66,6 +87,7 @@ What a pull request must satisfy before it merges.
 - [DEV-380](./DEV-380.md): enforce markdown lint on push with a pinned rumdl
   hook
 - [DEV-390](./DEV-390.md): update user-facing docs in the same PR
+- [DEV-395](./DEV-395.md): register a vendor account under a Holdex identity
 
 ### 4. Review
 
@@ -76,11 +98,15 @@ How to review, and the quality bar work is held to.
 - [DEV-420](./DEV-420.md): scout open PRs when idle
 - [DEV-430](./DEV-430.md): deliver bug-free work; review is a safety check
 - [DEV-440](./DEV-440.md): judge work by value delivered, not effort spent
+- [DEV-450](./DEV-450.md): come equipped with a paid AI agent
+- [DEV-460](./DEV-460.md): resolve every inline thread with its answer
+- [DEV-470](./DEV-470.md): raise one point per inline comment
+- [DEV-475](./DEV-475.md): answer every thread asked of you in one review
 
-## Rule file format
+### 5. Advocacy
 
-The file format is itself defined by the Authoring rules above:
-[DEV-020](./DEV-020.md) fixes the body shape, [DEV-030](./DEV-030.md) the shared
-frontmatter, and [DEV-040](./DEV-040.md) how rules reference each other. A rules
-system in another repo may add its own frontmatter fields, documented in that
-repo's own rules index.
+How members represent Holdex in public.
+
+- [DEV-510](./DEV-510.md): set up your public profiles for Holdex
+- [DEV-520](./DEV-520.md): advocate for Holdex across public channels
+- [DEV-530](./DEV-530.md): keep Holdex's public accounts on one identity line

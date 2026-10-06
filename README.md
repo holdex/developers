@@ -1,17 +1,8 @@
 # Developer Guidelines
 
-Welcome to our Developer Guidelines! Your journey to shape the future of AI and Fintech
-starts here.
-
-## For Developers
-
-_Developers_ are everyone creating value: business developers, designers,
-engineers, marketers, and beyond. We build businesses, products, partnerships,
-customer relationships, processes, and delivery methods, crafting the future we
-envision.
-
-Everything is indexed from the [documentation index](./docs/README.md): start
-there to reach the contributing guide, the developer rules, and the rest.
+Welcome! Your journey to shape the future of AI and Fintech starts here. Start
+with the [Guidelines index](./docs/README.md) to reach the contributing guide,
+the developer rules, and the rest.
 
 Subscribe to repository notifications to stay updated with frequent fixes and
 improvements.
@@ -21,8 +12,9 @@ improvements.
 ### Local
 
 After cloning, run `npm install` once to install the pinned `rumdl` version and
-enable the markdown lint and rules-audit checks on push (`postinstall` sets
-`core.hooksPath` to `.githooks` automatically).
+enable the markdown lint and rules-audit checks on commit (`postinstall` runs
+`lefthook install`). The hooks live in `lefthook.yml`, and CI runs the same
+file. To skip them once, run `LEFTHOOK=0 git commit`; CI still checks.
 
 ### Stage / Preview
 

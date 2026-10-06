@@ -1,0 +1,60 @@
+name: Run Git Hooks
+
+# Runs the pre-commit hooks from lefthook.yml on the files this PR changes.
+# A local hook can be skipped with --no-verify or never installed, so this is
+# the check that cannot be bypassed. Same config as local, nothing to sync.
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**.md"
+      - "docs/**"
+      - "lefthook.yml"
+      - "scripts/check-rules.mjs"
+      - "rules.config.yml"
+      - "package.json"
+      - "package-lock.json"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+jobs:
+  hooks:
+    # Drafts are work in progress. The hooks start mattering when the PR is
+    # ready for review; the ready_for_review event runs them the moment it is.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The diff below needs the base branch's commits.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run the hooks on the files this PR changes
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          # Three dots: changes since the merge base, so files that moved on
+          # the base branch are never linted. Deleted files are left out.
+          # -z: lefthook reads stdin as NUL-separated paths, not lines.
+          # pipefail: a failed diff must fail the job, not pass an empty list.
+          set -o pipefail
+          git diff -z --name-only --diff-filter=ACMR "origin/$BASE_REF...HEAD" |
+            node_modules/.bin/lefthook run pre-commit --files-from-stdin
+
+      - name: Audit the rules system
+        # The step above sees no file list when a PR only deletes docs, and a
+        # deleted rule is what breaks dependencies and the index. This runs the
+        # cross-file checks on every PR, with no file list to get wrong.
+        run: node scripts/check-rules.mjs --rules
