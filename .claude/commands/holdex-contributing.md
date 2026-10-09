@@ -3,6 +3,8 @@ name: holdex-contributing
 description: Holdex contributing rules for GitHub issues and PRs. Invoke before creating or updating issues or PRs in any Holdex repository.
 ---
 
+# Holdex Contributing
+
 All PRs and issues must follow the
 [Holdex Contributing Guidelines](https://github.com/holdex/developers/blob/main/docs/CONTRIBUTING.md).
 
@@ -26,10 +28,12 @@ All PRs and issues must follow the
   Commits format.
   - Good: `docs: protect client funds from unauthorized contractor custody`
   - Bad: `Add FUND_HANDLING.md`
-- **Scope**: fits within 3–4 hours of work. Decompose if larger.
-- **`fix` PRs**: must carry a `@holdex bug commit <commit-url> && bug author
-  @<handle>` comment attributing the commit/author that introduced the bug —
-  use the `/report-bug` command. Required before marking ready for review.
+- **Scope**: one `type(scope): action`, 3 to 15 minutes of work, per
+  [DEV-320](../../docs/rules/DEV-320.md). Decompose if larger.
+- **`fix` PRs**: must carry a
+  `@holdex bug commit <commit-url> && bug author @<handle>` comment attributing
+  the commit/author that introduced the bug — use the `/report-bug` command.
+  Required before marking ready for review.
 - **Lifecycle** (in order):
   1. Open as a **draft PR** immediately when starting work.
   1. Link to the Problem issue using a closing keyword (`Closes #123`).
