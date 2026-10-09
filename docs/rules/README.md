@@ -89,6 +89,7 @@ What a pull request must satisfy before it merges.
 - [DEV-370](./DEV-370.md): report time across all stages
 - [DEV-380](./DEV-380.md): enforce markdown lint on push with a pinned rumdl
   hook
+- [DEV-385](./DEV-385.md): export and test every function, at commit and in CI
 - [DEV-390](./DEV-390.md): update user-facing docs in the same PR
 - [DEV-395](./DEV-395.md): register a vendor account under a Holdex identity
 
