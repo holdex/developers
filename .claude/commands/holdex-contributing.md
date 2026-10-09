@@ -43,4 +43,5 @@ All PRs and issues must follow the
   1. Resolve all CI checks.
   1. Assign at least one reviewer.
   1. Mark ready for review only when all steps above are done.
-- **Do not merge** without an approved review.
+- **Do not merge** until agent review is clean and CI passes, per
+  [DEV-405](../../docs/rules/DEV-405.md). You merge it and own the result.
