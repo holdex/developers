@@ -1,4 +1,12 @@
-Post a `@holdex pr submit-time` or `@holdex pr add-time` comment on a pull request to record time spent.
+---
+name: submit-time
+description: Post a `@holdex pr submit-time` or `@holdex pr add-time` comment on a pull request to record time spent.
+---
+
+# Submit Time
+
+Post a `@holdex pr submit-time` or `@holdex pr add-time` comment on a pull
+request to record time spent.
 
 ## Input
 
@@ -12,8 +20,8 @@ Determine which mode applies:
 
 - No `add` prefix: **submit/update total time** — replaces any previously
   recorded time for this PR with the given value.
-- `add` prefix: **add time on top of the previous submission** — strip the
-  `add` prefix to get the time value.
+- `add` prefix: **add time on top of the previous submission** — strip the `add`
+  prefix to get the time value.
 
 Validate the time format — accepted patterns: `15m`, `1h`, `2h30m`, `1.5h`. If
 the format is invalid, tell the user and stop.

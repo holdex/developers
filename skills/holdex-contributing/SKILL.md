@@ -6,7 +6,7 @@ description: Holdex contributing rules for GitHub issues and PRs. Invoke before 
 # Holdex Contributing
 
 All PRs and issues must follow the
-[Holdex Contributing Guidelines](https://github.com/holdex/developers/blob/main/docs/CONTRIBUTING.md).
+[Holdex Contributing Guidelines][contributing].
 
 ## Issues
 
@@ -29,10 +29,10 @@ All PRs and issues must follow the
   - Good: `docs: protect client funds from unauthorized contractor custody`
   - Bad: `Add FUND_HANDLING.md`
 - **Scope**: one `type(scope): action`, 3 to 15 minutes of work, per
-  [DEV-320](../../docs/rules/DEV-320.md). Decompose if larger.
+  [DEV-320][dev-320]. Decompose if larger.
 - **`fix` PRs**: must carry a
   `@holdex bug commit <commit-url> && bug author @<handle>` comment attributing
-  the commit/author that introduced the bug — use the `/report-bug` command.
+  the commit/author that introduced the bug — use the `/report-bug` skill.
   Required before marking ready for review.
 - **Lifecycle** (in order):
   1. Open as a **draft PR** immediately when starting work.
@@ -45,4 +45,8 @@ All PRs and issues must follow the
      Spec others work from).
   1. Mark ready for review only when all steps above are done.
 - **Do not merge** until agent review is clean and CI passes, per
-  [DEV-405](../../docs/rules/DEV-405.md). You merge it and own the result.
+  [DEV-405][dev-405]. You merge it and own the result.
+
+[contributing]: https://github.com/holdex/developers/blob/main/docs/CONTRIBUTING.md
+[dev-320]: https://github.com/holdex/developers/blob/main/docs/rules/DEV-320.md
+[dev-405]: https://github.com/holdex/developers/blob/main/docs/rules/DEV-405.md
