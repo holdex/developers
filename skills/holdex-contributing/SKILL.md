@@ -32,14 +32,15 @@ All PRs and issues must follow the
   [DEV-320][dev-320]. Decompose if larger.
 - **`fix` PRs**: must carry a
   `@holdex bug commit <commit-url> && bug author @<handle>` comment attributing
-  the commit/author that introduced the bug — use the `/report-bug` skill.
-  Required before marking ready for review.
+  the commit/author that introduced the bug — use the `/report-bug` skill
+  (`/holdex:report-bug` when installed as a Claude Code plugin). Required before
+  marking ready for review.
 - **Lifecycle** (in order):
   1. Open as a **draft PR** immediately when starting work.
   1. Link to the Problem issue using a closing keyword (`Closes #123`).
   1. Assign yourself.
   1. If the PR title starts with `fix`, post the bug attribution comment
-     (`/report-bug`).
+     (`/report-bug`, or `/holdex:report-bug` as a Claude Code plugin).
   1. Resolve all CI checks.
   1. Assign a reviewer when DEV-405 requires a human (a security change, or a
      Spec others work from).
