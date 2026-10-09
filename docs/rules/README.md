@@ -48,6 +48,7 @@ what is not yet built.
 - [DEV-120](./DEV-120.md): keep the Goal description to the allowed sections
 - [DEV-125](./DEV-125.md): write a Spec in the standard format
 - [DEV-130](./DEV-130.md): understand and agree the Spec first
+- [DEV-135](./DEV-135.md): implement the Spec you helped write
 - [DEV-140](./DEV-140.md): give an ETA once the goal is clear
 - [DEV-150](./DEV-150.md): map every barrier blocking the goal
 - [DEV-155](./DEV-155.md): log a bottleneck as a Problem and design it out
