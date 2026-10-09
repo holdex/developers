@@ -75,6 +75,7 @@ What a pull request must satisfy before it merges.
 
 - [DEV-310](./DEV-310.md): sign every commit
 - [DEV-320](./DEV-320.md): scope a PR to minutes of work
+- [DEV-325](./DEV-325.md): ship dependent PRs as a gh stack
 - [DEV-330](./DEV-330.md): keep docs in sync
 - [DEV-335](./DEV-335.md): keep each fact in one canonical place
 - [DEV-337](./DEV-337.md): index every docs tree from a README
