@@ -37,7 +37,7 @@ behavior. The rules that carry these values day to day:
 
 - [DEV-110](./rules/DEV-110.md): take ownership of a Goal
 - [DEV-360](./rules/DEV-360.md): open work as a draft PR linked to its Problem
-- [DEV-430](./rules/DEV-430.md): deliver bug-free work; review is a safety check
+- [DEV-430](./rules/DEV-430.md): own quality through tests and agent review
 
 ### Communication
 
