@@ -69,6 +69,14 @@ in your own Special Terms, which HR prepares from the template in
 privately. Ask your lead for your number. The rate is fixed for the engagement,
 not the total: more hours delivered still means more pay, per Core Rules above.
 
+Hourly pay covers approved hours only, per the Retainer, Hourly clause of the
+[Standard Terms](https://github.com/holdex/contractor-terms/blob/main/STANDARD_TERMS.md).
+A reviewer who closes a PR because its submitted time is not accounted for
+([DEV-320](./rules/DEV-320.md), [DEV-440](./rules/DEV-440.md)) has not approved
+those hours, and they are not paid. The author can reopen the PR split into
+small PRs, and the time approved is the corrected time. A new setup that needs
+manual wiring or third-party service configuration is the only exception.
+
 Partner is paid a fixed rate plus a percentage of the deals they close. The
 exact numbers are set by leadership per deal: ask your lead for the current
 terms.
