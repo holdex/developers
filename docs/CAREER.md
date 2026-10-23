@@ -69,8 +69,9 @@ in your own Special Terms, which HR prepares from the template in
 privately. Ask your lead for your number. The rate is fixed for the engagement,
 not the total: more hours delivered still means more pay, per Core Rules above.
 
-Payment of hours follows the
-[Standard Terms](https://github.com/holdex/contractor-terms/blob/main/STANDARD_TERMS.md).
+Payment of hours follows the version of the
+[Standard Terms](https://github.com/holdex/contractor-terms/blob/main/STANDARD_TERMS.md)
+recorded in your Special Terms.
 
 Partner is paid a fixed rate plus a percentage of the deals they close. The
 exact numbers are set by leadership per deal: ask your lead for the current
