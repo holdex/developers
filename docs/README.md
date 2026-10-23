@@ -16,7 +16,7 @@ How work is proposed, built, reviewed, and shipped.
 Working here: policies and programs.
 
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Compensation](./COMPENSATION.md)
+- [Career](./CAREER.md)
 - [Expenses](./EXPENSES.md)
 - [Leave Policy](./LEAVE_POLICY.md)
 - [Referral Program](./REFERRAL.md)
