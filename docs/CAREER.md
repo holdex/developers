@@ -1,4 +1,4 @@
-# Compensation Guide
+# Career Guide
 
 **Goal:** Reward impact, not titles or location. Pay follows what you deliver.
 
